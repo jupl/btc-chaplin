@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "from": "appcache.appcache",
+      "to": "app/assets/appcache.appcache"
+    }
+  ],
+  "dependencies": []
+}

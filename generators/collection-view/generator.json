@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "from": "view.coffee.hbs",
+      "to": "app/views/collection/{{pluralName}}/view.coffee"
+    },
+    {
+      "from": "style.less.hbs",
+      "to": "app/views/collection/{{pluralName}}/style.less"
+    },
+    {
+      "from": "item-view.coffee.hbs",
+      "to": "app/views/collection/{{pluralName}}/item/view.coffee"
+    },
+    {
+      "from": "item-style.less.hbs",
+      "to": "app/views/collection/{{pluralName}}/item/style.less"
+    },
+    {
+      "from": "item-template.eco.hbs",
+      "to": "app/views/collection/{{pluralName}}/item/template.eco"
+    }
+  ],
+  "dependencies": []
+}
