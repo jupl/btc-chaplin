@@ -1,4 +1,4 @@
-Controller = require './base/controller'
+Controller = require 'controllers/base/controller'
 HeaderView = require 'views/header/view'
 
 module.exports = class HeaderController extends Controller
