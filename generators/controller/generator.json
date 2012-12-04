@@ -3,6 +3,10 @@
     {
       "from": "controller.coffee.hbs",
       "to": "app/controllers/{{name}}.coffee"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/tests/controllers/{{name}}.coffee"
     }
   ],
   "dependencies": []

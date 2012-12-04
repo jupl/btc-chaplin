@@ -19,6 +19,10 @@
     {
       "from": "item-template.eco.hbs",
       "to": "app/views/{{name}}/item/template.eco"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/tests/views/{{name}}.coffee"
     }
   ],
   "dependencies": []

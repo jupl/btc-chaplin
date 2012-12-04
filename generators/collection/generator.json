@@ -3,6 +3,10 @@
     {
       "from": "collection.coffee.hbs",
       "to": "app/models/{{pluralName}}.coffee"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/tests/models/{{pluralName}}.coffee"
     }
   ],
   "dependencies": [
