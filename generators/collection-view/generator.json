@@ -22,7 +22,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/tests/views/{{name}}.coffee"
+      "to": "test/tests/views/{{name}}_test.coffee"
     }
   ],
   "dependencies": []
