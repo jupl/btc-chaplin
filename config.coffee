@@ -7,8 +7,8 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^vendor/
-        'test/javascripts/tests.js': /^test(\/|\\)tests/
-        'test/javascripts/test-vendor.js': /^test(\/|\\)vendor/
+        'test/javascripts/tests.js': /^test[\\/]tests/
+        'test/javascripts/test-vendor.js': /^test[\\/]vendor/
       order:
         before: [
           'vendor/scripts/common/console-helper.js'
@@ -17,10 +17,11 @@ exports.config =
           'vendor/scripts/bootstrap/bootstrap-tooltip.js'
           'test/vendor/scripts/modernizr.js'
         ]
+        after: ['test/vendor/scripts/test-helper.js']
 
     stylesheets:
       joinTo:
-        'stylesheets/app.css': /^(app(?!(\/|\\)lib)|vendor)/
+        'stylesheets/app.css': /^(app(?![\\/]lib)|vendor)/
         'test/stylesheets/test.css': /^test/
       order:
         before: ['vendor/styles/bootstrap/bootstrap.less']
