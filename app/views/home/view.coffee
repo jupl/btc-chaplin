@@ -2,8 +2,8 @@ View = require 'views/base/view'
 
 template = require './template'
 
-module.exports = class HomePageView extends View
-  className: 'home-page-view'
+module.exports = class HomeView extends View
+  className: 'home-view'
   template: template
   autoRender: yes
   container: '#page-container'
