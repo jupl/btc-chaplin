@@ -4,4 +4,4 @@ HomeView = require 'views/home/view'
 module.exports = class HomeController extends Controller
 
   index: ->
-    @view = new HomeView()
+    @view = new HomeView

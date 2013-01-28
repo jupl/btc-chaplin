@@ -15,7 +15,7 @@ module.exports = class App extends Chaplin.Application
     super
 
     # Initialize core components
-    @initDispatcher controllerSuffix: ''
+    @initDispatcher(controllerSuffix: '')
     @initLayout()
     @initMediator()
 
@@ -38,7 +38,7 @@ module.exports = class App extends Chaplin.Application
   initLayout: ->
     # Use an application-specific Layout class. Currently this adds
     # no features to the standard Chaplin Layout, it’s an empty placeholder.
-    @layout = new Layout {@title}
+    @layout = new Layout({@title})
 
   # Instantiate common controllers
   # ------------------------------
@@ -49,7 +49,7 @@ module.exports = class App extends Chaplin.Application
     # and views which are needed the whole time, for example header, footer
     # or navigation views.
     # e.g. new NavigationController()
-    new HeaderController()
+    new HeaderController
 
   # Create additional mediator properties
   # -------------------------------------
