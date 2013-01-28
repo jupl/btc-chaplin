@@ -16,7 +16,7 @@ module.exports =
       task:         tasks.add.appcache
     bootstrap:
       command:      'add:bootstrap'
-      description:  'Add Twitter Bootstrap\n'
+      description:  'Add Twitter Bootstrap with Font Awesome\n'
       task:         tasks.add.bootstrap
 
   gen:

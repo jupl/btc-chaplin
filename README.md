@@ -16,7 +16,7 @@
   * [Backbone.js](http://backbonejs.org/)
   * [Underscore.js](http://underscorejs.org/)
   * [Clearless](http://clearleft.github.com/clearless/)
-  * [Bootstrap](http://twitter.github.com/bootstrap) (optional)
+  * [Bootstrap](http://twitter.github.com/bootstrap), [Font Awesome](http://fortawesome.github.com/Font-Awesome/) (optional)
 * Other Brunch Plugins:
   * [Appcache](http://github.com/brunch/appcache-brunch)
   * [Auto Reload](http://github.com/brunch/auto-reload-brunch) (included in test)
