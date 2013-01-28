@@ -21,7 +21,7 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'stylesheets/app.css': /^(app(?![\\/]lib)|vendor)/
+        'stylesheets/app.css': /^(app|vendor)/
         'test/stylesheets/test.css': /^test/
       order:
         before: ['vendor/styles/bootstrap/bootstrap.less']
