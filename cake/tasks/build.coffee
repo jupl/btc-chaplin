@@ -13,5 +13,5 @@ module.exports = class Build extends Exec
   serverProd: => @_build ['watch', '-s'], prod: yes
 
   _build: (args, {prod} = {prod: no}) ->
-    args.push '-m' if prod
+    args.push '-o' if prod
     @exec args

@@ -6,7 +6,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/tests/models/{{name}}_test.coffee"
+      "to": "test/tests/models/{{name}}-test.coffee"
     }
   ],
   "dependencies": []
