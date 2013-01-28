@@ -9,6 +9,10 @@
       "to": "app/views/{{name}}/style.less"
     },
     {
+      "from": "template.eco.hbs",
+      "to": "app/views/{{name}}/template.eco"
+    },
+    {
       "from": "item/view.coffee.hbs",
       "to": "app/views/{{name}}/item/view.coffee"
     },
