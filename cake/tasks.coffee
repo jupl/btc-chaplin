@@ -2,6 +2,7 @@ tasks =
   build:      require './tasks/build'
   add:        require './tasks/add'
   generate:   require './tasks/generate'
+  destroy:    require './tasks/destroy'
   help:       require './tasks/help'
   test:       require './tasks/test'
 
@@ -41,6 +42,30 @@ module.exports =
       command:      'gen:controller'
       description:  'Generate a Chaplin Controller\n'
       task:         tasks.generate.controller
+
+  del:
+    model:
+      command:      'del:model'
+      description:  'Delete a Chaplin Model'
+      task:         tasks.destroy.model
+    collection:
+      command:      'del:collection'
+      description:  'Delete a Chaplin Collection + Model'
+      task:         tasks.destroy.collection
+    view:
+      view:
+        command:      'del:view'
+        description:  'Delete a Chaplin View'
+        task:         tasks.destroy.view
+      collection:
+        command:      'del:view:collection'
+        description:  'Delete a Chaplin CollectionView + Item View'
+        task:         tasks.destroy.collectionView
+    controller:
+      command:      'del:controller'
+      description:  'Delete a Chaplin Controller\n'
+      task:         tasks.destroy.controller
+
 
   build:
     once:

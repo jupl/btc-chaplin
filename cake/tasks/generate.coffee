@@ -39,7 +39,14 @@ module.exports = class Generate extends Exec
     @exec args, callback
 
   _prompt: (type, callback) ->
-    commander.prompt "\nEnter name for #{type}: ", callback
+    prompt = switch type
+      when 'collection'
+        "\nEnter name for #{type} (as singular, not plural): "
+      when 'collection-view'
+        "\nEnter name for collection view: "
+      else
+        "\nEnter name for #{type}: "
+    commander.prompt prompt, callback
 
   _toDash: (string) ->
     " #{string} "

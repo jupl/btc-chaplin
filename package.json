@@ -26,6 +26,12 @@
     "gen:view:collection":  "./node_modules/.bin/cake gen:view:collection",
     "gen:controller":       "./node_modules/.bin/cake gen:controller",
 
+    "del:model":            "./node_modules/.bin/cake del:model",
+    "del:collection":       "./node_modules/.bin/cake del:collection",
+    "del:view":             "./node_modules/.bin/cake del:view",
+    "del:view:collection":  "./node_modules/.bin/cake del:view:collection",
+    "del:controller":       "./node_modules/.bin/cake del:controller",
+
     "build:dev":    "./node_modules/.bin/cake build:dev",
     "build:prod":   "./node_modules/.bin/cake build:prod",
     "watch:dev":    "./node_modules/.bin/cake watch:dev",
