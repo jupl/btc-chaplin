@@ -1,0 +1,22 @@
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="brand">Brunch</div>
+
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="test/">App tests</a></li>
+          <li><a href="http://brunch.readthedocs.org/">Docs</a></li>
+          <li><a href="https://github.com/brunch/brunch/issues">GitHub issues</a></li>
+          <li><a href="https://github.com/paulmillr/ostio">Ost.io example app</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
