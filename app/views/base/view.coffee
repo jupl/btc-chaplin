@@ -15,7 +15,7 @@ module.exports = class View extends Chaplin.View
     @stickit()
 
   initSelectors: ->
-    for element, selector of @elements do (element, selector) =>
+    for element, selector of @elements then do (element, selector) =>
       this["$#{element}"] = (subSelector) =>
         $el = @$(selector)
         $el = $el.find subSelector if subSelector
