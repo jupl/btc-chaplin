@@ -14,6 +14,7 @@
 * Libraries and Utilities:
   * [jQuery](http://jquery.com/)
   * [Backbone.js](http://backbonejs.org/)
+  * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/)
   * [Underscore.js](http://underscorejs.org/)
   * [Clearless](http://clearleft.github.com/clearless/)
   * [Bootstrap](http://twitter.github.com/bootstrap), [Font Awesome](http://fortawesome.github.com/Font-Awesome/) (optional)
