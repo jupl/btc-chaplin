@@ -6,6 +6,17 @@ module.exports = class View extends Chaplin.View
   getTemplateFunction: ->
     @template
 
+  constructor: ->
+    @initSelectors()
+    super
+
   render: ->
     super
     @stickit()
+
+  initSelectors: ->
+    for element, selector of @elements do (element, selector) =>
+      this["$#{element}"] = (subSelector) =>
+        $el = @$(selector)
+        $el = $el.find subSelector if subSelector
+        $el
