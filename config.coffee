@@ -13,12 +13,15 @@ exports.config =
         before: [
           'vendor/scripts/common/console-helper.js'
           'vendor/scripts/common/jquery.js'
-          'vendor/scripts/common/underscore.js'
+          'vendor/scripts/underscore/underscore.js'
           'vendor/scripts/backbone/backbone.js'
           'vendor/scripts/bootstrap/bootstrap-tooltip.js'
           'test/vendor/scripts/modernizr.js'
         ]
-        after: ['test/vendor/scripts/test-helper.js']
+        after: [
+          'vendor/scripts/backbone/chaplin.coffee'
+          'test/vendor/scripts/test-helper.js'
+        ]
 
     stylesheets:
       joinTo:
