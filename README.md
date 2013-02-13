@@ -1,57 +1,96 @@
-# Chapless Brunch
+# [Chapless Brunch](https://github.com/jupl/chapless-brunch)
 
-[Brunch](http://brunch.io/) skeleton that uses CoffeeScript with [Chaplin](http://chaplinjs.org/). jQuery comes included in its base. Brunch does not have to be installed or used directly to get started.
-
-* Language: [CoffeeScript](http://coffeescript.org/)
-* Lint: [CoffeeLint](http://www.coffeelint.org/)
-* Framework: [Chaplin](http://chaplinjs.org/)
-* Templating: [Eco](http://github.com/sstephenson/eco)
-* Styling: [LESS](http://lesscss.org/)
-* Testing:
-  * [Mocha](http://visionmedia.github.com/mocha/)
-  * [Chai](http://chaijs.com/)
-  * [Sinon](http://sinonjs.org/) (using [Sinon-Chai](http://github.com/domenic/sinon-chai))
-* Libraries and Utilities:
-  * [jQuery](http://jquery.com/)
-  * [Backbone.js](http://backbonejs.org/)
-  * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/)
-  * [Underscore.js](http://underscorejs.org/)
-  * [Clearless](http://clearleft.github.com/clearless/)
-  * [Bootstrap](http://twitter.github.com/bootstrap), [Font Awesome](http://fortawesome.github.com/Font-Awesome/) (optional)
-* Other Brunch Plugins:
-  * [Appcache](http://github.com/brunch/appcache-brunch)
-  * [Auto Reload](http://github.com/brunch/auto-reload-brunch) (included in test)
+## Introduction
+Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
 
 
-## Installation Instrctions
-
-* Install [Node](http://nodejs.org/) if you have not done so already.
-* Download the skeleton and run `npm install` from within the skeleton folder.
-* Alternatively, you can also install CoffeeScript to use the `cake` command: `npm install -g coffee-script`
+## Requirements
+* [node.js](http://nodejs.org) (mandatory)
+* [CoffeeScript](http://coffeescript.org/#installation) (recommended via npm)
 
 
-## Tasks
-
-* If you are familiar with Brunch, you can just use that with no issues.
-* If you rather not use or install Brunch globally, or leverage some other tasks (ex. project initialization) then you can use one of the following:
-  * `npm` - You can run tasks using `npm run-script [task]`. To see all tasks available just run `npm start`.
-  * `cake` - If you have CoffeeScript installed you can also use the Cakefile to run tasks using `cake [task]`. Run `cake` to see all available tasks.
-
-
-## FAQ
-
-* Why `npm` and `cake`?
-  * By specifying Brunch in `package.json` you can keep things consistent when working with others on a project in case of upgrades and changes.
-  * It is easier for one to get someone started on an existing project if they are unfamiliar with some of these tools. For me I can get them to install Node.js, download the project, install dependencies and use `npm run-script` or `cake`.
-  * Cakefile is used to write possible advanced tasks in the future and can be used cross-platform.
-* Why have Modernizr under testing only?
-  * That Modernizr is the complete version that can be used for feature detection during testing. Download Modernizr from their [website](http://modernizr.com/) to create a custom build based on your requirements to keep things lightweight for production.
+## Setup
+1. Install node.js.
+2. While not mandatory, it is recommended to install CoffeeScript.
+3. Download this skeleton.
+4. Open a Terminal / Command Prompt and navigate to this directory where you downloaded the skeleton.
+5. Execute the command `npm install` to install all package dependencies.
 
 
-## Notes
+## Command List
+While Brunch commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
 
-* Use `require 'app'` to get a reference to the application object from a module.
-* Run the task `add:bootstrap` to use Twitter Bootstrap.
+### Extras
+These commands add additional features/items to the project that are not included by default. It is recommended to add these features in the beginning when setting up the project as they overwrite certain files.
 
+#### `add:appcache`
+Add an HTML5 appcache file. Since Appcache Brunch is used, a build time will be added to the appcache after every build, triggering an update.
 
-### More information and features coming soon!
+#### `add:bootstrap`
+Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization.
+
+### Scaffolding
+These commands allow one to generate and destroy Chaplin components.
+* Test files are automatically generated for each of these items.
+* For views, a template and stylesheet is also provided in addition to the code file.
+
+#### `gen:model` / `del:model`
+Generate/destroy a Chaplin model.
+
+#### `gen:collection` / `del:collection` 
+Generate/destroy a Chaplin collection. Generating a Chaplin collection will also generate its corresponding model. Specify the name in singular form, as collection will automatically be pluralized.
+
+#### `gen:view` / `del:view`
+Generate/destroy a Chaplin view.
+
+#### `gen:view:collection` / `del:view:collection`
+Generate/destroy a Chaplin collection view. Generating a Chaplin collection view will also generate the individual model item view.
+
+#### `gen:controller` / `del:controller`
+Generate/destroy a Chaplin controller.
+
+### Building
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
+* `[mode]` Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
+
+#### `build:[mode]`
+Assemble the application once.
+
+#### `watch:[mode]`
+Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
+
+#### `server:[mode]`
+Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
+
+### Testing
+Use the `test` command to execute tests in the terminal using jsdom.
+
+## Details
+
+### Core
+* [Brunch](http://brunch.io) 1.5.2
+
+### Languages
+* [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
+* [Eco](https://github.com/sstephenson/eco)
+* [LESS](http://lesscss.org)
+
+### Framework
+* [Chaplin](http://chaplinjs.org) 0.6.0
+* [Backbone](http://backbonejs.org) 0.9.10
+
+### Utilities
+* [jQuery](http://jquery.com) 1.9.0
+* [Underscore](http://underscorejs.org) 1.4.4
+* [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
+* [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.2
+* [Modernizr](http://modernizr.com/) 2.6.2 (in test)
+
+### Styling
+* [Clearless](http://clearleft.github.com/clearless/)
+* [Bootstrap](http://twitter.github.com/bootstrap/) 2.3.0
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
+
+### Extras
+* [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
+* [Appcache Brunch](https://github.com/brunch/appcache-brunch)
