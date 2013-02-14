@@ -43,7 +43,7 @@
   },
 
   "dependencies": {
-    "brunch": ">= 1.0 < 1.6",
+    "brunch": "1.5.2",
     "commander": "1.0.5",
     "coffee-script": "1.4.0",
 
