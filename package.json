@@ -15,10 +15,9 @@
   },
   
   "scripts": {
-    "start":  "./node_modules/.bin/cake help:npm",
+    "start": "./node_modules/.bin/cake help:npm",
 
-    "add:appcache":   "./node_modules/.bin/cake add:appcache",
-    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap": "./node_modules/.bin/cake add:bootstrap",
 
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",
@@ -39,11 +38,11 @@
     "server:dev":   "./node_modules/.bin/cake server:dev",
     "server:prod":  "./node_modules/.bin/cake server:prod",
 
-    "test":   "./node_modules/.bin/cake test"
+    "test": "./node_modules/.bin/cake test"
   },
 
   "dependencies": {
-    "brunch": "1.5.2",
+    "brunch": "1.5.3",
     "wrench": "1.4.4",
     "commander": "1.1.1",
     "coffee-script": "1.4.0",
@@ -57,7 +56,6 @@
 
     "eco-brunch": ">= 1.0 < 1.6",
 
-    "appcache-brunch": ">= 1.0 < 1.6",
     "uglify-js-brunch": ">= 1.0 < 1.6",
     "clean-css-brunch": ">= 1.0 < 1.6",
     "auto-reload-brunch": ">= 1.0 < 1.6"

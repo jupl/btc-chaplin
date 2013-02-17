@@ -23,11 +23,8 @@ While Brunch commands can be used, cake commands are provided for this skeleton.
 ### Extras
 These commands add additional features/items to the project that are not included by default. It is recommended to add these features in the beginning when setting up the project as they overwrite certain files.
 
-#### `add:appcache`
-Add an HTML5 appcache file. Since Appcache Brunch is used, a build time will be added to the appcache after every build, triggering an update.
-
 #### `add:bootstrap`
-Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization.
+Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization. It is recommended that you add `@import "vendor/styles/bootstrap/variables";` to `base.less`.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
@@ -50,8 +47,7 @@ Generate/destroy a Chaplin collection view. Generating a Chaplin collection view
 Generate/destroy a Chaplin controller.
 
 ### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
-* `[mode]` Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
 
 #### `build:[mode]`
 Assemble the application once.
@@ -68,7 +64,7 @@ Use the `test` command to execute tests in the terminal using jsdom.
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.5.2
+* [Brunch](http://brunch.io) 1.5.3
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
@@ -93,4 +89,3 @@ Use the `test` command to execute tests in the terminal using jsdom.
 
 ### Extras
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
-* [Appcache Brunch](https://github.com/brunch/appcache-brunch)

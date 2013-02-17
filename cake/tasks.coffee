@@ -11,10 +11,6 @@ tasks[key] = new value for key, value of tasks
 module.exports =
   
   add:
-    appcache:
-      command:      'add:appcache'
-      description:  'Add HTML5 application cache to the project'
-      task:         tasks.add.appcache
     bootstrap:
       command:      'add:bootstrap'
       description:  'Add Twitter Bootstrap with Font Awesome\n'

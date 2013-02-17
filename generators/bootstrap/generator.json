@@ -1,26 +1,6 @@
 {
   "files": [
     {
-      "from": "app.less",
-      "to":   "app/app.less"
-    },
-    {
-      "from": "base.less",
-      "to":   "app/base.less"
-    },
-    {
-      "from": "header/style.less",
-      "to":   "app/views/header/style.less"
-    },
-    {
-      "from": "header/template.eco",
-      "to":   "app/views/header/template.eco"
-    },
-    {
-      "from": "home/style.less",
-      "to":   "app/views/home/style.less"
-    },
-    {
       "from": "font/fontawesome-webfont.eot",
       "to":   "app/assets/font/fontawesome-webfont.eot"
     },
