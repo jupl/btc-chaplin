@@ -80,7 +80,7 @@ Use the `test` command to execute tests in the terminal using jsdom.
 * [Backbone](http://backbonejs.org) 0.9.10
 
 ### Utilities
-* [jQuery](http://jquery.com) 1.9.0
+* [jQuery](http://jquery.com) 1.9.1
 * [Underscore](http://underscorejs.org) 1.4.4
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
 * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.2
