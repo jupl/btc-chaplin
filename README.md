@@ -72,7 +72,7 @@ Use the `test` command to execute tests in the terminal using jsdom.
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.6.0
+* [Chaplin](http://chaplinjs.org) 0.7.0
 * [Backbone](http://backbonejs.org) 0.9.10
 
 ### Utilities

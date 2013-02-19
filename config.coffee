@@ -15,7 +15,7 @@ exports.config =
           'vendor/scripts/backbone/backbone.js'
           'vendor/scripts/bootstrap/bootstrap-tooltip.js'
         ]
-        after: ['vendor/scripts/backbone/chaplin.coffee']
+        after: ['vendor/scripts/backbone/chaplin.js']
 
     stylesheets:
       joinTo:
