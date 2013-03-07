@@ -26,6 +26,9 @@ These commands add additional features/items to the project that are not include
 #### `add:bootstrap`
 Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization. It is recommended that you add `@import "vendor/styles/bootstrap/variables";` to `base.less`.
 
+#### `add:stickit`
+Add Backbone.stickit to the project.
+
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
 * Test files are automatically generated for each of these items.
@@ -79,12 +82,12 @@ Use the `test` command to execute tests in the terminal using jsdom.
 * [jQuery](http://jquery.com) 1.9.1
 * [Underscore](http://underscorejs.org) 1.4.4
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
-* [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.2
+* [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://twitter.github.com/bootstrap/) 2.3.0
+* [Bootstrap](http://twitter.github.com/bootstrap/) 2.3.1
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
 
 ### Extras
