@@ -12,7 +12,7 @@ module.exports = class View extends Chaplin.View
 
   render: ->
     super
-    @stickit()
+    @stickit?()
 
   initSelectors: ->
     for element, selector of @elements then do (element, selector) =>

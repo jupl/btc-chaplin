@@ -13,8 +13,12 @@ module.exports =
   add:
     bootstrap:
       command:      'add:bootstrap'
-      description:  'Add Twitter Bootstrap with Font Awesome\n'
+      description:  'Add Twitter Bootstrap with Font Awesome'
       task:         tasks.add.bootstrap
+    stickit:
+      command:      'add:stickit'
+      description:  'Add Backbone.stickit\n'
+      task:         tasks.add.stickit
 
   gen:
     model:
