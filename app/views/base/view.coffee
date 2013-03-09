@@ -2,11 +2,13 @@ Chaplin = require 'chaplin'
 require 'lib/view-helper' # Just load the view helpers, no return value
 
 module.exports = class View extends Chaplin.View
+  autoRender: yes
+
   # Precompiled templates function initializer.
   getTemplateFunction: ->
     @template
 
-  constructor: ->
+  initialize: ->
     @initSelectors()
     super
 
@@ -20,3 +22,8 @@ module.exports = class View extends Chaplin.View
         $el = @$(selector)
         $el = $el.find subSelector if subSelector
         $el
+
+  redirectTo: (url, options = {}) ->
+    @publishEvent '!router:route', url, options, (routed) ->
+      unless routed
+        throw new Error 'View#redirectTo: no route matched'
