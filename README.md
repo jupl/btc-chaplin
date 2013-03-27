@@ -23,11 +23,11 @@ While Brunch commands can be used, cake commands are provided for this skeleton.
 ### Extras
 These commands add additional features/items to the project that are not included by default. It is recommended to add these features in the beginning when setting up the project as they overwrite certain files.
 
-#### `add:bootstrap`
-Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization. It is recommended that you add `@import "vendor/styles/bootstrap/variables";` to `base.less`.
+#### `add:bootstrap` / `rem:bootstrap`
+Add/remove Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization. It is recommended that you modify `app.less` and `base.less` if using Bootstrap.
 
-#### `add:stickit`
-Add Backbone.stickit to the project.
+#### `add:stickit` / `rem:stickit`
+Add/remove Backbone.stickit to the project.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
@@ -61,13 +61,10 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 #### `server:[mode]`
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
 
-### Testing
-Use the `test` command to execute tests in the terminal using jsdom.
-
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.5.3
+* [Brunch](http://brunch.io) 1.6.1
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
