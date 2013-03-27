@@ -1,14 +1,37 @@
 Build = require './tasks/build'
 Help = require './tasks/help'
 Scaffold =
-  Model:          require './tasks/scaffold/model'
-  Collection:     require './tasks/scaffold/collection'
-  View:           require './tasks/scaffold/view'
-  CollectionView: require './tasks/scaffold/collection-view'
-  Controller:     require './tasks/scaffold/controller'
+  Model:          require './tasks/scaffolds/model'
+  Collection:     require './tasks/scaffolds/collection'
+  View:           require './tasks/scaffolds/view'
+  CollectionView: require './tasks/scaffolds/collection-view'
+  Controller:     require './tasks/scaffolds/controller'
+Module =
+  Bootstrap: require './tasks/modules/bootstrap'
+  Stickit:   require './tasks/modules/stickit'
 
 module.exports =
   
+  add:
+    bootstrap:
+      command:      'add:bootstrap'
+      description:  'Add Bootstrap with Font Awesome'
+      task:         -> do Module.Bootstrap.add
+    stickit:
+      command:      'add:stickit'
+      description:  'Add backbone.stickit\n'
+      task:         -> do Module.Stickit.add
+
+  rem:
+    bootstrap:
+      command:      'rem:bootstrap'
+      description:  'Remove Bootstrap with Font Awesome'
+      task:         -> do Module.Bootstrap.remove
+    stickit:
+      command:      'rem:stickit'
+      description:  'Remove backbone.stickit\n'
+      task:         -> do Module.Stickit.remove
+
   gen:
     model:
       command:      'gen:model'
@@ -19,14 +42,13 @@ module.exports =
       description:  'Generate a Chaplin Collection + Model'
       task:         -> do Scaffold.Collection.generate
     view:
-      view:
-        command:      'gen:view'
-        description:  'Generate a Chaplin View'
-        task:         -> do Scaffold.View.generate
-      collection:
-        command:      'gen:view:collection'
-        description:  'Generate a Chaplin CollectionView + Item View'
-        task:         -> do Scaffold.CollectionView.generate
+      command:      'gen:view'
+      description:  'Generate a Chaplin View'
+      task:         -> do Scaffold.View.generate
+    collectionView:
+      command:      'gen:view:collection'
+      description:  'Generate a Chaplin CollectionView + Item View'
+      task:         -> do Scaffold.CollectionView.generate
     controller:
       command:      'gen:controller'
       description:  'Generate a Chaplin Controller\n'
@@ -42,14 +64,13 @@ module.exports =
       description:  'Delete a Chaplin Collection + Model'
       task:         -> do Scaffold.Collection.destroy
     view:
-      view:
-        command:      'del:view'
-        description:  'Delete a Chaplin View'
-        task:         -> do Scaffold.View.destroy
-      collection:
-        command:      'del:view:collection'
-        description:  'Delete a Chaplin CollectionView + Item View'
-        task:         -> do Scaffold.CollectionView.destroy
+      command:      'del:view'
+      description:  'Delete a Chaplin View'
+      task:         -> do Scaffold.View.destroy
+    collectionView:
+      command:      'del:view:collection'
+      description:  'Delete a Chaplin CollectionView + Item View'
+      task:         -> do Scaffold.CollectionView.destroy
     controller:
       command:      'del:controller'
       description:  'Delete a Chaplin Controller\n'

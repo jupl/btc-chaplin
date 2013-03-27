@@ -1,3 +1,8 @@
+//
+// backbone.stickit - v0.6.3
+// The MIT License
+// Copyright (c) 2012 The New York Times, CMS Group, Matthew DeLambo <delambo@gmail.com> 
+//
 (function($) {
 
   // Backbone.Stickit Namespace
