@@ -1,4 +1,5 @@
 exports.config =
+
   paths:
     public: 'build/web'
 

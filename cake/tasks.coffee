@@ -1,109 +1,91 @@
-tasks =
-  build:      require './tasks/build'
-  add:        require './tasks/add'
-  generate:   require './tasks/generate'
-  destroy:    require './tasks/destroy'
-  help:       require './tasks/help'
-  test:       require './tasks/test'
-
-tasks[key] = new value for key, value of tasks
+Build = require './tasks/build'
+Help = require './tasks/help'
+Scaffold =
+  Model:          require './tasks/scaffold/model'
+  Collection:     require './tasks/scaffold/collection'
+  View:           require './tasks/scaffold/view'
+  CollectionView: require './tasks/scaffold/collection-view'
+  Controller:     require './tasks/scaffold/controller'
 
 module.exports =
   
-  add:
-    bootstrap:
-      command:      'add:bootstrap'
-      description:  'Add Twitter Bootstrap with Font Awesome'
-      task:         tasks.add.bootstrap
-    stickit:
-      command:      'add:stickit'
-      description:  'Add Backbone.stickit\n'
-      task:         tasks.add.stickit
-
   gen:
     model:
       command:      'gen:model'
       description:  'Generate a Chaplin Model'
-      task:         tasks.generate.model
+      task:         Scaffold.Model.generate
     collection:
       command:      'gen:collection'
       description:  'Generate a Chaplin Collection + Model'
-      task:         tasks.generate.collection
+      task:         Scaffold.Collection.generate
     view:
       view:
         command:      'gen:view'
         description:  'Generate a Chaplin View'
-        task:         tasks.generate.view
+        task:         Scaffold.View.generate
       collection:
         command:      'gen:view:collection'
         description:  'Generate a Chaplin CollectionView + Item View'
-        task:         tasks.generate.collectionView
+        task:         Scaffold.CollectionView.generate
     controller:
       command:      'gen:controller'
       description:  'Generate a Chaplin Controller\n'
-      task:         tasks.generate.controller
+      task:         Scaffold.Controller.generate
 
   del:
     model:
       command:      'del:model'
       description:  'Delete a Chaplin Model'
-      task:         tasks.destroy.model
+      task:         Scaffold.Model.destroy
     collection:
       command:      'del:collection'
       description:  'Delete a Chaplin Collection + Model'
-      task:         tasks.destroy.collection
+      task:         Scaffold.Collection.destroy
     view:
       view:
         command:      'del:view'
         description:  'Delete a Chaplin View'
-        task:         tasks.destroy.view
+        task:         Scaffold.View.destroy
       collection:
         command:      'del:view:collection'
         description:  'Delete a Chaplin CollectionView + Item View'
-        task:         tasks.destroy.collectionView
+        task:         Scaffold.CollectionView.destroy
     controller:
       command:      'del:controller'
       description:  'Delete a Chaplin Controller\n'
-      task:         tasks.destroy.controller
-
+      task:         Scaffold.Controller.destroy
 
   build:
     once:
       dev:
         command:      'build:dev'
         description:  'Build project'
-        task:         tasks.build.onceDev
+        task:         Build.once.development
       prod:
         command:      'build:prod'
         description:  'Build project minified'
-        task:         tasks.build.onceProd
+        task:         Build.once.production
     watch:
       dev:
         command:      'watch:dev'
         description:  'Continuously rebuild project on changes'
-        task:         tasks.build.watchDev
+        task:         Build.watch.development
       prod:
         command:      'watch:prod'
         description:  'Continuously rebuild project minified on changes'
-        task:         tasks.build.watchProd
+        task:         Build.watch.production
     server:
       dev:
         command:      'server:dev'
         description:  'Continuously rebuild project on changes, and host locally'
-        task:         tasks.build.serverDev
+        task:         Build.server.development
       prod:
         command:      'server:prod'
         description:  'Continuously rebuild project minified on changes, and host locally\n'
-        task:         tasks.build.serverProd
-  
-  test:
-    terminal:
-      command:      'test'
-      description:  'Run test tasks in terminal using jsdom\n'
-      task:         tasks.test.terminal
+        task:         Build.server.production
 
   help:
     npm:
       command:      'help:npm'
       description:  'Help for those running commands from npm'
-      task:         tasks.help.npm
+      task:         Help.npm

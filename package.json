@@ -17,8 +17,6 @@
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
-    "add:bootstrap": "./node_modules/.bin/cake add:bootstrap",
-
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",
     "gen:view":             "./node_modules/.bin/cake gen:view",
@@ -36,16 +34,15 @@
     "watch:dev":    "./node_modules/.bin/cake watch:dev",
     "watch:prod":   "./node_modules/.bin/cake watch:prod",
     "server:dev":   "./node_modules/.bin/cake server:dev",
-    "server:prod":  "./node_modules/.bin/cake server:prod",
-
-    "test": "./node_modules/.bin/cake test"
+    "server:prod":  "./node_modules/.bin/cake server:prod"
   },
 
   "dependencies": {
-    "brunch": "1.5.3",
+    "brunch": "1.6.1",
     "wrench": "1.4.4",
     "commander": "1.1.1",
-    "coffee-script": "1.4.0",
+    "coffee-script": "1.6.2",
+    "underscore.string": "2.3.0",
 
     "javascript-brunch": ">= 1.0 < 1.6",
     "coffee-script-brunch": ">= 1.0 < 1.6",
@@ -59,12 +56,5 @@
     "uglify-js-brunch": ">= 1.0 < 1.6",
     "clean-css-brunch": ">= 1.0 < 1.6",
     "auto-reload-brunch": ">= 1.0 < 1.6"
-  },
-
-  "devDependencies": {
-    "chai": "1.5.0",
-    "sinon": "1.6.0",
-    "sinon-chai": "2.3.1",
-    "jsdom": "0.5.0"
   }
 }
