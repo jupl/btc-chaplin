@@ -3,7 +3,9 @@ Scaffold = require './scaffold'
 module.exports = class Module extends Scaffold
 
   @add: ->
-    @generate 'placeholder'
+    instance = new this
+    instance.generate 'placeholder'
 
   @remove: ->
-    @destroy 'placeholder'
+    instance = new this
+    instance.destroy 'placeholder'
