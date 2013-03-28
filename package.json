@@ -17,6 +17,12 @@
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
+    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
+    "add:stickit":    "./node_modules/.bin/cake add:stickit",
+
+    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
+    "rem:stickit":    "./node_modules/.bin/cake rem:stickit",
+
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",
     "gen:view":             "./node_modules/.bin/cake gen:view",
