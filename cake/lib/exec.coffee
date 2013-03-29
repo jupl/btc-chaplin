@@ -2,7 +2,7 @@
 
 module.exports = class Exec
 
-  exec: (args = [], onExit = (->), options) =>
+  exec: (args = [], onExit = (->), options) ->
     child = spawn @command, args, options
     child.on 'exit', onExit
     child.stdout.pipe process.stdout
