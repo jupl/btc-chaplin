@@ -1,4 +1,4 @@
-# [Chapless Brunch](https://github.com/jupl/chapless-brunch)
+# Chapless Brunch 0.1.0
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -21,13 +21,13 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 While Brunch commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
 
 ### Extras
-These commands add additional features/items to the project that are not included by default. It is recommended to add these features in the beginning when setting up the project as they overwrite certain files.
+These commands add additional features/items to the project that are not included by default.
 
-#### `add:bootstrap`
-Add Twitter Bootstrap and Font Awesome to the project. LESS-based files are provided for full customization. It is recommended that you add `@import "vendor/styles/bootstrap/variables";` to `base.less`.
+#### `add:bootstrap` / `rem:bootstrap`
+Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are provided for full customization. It is recommended that you modify `app.less` and `base.less` if using Bootstrap.
 
-#### `add:stickit`
-Add Backbone.stickit to the project.
+#### `add:stickit` / `rem:stickit`
+Add/remove Backbone.stickit to/from the project.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
@@ -61,13 +61,11 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 #### `server:[mode]`
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
 
-### Testing
-Use the `test` command to execute tests in the terminal using jsdom.
-
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.5.3
+* [Brunch](http://brunch.io) 1.6.1
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.1
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
@@ -87,7 +85,7 @@ Use the `test` command to execute tests in the terminal using jsdom.
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://twitter.github.com/bootstrap/) 2.3.1
+* [Bootstrap](http://getbootstrap.com/) 2.3.1
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
 
 ### Extras

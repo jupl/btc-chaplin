@@ -1,6 +1,18 @@
 @import "vendor/styles/clearless/_all";
+// Uncomment below line if using Bootstrap
+// @import "vendor/styles/bootstrap/variables";
 
-.scrollable() {
+.scroll() {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll() {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vertical-scroll() {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }

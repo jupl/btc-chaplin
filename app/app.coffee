@@ -1,5 +1,4 @@
 Chaplin = require 'chaplin'
-HeaderController = require 'controllers/header'
 Layout = require 'views/layout'
 
 mediator = require 'mediator'
@@ -9,7 +8,7 @@ routes = require 'routes'
 module.exports = class App extends Chaplin.Application
   # Set your application name here so the document title is set to
   # “Controller title – Site title” (see Layout#adjustTitle)
-  title: 'Brunch example application'
+  title: 'Chapless Brunch'
 
   initialize: ->
     super
@@ -49,7 +48,6 @@ module.exports = class App extends Chaplin.Application
     # and views which are needed the whole time, for example header, footer
     # or navigation views.
     # e.g. new NavigationController()
-    new HeaderController
 
   # Create additional mediator properties
   # -------------------------------------

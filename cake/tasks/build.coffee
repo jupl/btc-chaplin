@@ -1,22 +1,30 @@
+require 'sugar'
 wrench = require 'wrench'
 Exec = require '../lib/exec'
 
 module.exports = class Build extends Exec
   command: './node_modules/.bin/brunch'
 
-  onceDev: => @_build ['build', '-c', 'configs/dev'], prod: no
-  onceProd: => @_build ['build', '-c', 'configs/prod'], prod: yes
+  for type in ['once', 'watch', 'server']
+    this[type] ?= {}
+    for platform in ['web']
+      this[type][platform] ?= {}
+      for environment in ['development', 'production'] then do (type, platform, environment) =>
+        this[type][platform][environment] = =>
+          instance = new this
+          instance.build({platform, type, environment})
 
-  watchDev: => @_build ['watch', '-c', 'configs/dev'], prod: no
-  watchProd: => @_build ['watch', '-c', 'configs/prod'], prod: yes
+  build: ({platform, type, environment}) ->
+    args = switch type
+      when 'once' then ['build']
+      when 'watch' then ['watch']
+      when 'server' then ['watch', '-s']
 
-  serverDev: => @_build ['watch', '-c', 'configs/dev', '-s'], prod: no
-  serverProd: => @_build ['watch', '-c', 'configs/prod', '-s'], prod: yes
+    args.push '-o' if environment is 'production'
+    args.push '-c', "configs/#{platform}/#{environment}"
 
-  _build: (args, {prod} = {prod: no}) ->
     # Before running the brunch command let's clear the public folder
-    {config} = require "../../#{args[2]}"
+    {config} = require "../../#{args.last()}"
     wrench.rmdirSyncRecursive config.paths.public, ->
 
-    args.push '-o' if prod
     @exec args
