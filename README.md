@@ -30,7 +30,7 @@ Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are 
 Add/remove Backbone.stickit to/from the project.
 
 #### `add:fastclick` / `rem:fastclick`
-Add/remove FastClick to/from the project for optimized click events in touch devices. Visit the [GitHub page](https://github.com/ftlabs/fastclick) for more information and instructions.
+Add/remove FastClick to/from the project for optimized click events in touch devices.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
