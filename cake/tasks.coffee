@@ -10,6 +10,7 @@ Scaffold =
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
   Stickit:   require './tasks/modules/stickit'
+  Fastclick: require './tasks/modules/fastclick'
 
 module.exports =
   
@@ -20,8 +21,12 @@ module.exports =
       task:         -> do Module.Bootstrap.add
     stickit:
       command:      'add:stickit'
-      description:  'Add backbone.stickit\n'
+      description:  'Add backbone.stickit'
       task:         -> do Module.Stickit.add
+    fastclick:
+      command:      'add:fastclick'
+      description:  'Add FastClick\n'
+      task:         -> do Module.Fastclick.add
 
   rem:
     bootstrap:
@@ -30,8 +35,12 @@ module.exports =
       task:         -> do Module.Bootstrap.remove
     stickit:
       command:      'rem:stickit'
-      description:  'Remove backbone.stickit\n'
+      description:  'Remove backbone.stickit'
       task:         -> do Module.Stickit.remove
+    fastclick:
+      command:      'rem:fastclick'
+      description:  'Remove FastClick\n'
+      task:         -> do Module.Fastclick.remove
 
   gen:
     model:

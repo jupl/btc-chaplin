@@ -19,9 +19,11 @@
 
     "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
     "add:stickit":    "./node_modules/.bin/cake add:stickit",
+    "add:fastclick":  "./node_modules/.bin/cake add:fastclick",
 
     "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
     "rem:stickit":    "./node_modules/.bin/cake rem:stickit",
+    "rem:fastclick":  "./node_modules/.bin/cake rem:fastclick",
 
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",

@@ -1,6 +1,9 @@
 # Initialize the application on DOM ready event.
 initialize = ->
 
+  # Add FastClick if available
+  new FastClick?(document.body)
+
   # Mix in underscore.string into underscore
   _.mixin _.str.exports()
 

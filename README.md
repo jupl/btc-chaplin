@@ -29,6 +29,9 @@ Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are 
 #### `add:stickit` / `rem:stickit`
 Add/remove Backbone.stickit to/from the project.
 
+#### `add:fastclick` / `rem:fastclick`
+Add/remove FastClick to/from the project for optimized click events in touch devices. Visit the [GitHub page](https://github.com/ftlabs/fastclick) for more information and instructions.
+
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
 * Test files are automatically generated for each of these items.
@@ -51,7 +54,6 @@ Generate/destroy a Chaplin controller.
 
 ### Cordova
 These commands are to set up and initialize native projects that use Cordova to wrap your web application in a native app. `[platform]` denotes the application platform to build under. (Currently supporting `ios` and `android`) If you need access to the Cordova JavaScript from your page use the script tag: `<script src="cordova.js"></script>`
-
 
 #### `cordova:init`
 Create a new Cordova project using [cordova-cli](https://github.com/apache/cordova-cli).
@@ -104,6 +106,7 @@ Assemble the application, compile, and deploy to an emulator for the specified p
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
 * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
+* [FastClick](https://github.com/ftlabs/fastclick) 0.6.3
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
