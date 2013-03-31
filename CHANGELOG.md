@@ -1,6 +1,6 @@
 # Changelog
 
-#### 0.1.1 (WIP)
+#### 0.2.0 (March 31, 2013)
 - Update Backbone and Chaplin.
 - Add test generator.
 - Have test modules be automatically included again.
