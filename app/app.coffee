@@ -1,59 +1,49 @@
 Chaplin = require 'chaplin'
-Layout = require 'views/layout'
-
 mediator = require 'mediator'
 routes = require 'routes'
 
-# The application object
+# The application object.
 module.exports = class App extends Chaplin.Application
   # Set your application name here so the document title is set to
-  # “Controller title – Site title” (see Layout#adjustTitle)
+  # “Controller title – Site title” (see Chaplin.Layout#adjustTitle)
   title: 'Chapless Brunch'
 
   initialize: ->
     super
 
-    # Initialize core components
+    # Initialize core components.
+    # ---------------------------
+
+    # Dispatcher listens for routing events and initialises controllers.
     @initDispatcher(controllerSuffix: '')
+
+    # Layout listens for click events & delegates internal links to router.
     @initLayout()
+
+    # Composer grants the ability for views and stuff to be persisted.
+    @initComposer()
+
+    # Mediator is a global message broker which implements pub / sub pattern.
     @initMediator()
 
-    # Application-specific scaffold
-    @initControllers()
-
-    # Register all routes and start routing
-    @initRouter routes
+    # Register all routes.
     # You might pass Router/History options as the second parameter.
     # Chaplin enables pushState per default and Backbone uses / as
     # the root per default. You might change that in the options
     # if necessary:
     # @initRouter routes, pushState: false, root: '/subdir/'
+    @initRouter routes
 
-    # Freeze the application instance to prevent further changes
+    # Actually start routing.
+    @startRouting()
+
+    # Freeze the application instance to prevent further changes.
     Object.freeze? this
 
-  # Override standard layout initializer
-  # ------------------------------------
-  initLayout: ->
-    # Use an application-specific Layout class. Currently this adds
-    # no features to the standard Chaplin Layout, it’s an empty placeholder.
-    @layout = new Layout({@title})
-
-  # Instantiate common controllers
-  # ------------------------------
-  initControllers: ->
-    # These controllers are active during the whole application runtime.
-    # You don’t need to instantiate all controllers here, only special
-    # controllers which do not to respond to routes. They may govern models
-    # and views which are needed the whole time, for example header, footer
-    # or navigation views.
-    # e.g. new NavigationController()
-
-  # Create additional mediator properties
-  # -------------------------------------
+  # Create additional mediator properties.
   initMediator: ->
     # Add additional application-specific properties and methods
     # e.g. mediator.prop = null
 
-    # Seal the mediator
+    # Seal the mediator.
     mediator.seal()
