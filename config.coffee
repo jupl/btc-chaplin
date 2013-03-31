@@ -24,3 +24,19 @@ exports.config =
 
     templates:
       joinTo: 'javascripts/app.js'
+
+  # Redo wrapper so that tests modules are automatically added.
+  modules:
+    wrapper: (path, data, isVendor) ->
+      if isVendor
+        code = "#{data};\n"
+      else
+        path = path.replace(/\.\w+$/, '').replace(/^app\//, '')
+        code = """
+        window.require.define({#{JSON.stringify path}: function(exports, require, module) {
+          #{data.replace /(\\)?\n(?!\n)/g, ($0, $1) -> if $1 then $0 else '\n  '}
+        }});\n\n
+        """
+        if /^test[\\/]/.test path
+          code += "window.require(#{JSON.stringify path});\n\n"
+      code
