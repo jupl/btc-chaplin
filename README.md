@@ -49,6 +49,9 @@ Generate/destroy a Chaplin collection view. Generating a Chaplin collection view
 #### `gen:controller` / `del:controller`
 Generate/destroy a Chaplin controller.
 
+#### `gen:test` / `del:test`
+Generate/destroy a test file to be run using Mocha.
+
 ### Building
 These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
 
