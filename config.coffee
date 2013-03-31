@@ -7,7 +7,7 @@ exports.config =
         'javascripts/vendor.js': /^vendor/
       order:
         before: [
-          'vendor/scripts/common/console-helper.js'
+          'vendor/scripts/common/console-polyfill.js'
           'vendor/scripts/common/jquery.js'
           'vendor/scripts/underscore/underscore.js'
           'vendor/scripts/backbone/backbone.js'
