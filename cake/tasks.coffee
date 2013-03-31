@@ -6,6 +6,7 @@ Scaffold =
   View:           require './tasks/scaffolds/view'
   CollectionView: require './tasks/scaffolds/collection-view'
   Controller:     require './tasks/scaffolds/controller'
+  Test:           require './tasks/scaffolds/test'
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
   Stickit:   require './tasks/modules/stickit'
