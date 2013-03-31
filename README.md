@@ -1,4 +1,4 @@
-# Chapless Brunch 0.1.0
+# Chapless Brunch 0.2.0
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -49,6 +49,9 @@ Generate/destroy a Chaplin collection view. Generating a Chaplin collection view
 #### `gen:controller` / `del:controller`
 Generate/destroy a Chaplin controller.
 
+#### `gen:test` / `del:test`
+Generate/destroy a test file to be run using Mocha.
+
 ### Building
 These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
 
@@ -73,8 +76,8 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.7.0
-* [Backbone](http://backbonejs.org) 0.9.10
+* [Chaplin](http://chaplinjs.org) 0.8.0
+* [Backbone](http://backbonejs.org) 1.0.0
 
 ### Utilities
 * [jQuery](http://jquery.com) 1.9.1
