@@ -74,7 +74,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Framework
 * [Chaplin](http://chaplinjs.org) 0.7.0
-* [Backbone](http://backbonejs.org) 0.9.10
+* [Backbone](http://backbonejs.org) 1.0.0
 
 ### Utilities
 * [jQuery](http://jquery.com) 1.9.1
