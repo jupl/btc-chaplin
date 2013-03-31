@@ -6,6 +6,7 @@ Scaffold =
   View:           require './tasks/scaffolds/view'
   CollectionView: require './tasks/scaffolds/collection-view'
   Controller:     require './tasks/scaffolds/controller'
+  Test:           require './tasks/scaffolds/test'
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
   Stickit:   require './tasks/modules/stickit'
@@ -82,7 +83,7 @@ module.exports =
     test:
       command:      'del:test'
       description:  'Delete a Mocha test file\n'
-      task:         -> do Scaffold.Test.generate
+      task:         -> do Scaffold.Test.destroy
 
   build:
     once:

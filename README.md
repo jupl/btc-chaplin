@@ -1,4 +1,4 @@
-# Chapless Brunch 0.1.0
+# Chapless Brunch 0.2.0
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -76,7 +76,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.7.0
+* [Chaplin](http://chaplinjs.org) 0.8.0
 * [Backbone](http://backbonejs.org) 1.0.0
 
 ### Utilities
