@@ -1,7 +1,7 @@
 # Changelog
 
 #### 0.1.1 (WIP)
-- Update Backbone.
+- Update Backbone and Chaplin.
 - Skeleton cleanup.
 
 ### 0.1.0 (March 28, 2013)
