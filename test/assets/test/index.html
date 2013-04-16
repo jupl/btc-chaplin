@@ -5,15 +5,14 @@
   <title>Mocha Tests</title>
   <link rel="stylesheet" href="stylesheets/test.css" />
 
+</head>
+<body>
+  <div id="mocha"></div>
   <script src="../cordova.js"></script>
   <script src="javascripts/vendor.js"></script>
   <script src="../javascripts/vendor.js"></script>
   <script src="../javascripts/app.js"></script>
   <script src="javascripts/tests.js"></script>
-  <script>$(mocha.run);</script>
-  </script>
-</head>
-<body>
-  <div id="mocha"></div>
+  <script>mocha.run();</script>
 </body>
 </html>
