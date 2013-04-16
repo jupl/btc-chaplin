@@ -1,6 +1,10 @@
 # Changelog
 
-#### 0.2.0 (March 31, 2013)
+### 0.2.1 (WIP)
+- Update Brunch Toolchain.
+- Update Chaplin.
+
+### 0.2.0 (March 31, 2013)
 - Update Backbone and Chaplin.
 - Add test generator.
 - Have test modules be automatically included again.
