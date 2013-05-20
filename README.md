@@ -1,4 +1,4 @@
-# Chapless Brunch 0.2.1
+# Chapless Brunch 0.2.2
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -67,8 +67,8 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.3
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.3
+* [Brunch](http://brunch.io) 1.6.7
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
@@ -76,11 +76,11 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.8.1
+* [Chaplin](http://chaplinjs.org) 0.9.0
 * [Backbone](http://backbonejs.org) 1.0.0
 
 ### Utilities
-* [jQuery](http://jquery.com) 1.9.1
+* [jQuery](http://jquery.com) 2.0.0
 * [Underscore](http://underscorejs.org) 1.4.4
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
 * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
@@ -89,7 +89,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
 * [Bootstrap](http://getbootstrap.com/) 2.3.1
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)

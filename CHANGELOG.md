@@ -1,6 +1,10 @@
 # Changelog
 
-### 0.2.1 (April 15, 2013)
+#### 0.2.2 (May 19, 2013)
+- Update Brunch Toolchain.
+- Update Chaplin, jQuery, and Font Awesome.
+
+#### 0.2.1 (April 15, 2013)
 - Update Brunch Toolchain.
 - Update Chaplin.
 
