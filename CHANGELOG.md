@@ -1,5 +1,9 @@
 # Changelog
 
+##### WIP
+- Update from BWC.
+- Underscore -> Lo-Dash
+
 #### 0.2.3 (May 20, 2013)
 - Bugfix in base collection view.
 
