@@ -9,6 +9,7 @@ Scaffold =
   Test:           require './tasks/scaffolds/test'
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
+  Transit:   require './tasks/modules/transit'
   Stickit:   require './tasks/modules/stickit'
 
 module.exports =
@@ -18,6 +19,10 @@ module.exports =
       command:      'add:bootstrap'
       description:  'Add Bootstrap with Font Awesome'
       task:         -> do Module.Bootstrap.add
+    transit:
+      command:      'add:transit'
+      description:  'Add jQuery Transit'
+      task:         -> do Module.Transit.add
     stickit:
       command:      'add:stickit'
       description:  'Add backbone.stickit\n'
@@ -28,6 +33,10 @@ module.exports =
       command:      'rem:bootstrap'
       description:  'Remove Bootstrap with Font Awesome'
       task:         -> do Module.Bootstrap.remove
+    transit:
+      command:      'rem:transit'
+      description:  'Remove jQuery Transit'
+      task:         -> do Module.Transit.remove
     stickit:
       command:      'rem:stickit'
       description:  'Remove backbone.stickit\n'

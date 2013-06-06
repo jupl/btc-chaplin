@@ -29,6 +29,9 @@ Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are 
 #### `add:stickit` / `rem:stickit`
 Add/remove Backbone.stickit to/from the project.
 
+#### `add:transit` / `rem:transit`
+Add/remove Transit to/from the project.
+
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
 * Test files are automatically generated for each of these items.
@@ -84,6 +87,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [Lo-Dash](http://lodash.com/) 1.2.1
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
 * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
+* [Transit](http://ricostacruz.com/jquery.transit/) 0.9.9
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
