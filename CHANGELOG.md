@@ -1,6 +1,7 @@
 # Changelog
 
 ##### WIP
+- Integrate BTC Bootstrap
 - Update from BWC
 - Underscore -> Lo-Dash
 - Add Transit

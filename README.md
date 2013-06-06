@@ -92,7 +92,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.1
+* [Bootstrap](http://getbootstrap.com/) 2.3.2
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras
