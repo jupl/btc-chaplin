@@ -83,7 +83,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [Backbone](http://backbonejs.org) 1.0.0
 
 ### Utilities
-* [jQuery](http://jquery.com) 2.0.0
+* [jQuery](http://jquery.com) 2.0.2
 * [Lo-Dash](http://lodash.com/) 1.2.1
 * [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
 * [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
