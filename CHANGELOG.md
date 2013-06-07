@@ -1,6 +1,6 @@
 # Changelog
 
-##### WIP
+### 0.3.0 (June 6, 2013)
 - Integrate BTC Bootstrap
 - Update from BWC
 - Underscore -> Lo-Dash
