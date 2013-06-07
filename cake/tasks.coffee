@@ -58,7 +58,8 @@ module.exports =
       responsive:
         command:      'rem:bootstrap:responsive'
         description:  'Remove Bootstrap responsive\n'
-        task:         -> do Module.Bootstrap.Responsive.remove    transit:
+        task:         -> do Module.Bootstrap.Responsive.remove
+    transit:
       command:      'rem:transit'
       description:  'Remove jQuery Transit'
       task:         -> do Module.Transit.remove
