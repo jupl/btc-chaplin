@@ -34,7 +34,7 @@ module.exports =
         task:         -> do Module.Bootstrap.Glyphicons.add
       fontAwesome:
         command:      'add:bootstrap:awesome'
-        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)\n'
+        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)'
         task:         -> do Module.Bootstrap.FontAwesome.add
     transit:
       command:      'add:transit'
@@ -57,7 +57,7 @@ module.exports =
         task:         -> do Module.Bootstrap.JS.remove
       responsive:
         command:      'rem:bootstrap:responsive'
-        description:  'Remove Bootstrap responsive\n'
+        description:  'Remove Bootstrap responsive'
         task:         -> do Module.Bootstrap.Responsive.remove
     transit:
       command:      'rem:transit'
