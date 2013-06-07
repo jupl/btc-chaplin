@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.3.0 (June 6, 2013)
+- Integrate BTC Bootstrap
+- Update from BWC
+- Underscore -> Lo-Dash
+- Add Transit
+- Update jQuery
+
 #### 0.2.3 (May 20, 2013)
 - Bugfix in base collection view.
 

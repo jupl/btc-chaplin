@@ -1,5 +1,4 @@
 Chaplin = require 'chaplin'
-mediator = require 'mediator'
 routes = require 'routes'
 
 # The application object.
@@ -14,6 +13,14 @@ module.exports = class App extends Chaplin.Application
     # Initialize core components.
     # ---------------------------
 
+    # Register all routes.
+    # You might pass Router/History options as the second parameter.
+    # Chaplin enables pushState per default and Backbone uses / as
+    # the root per default. You might change that in the options
+    # if necessary:
+    # @initRouter routes, pushState: false, root: '/subdir/'
+    @initRouter routes
+
     # Dispatcher listens for routing events and initialises controllers.
     @initDispatcher(controllerSuffix: '')
 
@@ -26,14 +33,6 @@ module.exports = class App extends Chaplin.Application
     # Mediator is a global message broker which implements pub / sub pattern.
     @initMediator()
 
-    # Register all routes.
-    # You might pass Router/History options as the second parameter.
-    # Chaplin enables pushState per default and Backbone uses / as
-    # the root per default. You might change that in the options
-    # if necessary:
-    # @initRouter routes, pushState: false, root: '/subdir/'
-    @initRouter routes
-
     # Actually start routing.
     @startRouting()
 
@@ -43,7 +42,7 @@ module.exports = class App extends Chaplin.Application
   # Create additional mediator properties.
   initMediator: ->
     # Add additional application-specific properties and methods
-    # e.g. mediator.prop = null
+    # e.g. Chaplin.mediator.prop = null
 
     # Seal the mediator.
-    mediator.seal()
+    Chaplin.mediator.seal()

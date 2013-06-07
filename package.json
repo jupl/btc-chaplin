@@ -11,17 +11,23 @@
   },
 
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
+    "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
   },
   
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
-    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
-    "add:stickit":    "./node_modules/.bin/cake add:stickit",
+    "add:bootstrap":              "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap:js":           "./node_modules/.bin/cake add:bootstrap:js",
+    "add:bootstrap:responsive":   "./node_modules/.bin/cake add:bootstrap:responsive",
+    "add:bootstrap:glyph":        "./node_modules/.bin/cake add:bootstrap:glyph",
+    "add:bootstrap:awesome":      "./node_modules/.bin/cake add:bootstrap:awesome",
+    "add:stickit":                "./node_modules/.bin/cake add:stickit",
 
-    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
-    "rem:stickit":    "./node_modules/.bin/cake rem:stickit",
+    "rem:bootstrap":              "./node_modules/.bin/cake rem:bootstrap",
+    "rem:bootstrap:js":           "./node_modules/.bin/cake rem:bootstrap:js",
+    "rem:bootstrap:responsive":   "./node_modules/.bin/cake rem:bootstrap:responsive",
+    "rem:stickit":                "./node_modules/.bin/cake rem:stickit",
 
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",

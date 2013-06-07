@@ -9,7 +9,7 @@ exports.config =
         before: [
           'vendor/scripts/common/console-polyfill.js'
           'vendor/scripts/common/jquery.js'
-          'vendor/scripts/underscore/underscore.js'
+          'vendor/scripts/underscore/lodash.js'
           'vendor/scripts/backbone/backbone.js'
           'vendor/scripts/bootstrap/bootstrap-tooltip.js'
         ]
