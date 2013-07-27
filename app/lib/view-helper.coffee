@@ -1,4 +1,4 @@
-utils = require 'chaplin/lib/utils'
+utils = require './utils'
 
 # Application-specific view helpers
 # ---------------------------------
