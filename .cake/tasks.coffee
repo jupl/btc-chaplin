@@ -1,3 +1,4 @@
+Bower = require './tasks/bower'
 Build = require './tasks/build'
 Help = require './tasks/help'
 Scaffold =
@@ -119,6 +120,12 @@ module.exports =
       command:      'del:test'
       description:  'Delete a Mocha test file\n'
       task:         -> do Scaffold.Test.destroy
+
+  bower:
+    install:
+      command:      'bower:install'
+      description:  'Download and install Bower dependencies\n'
+      task:         -> do Bower.install
 
   build:
     once:

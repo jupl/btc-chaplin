@@ -67,8 +67,13 @@ Generate/destroy a Chaplin controller.
 #### `gen:test` / `del:test`
 Generate/destroy a test file to be run using Mocha.
 
+### Bower
+
+#### `bower:install`
+Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
 ### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS, plus include source maps as well as tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS as well as omit source maps and tests. If any Bower dependencies have not been downloaded yet, Bower will first download them.
 
 #### `build:[mode]`
 Assemble the application once.
@@ -82,7 +87,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.2.0
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))

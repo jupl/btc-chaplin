@@ -1,5 +1,8 @@
 # Changelog
 
+### WIP (WIP)
+- Update from BWC
+
 ### 0.3.0 (June 6, 2013)
 - Integrate BTC Bootstrap
 - Update from BWC

@@ -4,7 +4,7 @@ exports.config =
     javascripts:
       joinTo:
         'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor/
+        'javascripts/vendor.js': /^(vendor|bower_components)/
       order:
         before: [
           'vendor/scripts/common/console-polyfill.js'
@@ -17,7 +17,7 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'stylesheets/app.css': /^(app|vendor)/
+        'stylesheets/app.css': /^(app|vendor|bower_components)/
       order:
         before: ['vendor/styles/bootstrap/bootstrap.less']
         after: ['vendor/styles/bootstrap/responsive.less']
