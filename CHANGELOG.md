@@ -1,7 +1,9 @@
 # Changelog
 
 ### WIP (WIP)
-- Update from BWC
+- Update from BTC
+- Refactor to reflect Brunch and BWC
+- Remove Stickit and Transit (use Bower)
 
 ### 0.3.0 (June 6, 2013)
 - Integrate BTC Bootstrap
