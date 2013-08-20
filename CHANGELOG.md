@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP (WIP)
+### 0.4.0 (August 19, 2013)
 - Update from BTC
 - Refactor to reflect Brunch and BWC
 - Remove Stickit and Transit (use Bower)
