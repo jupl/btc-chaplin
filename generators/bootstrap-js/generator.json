@@ -42,7 +42,7 @@
     },
     {
       "from": "js/bootstrap-tooltip.js",
-      "to":   "vendor/scripts/bootstrap/bootstrap-tooltip.js"
+      "to":   "vendor/scripts/bootstrap/0-bootstrap-tooltip.js"
     },
     {
       "from": "js/bootstrap-transition.js",

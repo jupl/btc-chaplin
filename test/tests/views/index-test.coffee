@@ -1,5 +1,6 @@
 IndexView = require 'views/index/view'
 
 describe 'IndexView', ->
-  beforeEach: ->
+
+  beforeEach ->
     @view = new IndexView

@@ -1,9 +1,7 @@
 CollectionView = require 'views/base/collection'
 {{#camelize}}{{name}}{{/camelize}}ItemView = require './item/view'
 
-template = require './template'
-
 module.exports = class {{#camelize}}{{name}}{{/camelize}}View extends CollectionView
   className: '{{name}}-view'
-  template: template
+  template: require './template'
   itemView: {{#camelize}}{{name}}{{/camelize}}ItemView

@@ -2,6 +2,7 @@
 {{#camelize}}{{pluralName}}{{/camelize}} = require 'models/{{pluralName}}'
 
 describe '{{#camelize}}{{pluralName}}{{/camelize}}', ->
+
   beforeEach ->
     @model = new {{#camelize}}{{name}}{{/camelize}}
     @collection = new {{#camelize}}{{pluralName}}{{/camelize}}

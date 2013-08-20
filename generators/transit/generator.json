@@ -1,9 +1,0 @@
-{
-  "files": [
-    {
-      "from": "jquery.transit.js",
-      "to": "vendor/scripts/common/jquery.transit.js"
-    }
-  ],
-  "dependencies": []
-}

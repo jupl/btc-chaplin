@@ -1,3 +1,4 @@
+Bower = require './tasks/bower'
 Build = require './tasks/build'
 Help = require './tasks/help'
 Scaffold =
@@ -9,8 +10,6 @@ Scaffold =
   Test:           require './tasks/scaffolds/test'
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
-  Transit:   require './tasks/modules/transit'
-  Stickit:   require './tasks/modules/stickit'
 
 module.exports =
   
@@ -34,16 +33,8 @@ module.exports =
         task:         -> do Module.Bootstrap.Glyphicons.add
       fontAwesome:
         command:      'add:bootstrap:awesome'
-        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)'
+        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)\n'
         task:         -> do Module.Bootstrap.FontAwesome.add
-    transit:
-      command:      'add:transit'
-      description:  'Add jQuery Transit'
-      task:         -> do Module.Transit.add
-    stickit:
-      command:      'add:stickit'
-      description:  'Add backbone.stickit\n'
-      task:         -> do Module.Stickit.add
 
   rem:
     bootstrap:
@@ -57,16 +48,8 @@ module.exports =
         task:         -> do Module.Bootstrap.JS.remove
       responsive:
         command:      'rem:bootstrap:responsive'
-        description:  'Remove Bootstrap responsive'
+        description:  'Remove Bootstrap responsive\n'
         task:         -> do Module.Bootstrap.Responsive.remove
-    transit:
-      command:      'rem:transit'
-      description:  'Remove jQuery Transit'
-      task:         -> do Module.Transit.remove
-    stickit:
-      command:      'rem:stickit'
-      description:  'Remove backbone.stickit\n'
-      task:         -> do Module.Stickit.remove
 
   gen:
     model:
@@ -119,6 +102,12 @@ module.exports =
       command:      'del:test'
       description:  'Delete a Mocha test file\n'
       task:         -> do Scaffold.Test.destroy
+
+  bower:
+    install:
+      command:      'bower:install'
+      description:  'Download and install Bower dependencies\n'
+      task:         -> do Bower.install
 
   build:
     once:
