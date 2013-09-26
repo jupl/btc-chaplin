@@ -105,10 +105,6 @@
       "to":   "vendor/styles/bootstrap/_navs.less"
     },
     {
-      "from": "less/normalize.less",
-      "to":   "vendor/styles/bootstrap/_normalize.less"
-    },
-    {
       "from": "less/pager.less",
       "to":   "vendor/styles/bootstrap/_pager.less"
     },

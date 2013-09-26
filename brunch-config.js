@@ -12,6 +12,9 @@ exports.config = setup({
     stylesheets: {
       joinTo: {
         'stylesheets/app.css': /^(app|vendor|bower_components)/
+      },
+      order: {
+        before: ['vendor/styles/bootstrap/normalize.less']
       }
     },
 
