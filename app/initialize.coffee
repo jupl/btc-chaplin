@@ -5,7 +5,7 @@ initialize = ->
   _.mixin _.str.exports()
 
   # Start application
-  Application = require 'application'
+  Application = require('application')
   new Application
 
-$ initialize
+$(document).ready(initialize)
