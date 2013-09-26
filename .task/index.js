@@ -8,40 +8,24 @@ module.exports = {
 
   add: {
     bootstrap: {
-      description:  'Add Bootstrap with FontAwesome',
-      task:         bootstrap.add -> do Module.Bootstrap.FontAwesome.add
+      description:  'Add Bootstrap',
+      task:         bootstrap.add.bind(bootstrap),
+
       js: {
         description:  'Add Bootstrap JavaScript',
-        task:         bootstrap.js.add
-      },
-      responsive: {
-        description:  'Add Bootstrap responsive',
-        task:         -> do Module.Bootstrap.Responsive.add
-      },
-      glyph: {
-        description:  'Add Bootstrap glyphicons (removes FontAwesome)',
-        task:         -> do Module.Bootstrap.Glyphicons.add
-      },
-      awesome: {
-        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)\n'
-        task:         -> do Module.Bootstrap.FontAwesome.add
+        task:         bootstrap.js.add.bind(bootstrap.js)
       }
     }
   },
 
   rem: {
     bootstrap: {
-      description:  'Remove Bootstrap and any of the above Bootstrap-related'
-      task:         -> do Module.Bootstrap.remove
+      description:  'Remove Bootstrap and any of the above Bootstrap-related',
+      task:         bootstrap.remove.bind(bootstrap),
+
       js: {
-        command:      'rem:bootstrap:js'
-        description:  'Remove Bootstrap JavaScript'
-        task:         -> do Module.Bootstrap.JS.remove
-      },
-      responsive: {
-        command:      'rem:bootstrap:responsive'
-        description:  'Remove Bootstrap responsive\n'
-        task:         -> do Module.Bootstrap.Responsive.remove
+        description:  'Remove Bootstrap JavaScript',
+        task:         bootstrap.js.remove.bind(bootstrap.js)
       }
     }
   },

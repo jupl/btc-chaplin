@@ -1,5 +1,9 @@
 # Changelog
 
+### WIP (WIP)
+- Update from BTC
+- Update Bootstrap to v3
+
 ### 0.4.0 (August 19, 2013)
 - Update from BTC
 - Refactor to reflect Brunch and BWC

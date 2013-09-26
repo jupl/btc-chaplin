@@ -24,16 +24,10 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 These commands add additional features/items to the project that are not included by default.
 
 #### `add:bootstrap`
-Add Bootstrap and Font Awesome styles to the project. LESS-based files are provided for full customization.
+Add Bootstrap to the project. LESS-based files are provided for full customization.
 
 #### `add:bootstrap:js` / `rem:bootstrap:js`
-Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://twitter.github.io/bootstrap/javascript.html) to work.
-
-#### `add:bootstrap:responsive` / `rem:bootstrap:responsive`
-Add/remove Bootstrap files for responsiveness.
-
-#### `add:bootstrap:glyph` / `add:bootstrap:awesome`
-Add Glyphicons or Font Awesome icons. Note that adding one removes the other.
+Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://getbootstrap.com/javascript/) to work.
 
 #### `rem:bootstrap`
 Removes all of the above Bootstrap-related components from the project.
@@ -81,7 +75,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.2.0
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.0
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
@@ -89,13 +83,12 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.10.0
+* [Chaplin](http://chaplinjs.org) 0.11.0
 * [Backbone](http://backbonejs.org) 1.0.0
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.2
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
+* [Bootstrap](http://getbootstrap.com/) 3.0.0
 
 ### Extras
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
