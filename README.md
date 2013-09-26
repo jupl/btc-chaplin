@@ -24,7 +24,7 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 These commands add additional features/items to the project that are not included by default.
 
 #### `add:bootstrap`
-Add Bootstrap to the project. LESS-based files are provided for full customization.
+Add Bootstrap to the project. LESS-based files are provided for full customization. You do not need to run this command to leverage Bootstrap's variables and mixins.
 
 #### `add:bootstrap:js` / `rem:bootstrap:js`
 Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://getbootstrap.com/javascript/) to work.
@@ -87,7 +87,6 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [Backbone](http://backbonejs.org) 1.0.0
 
 ### Styling
-* [Clearless](http://clearleft.github.com/clearless/)
 * [Bootstrap](http://getbootstrap.com/) 3.0.0
 
 ### Extras

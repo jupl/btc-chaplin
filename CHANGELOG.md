@@ -3,6 +3,7 @@
 ### WIP (WIP)
 - Update from BTC
 - Update Bootstrap to v3
+- Remove Clearless in favor of Bootstrap's mixins
 
 ### 0.4.0 (August 19, 2013)
 - Update from BTC

@@ -93,10 +93,6 @@
       "to":   "vendor/styles/bootstrap/_media.less"
     },
     {
-      "from": "less/mixins.less",
-      "to":   "vendor/styles/bootstrap/mixins.less"
-    },
-    {
       "from": "less/modals.less",
       "to":   "vendor/styles/bootstrap/_modals.less"
     },
@@ -163,10 +159,6 @@
     {
       "from": "less/utilities.less",
       "to":   "vendor/styles/bootstrap/_utilities.less"
-    },
-    {
-      "from": "less/variables.less",
-      "to":   "vendor/styles/bootstrap/variables.less"
     },
     {
       "from": "less/wells.less",
