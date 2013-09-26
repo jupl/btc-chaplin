@@ -1,6 +1,6 @@
 'use strict';
 
-var scaffold = require('../lib/scaffold');
+var scaffold = require('../../lib/scaffold');
 var collection = module.exports = Object.create(scaffold);
 
 collection.name = 'collection';
