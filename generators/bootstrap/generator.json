@@ -1,12 +1,28 @@
 {
   "files": [
     {
-      "from": "less/accordion.less",
-      "to":   "vendor/styles/bootstrap/_accordion.less"
+      "from": "fonts/glyphicons-halflings-regular.eot",
+      "to":   "app/assets/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "from": "fonts/glyphicons-halflings-regular.svg",
+      "to":   "app/assets/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "from": "fonts/glyphicons-halflings-regular.ttf",
+      "to":   "app/assets/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "from": "fonts/glyphicons-halflings-regular.woff",
+      "to":   "app/assets/fonts/glyphicons-halflings-regular.woff"
     },
     {
       "from": "less/alerts.less",
       "to":   "vendor/styles/bootstrap/_alerts.less"
+    },
+    {
+      "from": "less/badges.less",
+      "to":   "vendor/styles/bootstrap/_badges.less"
     },
     {
       "from": "less/bootstrap.less",
@@ -49,20 +65,28 @@
       "to":   "vendor/styles/bootstrap/_forms.less"
     },
     {
+      "from": "less/glyphicons.less",
+      "to":   "vendor/styles/bootstrap/_glyphicons.less"
+    },
+    {
       "from": "less/grid.less",
       "to":   "vendor/styles/bootstrap/_grid.less"
     },
     {
-      "from": "less/hero-unit.less",
-      "to":   "vendor/styles/bootstrap/_hero-unit.less"
+      "from": "less/input-groups.less",
+      "to":   "vendor/styles/bootstrap/_input-groups.less"
     },
     {
-      "from": "less/labels-badges.less",
-      "to":   "vendor/styles/bootstrap/_labels-badges.less"
+      "from": "less/jumbotron.less",
+      "to":   "vendor/styles/bootstrap/_jumbotron.less"
     },
     {
-      "from": "less/layouts.less",
-      "to":   "vendor/styles/bootstrap/_layouts.less"
+      "from": "less/labels.less",
+      "to":   "vendor/styles/bootstrap/_labels.less"
+    },
+    {
+      "from": "less/list-groups.less",
+      "to":   "vendor/styles/bootstrap/_list-groups.less"
     },
     {
       "from": "less/media.less",
@@ -70,7 +94,7 @@
     },
     {
       "from": "less/mixins.less",
-      "to":   "vendor/styles/bootstrap/_mixins.less"
+      "to":   "vendor/styles/bootstrap/mixins.less"
     },
     {
       "from": "less/modals.less",
@@ -85,6 +109,10 @@
       "to":   "vendor/styles/bootstrap/_navs.less"
     },
     {
+      "from": "less/normalize.less",
+      "to":   "vendor/styles/bootstrap/_normalize.less"
+    },
+    {
       "from": "less/pager.less",
       "to":   "vendor/styles/bootstrap/_pager.less"
     },
@@ -97,12 +125,16 @@
       "to":   "vendor/styles/bootstrap/_popovers.less"
     },
     {
+      "from": "less/print.less",
+      "to":   "vendor/styles/bootstrap/_print.less"
+    },
+    {
       "from": "less/progress-bars.less",
       "to":   "vendor/styles/bootstrap/_progress-bars.less"
     },
     {
-      "from": "less/reset.less",
-      "to":   "vendor/styles/bootstrap/_reset.less"
+      "from": "less/responsive-utilities.less",
+      "to":   "vendor/styles/bootstrap/_responsive-utilities.less"
     },
     {
       "from": "less/scaffolding.less",
@@ -111,6 +143,10 @@
     {
       "from": "less/tables.less",
       "to":   "vendor/styles/bootstrap/_tables.less"
+    },
+    {
+      "from": "less/theme.less",
+      "to":   "vendor/styles/bootstrap/_theme.less"
     },
     {
       "from": "less/thumbnails.less",
