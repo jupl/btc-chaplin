@@ -10,7 +10,8 @@
     "console-polyfill": "~0.1.0",
     "lodash": "~2.0.0",
     "jquery": "~2.0.2",
-    "underscore.string": "~2.3.3"
+    "underscore.string": "~2.3.3",
+    "rivets": "~0.5.13"
   },
   "overrides": {
     "backbone": {

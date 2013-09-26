@@ -90,4 +90,5 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [Bootstrap](http://getbootstrap.com/) 3.0.0
 
 ### Extras
+* [Rivets.js](http://rivetsjs.com/) 0.5.13
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)

@@ -4,6 +4,7 @@
 - Update from BTC
 - Update Bootstrap to v3
 - Remove Clearless in favor of Bootstrap's mixins
+- Add Rivets for binding
 
 ### 0.4.0 (August 19, 2013)
 - Update from BTC

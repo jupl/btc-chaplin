@@ -19,15 +19,11 @@
 
     "bower:install": "./node_modules/.bin/cake bower:install",
 
-    "add:bootstrap":              "./node_modules/.bin/cake add:bootstrap",
-    "add:bootstrap:js":           "./node_modules/.bin/cake add:bootstrap:js",
-    "add:bootstrap:responsive":   "./node_modules/.bin/cake add:bootstrap:responsive",
-    "add:bootstrap:glyph":        "./node_modules/.bin/cake add:bootstrap:glyph",
-    "add:bootstrap:awesome":      "./node_modules/.bin/cake add:bootstrap:awesome",
+    "add:bootstrap":    "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap:js": "./node_modules/.bin/cake add:bootstrap:js",
 
-    "rem:bootstrap":              "./node_modules/.bin/cake rem:bootstrap",
-    "rem:bootstrap:js":           "./node_modules/.bin/cake rem:bootstrap:js",
-    "rem:bootstrap:responsive":   "./node_modules/.bin/cake rem:bootstrap:responsive",
+    "rem:bootstrap":    "./node_modules/.bin/cake rem:bootstrap",
+    "rem:bootstrap:js": "./node_modules/.bin/cake rem:bootstrap:js",
 
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",
