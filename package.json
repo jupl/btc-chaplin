@@ -17,8 +17,6 @@
   "scripts": {
     "start":                "./node_modules/.bin/cake help:npm",
 
-    "bower:install":        "./node_modules/.bin/cake bower:install",
-
     "add:bootstrap":        "./node_modules/.bin/cake add:bootstrap",
     "add:bootstrap:js":     "./node_modules/.bin/cake add:bootstrap:js",
 
@@ -36,6 +34,8 @@
     "del:view":             "./node_modules/.bin/cake del:view",
     "del:view:collection":  "./node_modules/.bin/cake del:view:collection",
     "del:controller":       "./node_modules/.bin/cake del:controller",
+
+    "bower:install":        "./node_modules/.bin/cake bower:install",
 
     "build:dev":            "./node_modules/.bin/cake build:dev",
     "build:prod":           "./node_modules/.bin/cake build:prod",
