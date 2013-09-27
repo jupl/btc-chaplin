@@ -1,4 +1,4 @@
-Collection = require('base/collection')
+Collection = require('models/base/collection')
 
 # Initialize the application on DOM ready event.
 initialize = ->

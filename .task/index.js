@@ -43,15 +43,15 @@ module.exports = {
       description:  'Generate a Chaplin Model',
       task:         function(){ scaffold.model.generate() }
     },
-    view: {
-      description:  'Generate a Chaplin View',
-      task:         function(){ scaffold.view.generate() }
-    },
     collection: {
       description:  'Generate a Chaplin Collection + Model',
-      task:         function(){ scaffold.collection.generate() },
-
-      view: {
+      task:         function(){ scaffold.collection.generate() }
+    },
+    view: {
+      description:  'Generate a Chaplin View',
+      task:         function(){ scaffold.view.generate() },
+      
+      collection: {
         description:  'Generate a Chaplin CollectionView + Item View',
         task:         function(){ scaffold.collectionView.generate() }
       }
@@ -73,16 +73,16 @@ module.exports = {
     },
     view: {
       description:  'Delete a Chaplin View',
-      task:         function(){ scaffold.view.generate() }
-    },
-    collection: {
-      description:  'Delete a Chaplin Collection + Model',
-      task:         function(){ scaffold.collection.generate() },
+      task:         function(){ scaffold.view.generate() },
 
-      view: {
+      collection: {
         description:  'Delete a Chaplin CollectionView + Item View',
         task:         function(){ scaffold.collectionView.generate() }
       }
+    },
+    collection: {
+      description:  'Delete a Chaplin Collection + Model',
+      task:         function(){ scaffold.collection.generate() }
     },
     controller: {
       description:  'Delete a Chaplin Controller',

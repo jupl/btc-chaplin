@@ -7,7 +7,7 @@ view.name = 'view';
 
 view.validate = function(name) {
   if(name === 'base') {
-    return false;
+    throw new Error('Name is reserved');
   }
   return scaffold.validate.apply(this, arguments);
 };
