@@ -1,10 +1,10 @@
 'use strict';
 
-var bowerJson = require('../../lib/bower-json');
-var rivets = module.exports = Object.create(bowerJson);
+var bower = require('../bower');
+var rivets = module.exports = Object.create(null);
 
 rivets.add = function() {
-  this.edit(function(json) {
+  bower.edit(function(json) {
     json.dependencies.rivets = '~0.5.13';
     json.overrides.rivets = {
       main: 'dist/rivets.js'
@@ -13,7 +13,7 @@ rivets.add = function() {
 };
 
 rivets.remove = function() {
-  this.edit(function(json) {
+  bower.edit(function(json) {
     delete json.dependencies.rivets;
     delete json.overrides.rivets;
   });
