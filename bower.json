@@ -24,7 +24,11 @@
     "underscore.string": {
       "dependencies": {
         "lodash": "*"
-      }
+      },
+      "main": "lib/underscore.string.js"
+    },
+    "rivets": {
+      "main": "dist/rivets.js"
     }
   }
 }
