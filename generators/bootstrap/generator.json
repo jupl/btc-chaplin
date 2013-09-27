@@ -85,8 +85,8 @@
       "to":   "vendor/styles/bootstrap/_labels.less"
     },
     {
-      "from": "less/list-groups.less",
-      "to":   "vendor/styles/bootstrap/_list-groups.less"
+      "from": "less/list-group.less",
+      "to":   "vendor/styles/bootstrap/_list-group.less"
     },
     {
       "from": "less/media.less",
@@ -111,6 +111,10 @@
     {
       "from": "less/pagination.less",
       "to":   "vendor/styles/bootstrap/_pagination.less"
+    },
+    {
+      "from": "less/panels.less",
+      "to":   "vendor/styles/bootstrap/_panels.less"
     },
     {
       "from": "less/popovers.less",

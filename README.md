@@ -23,14 +23,11 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
 
-#### `add:bootstrap`
-Add Bootstrap to the project. LESS-based files are provided for full customization. You do not need to run this command to leverage Bootstrap's variables and mixins.
+#### `add:bootstrap` / `rem:bootstrap`
+Add/remove Bootstrap to the project. LESS-based files are provided for full customization. You do not need to run this command to leverage Bootstrap's variables and mixins.
 
 #### `add:bootstrap:js` / `rem:bootstrap:js`
 Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://getbootstrap.com/javascript/) to work.
-
-#### `rem:bootstrap`
-Removes all of the above Bootstrap-related components from the project.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
