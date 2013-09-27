@@ -13,6 +13,7 @@ bower.install = function() {
   return this.execute(['install']);
 };
 
+// Allows one to read/edit the bower.json file via a callback.
 bower.edit = function(callback) {
   var json = jsonfile.readFileSync(jsonFile);
   callback(json);
