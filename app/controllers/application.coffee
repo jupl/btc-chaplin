@@ -1,5 +1,5 @@
-Controller = require 'controllers/base/controller'
-IndexView = require 'views/index/view'
+Controller = require('controllers/base/controller')
+IndexView = require('views/index/view')
 
 module.exports = class ApplicationController extends Controller
 

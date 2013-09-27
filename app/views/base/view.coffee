@@ -1,4 +1,4 @@
-require 'lib/view-helper' # Just load the view helpers, no return value
+require('lib/view-helper') # Just load the view helpers, no return value
 
 module.exports = class View extends Chaplin.View
   autoRender: yes
@@ -17,6 +17,19 @@ module.exports = class View extends Chaplin.View
         $el = @$ selector
         $el = $el.find subSelector if subSelector
         $el
+
+  render: ->
+    super
+    return unless @model
+    if @_rivets
+      @_rivets.build()
+    else
+      @_rivets = rivets?.bind(@el, {@model})
+
+  dispose: ->
+    @_rivets?.unbind()
+    delete @_rivets
+    super
 
   redirectTo: (url, options = {}) ->
     @publishEvent '!router:route', url, options, (routed) ->
