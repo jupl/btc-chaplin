@@ -72,7 +72,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.0
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.1
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
