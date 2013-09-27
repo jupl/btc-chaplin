@@ -1,5 +1,5 @@
 defaultOptions =
-  routes: require 'routes'
+  routes: require('routes')
   controllerSuffix: ''
 
 module.exports = class Application extends Chaplin.Application

@@ -1,3 +1,5 @@
+Collection = require('base/collection')
+
 # Initialize the application on DOM ready event.
 initialize = ->
 
@@ -12,7 +14,7 @@ initialize = ->
       unsubscribe: (obj, keypath, callback) ->
         obj.off("change:#{keypath}", callback)
       read: (obj, keypath) ->
-        obj.get(keypath)
+        if obj instanceof Collection then obj.models else obj.get(keypath)
       publish: (obj, keypath, value) ->
         obj.set(keypath, value)
 

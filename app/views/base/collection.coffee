@@ -1,4 +1,4 @@
-View = require './view'
+View = require('./view')
 
 module.exports = class CollectionView extends Chaplin.CollectionView
   # This class doesn’t inherit from the application-specific View class,
@@ -9,4 +9,17 @@ module.exports = class CollectionView extends Chaplin.CollectionView
 
   constructor: ->
     @initSelectors()
+    super
+
+  render: ->
+    super
+    return unless @collection
+    if @_rivets
+      @_rivets.build()
+    else
+      @_rivets = rivets?.bind(@el, {@collection})
+
+  dispose: ->
+    @_rivets?.unbind()
+    delete @_rivets
     super
