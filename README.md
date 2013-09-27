@@ -29,6 +29,12 @@ Add/remove Bootstrap to the project. LESS-based files are provided for full cust
 #### `add:bootstrap:js` / `rem:bootstrap:js`
 Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://getbootstrap.com/javascript/) to work.
 
+#### `add:rivets` / `rem:rivets`
+Add/remove Rivets.js to the project for binding models and views. No additional configuration is needed if added.
+
+#### `add:underscore:string` / `rem:underscore:string`
+Add/remove Underscore.string to the project. The project will automatically mix in methods to Lo-Dash.
+
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
 * Test files are automatically generated for each of these items.
@@ -88,4 +94,4 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Extras
 * [Rivets.js](http://rivetsjs.com/) 0.5.13
-* [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
+* [Underscore.string](http://epeli.github.io/underscore.string/) 2.3.3

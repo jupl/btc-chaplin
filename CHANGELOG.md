@@ -1,5 +1,9 @@
 # Changelog
 
+### WIP (WIP)
+- Make Rivets and Underscore.string optional
+- General cleanup
+
 ### 0.5.0 (September 26, 2013)
 - Update from BTC
 - Update Bootstrap to v3
