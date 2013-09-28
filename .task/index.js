@@ -93,28 +93,28 @@ module.exports = {
   del: {
     model: {
       description:  'Delete a Chaplin Model',
-      task:         function(){ scaffold.model.generate() }
+      task:         function(){ scaffold.model.destroy() }
     },
     view: {
       description:  'Delete a Chaplin View',
-      task:         function(){ scaffold.view.generate() },
+      task:         function(){ scaffold.view.destroy() },
 
       collection: {
         description:  'Delete a Chaplin CollectionView + Item View',
-        task:         function(){ scaffold.collectionView.generate() }
+        task:         function(){ scaffold.collectionView.destroy() }
       }
     },
     collection: {
       description:  'Delete a Chaplin Collection + Model',
-      task:         function(){ scaffold.collection.generate() }
+      task:         function(){ scaffold.collection.destroy() }
     },
     controller: {
       description:  'Delete a Chaplin Controller',
-      task:         function(){ scaffold.controller.generate() }
+      task:         function(){ scaffold.controller.destroy() }
     },
     test: {
       description:  'Delete a Mocha test file\n',
-      task:         function(){ scaffold.test.generate() }
+      task:         function(){ scaffold.test.destroy() }
     }
   },
 
