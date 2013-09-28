@@ -11,7 +11,7 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 ## Setup
 1. Install node.js.
-2. If you prefer using the cake command instead of npm run-script (see below) install CoffeeScript.
+2. If you prefer using the `cake` command instead of `npm run-script` (see below) install CoffeeScript.
 3. Download this skeleton.
 4. Open a Terminal / Command Prompt and navigate to this directory where you downloaded the skeleton.
 5. Execute the command `npm install` to install all package dependencies.
