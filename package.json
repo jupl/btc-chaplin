@@ -15,15 +15,13 @@
   },
 
   "scripts": {
-    "start": "./node_modules/.bin/cake help:npm",
+    "start":                "./node_modules/.bin/cake help:npm",
 
-    "bower:install": "./node_modules/.bin/cake bower:install",
+    "add:bootstrap":        "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap:js":     "./node_modules/.bin/cake add:bootstrap:js",
 
-    "add:bootstrap":    "./node_modules/.bin/cake add:bootstrap",
-    "add:bootstrap:js": "./node_modules/.bin/cake add:bootstrap:js",
-
-    "rem:bootstrap":    "./node_modules/.bin/cake rem:bootstrap",
-    "rem:bootstrap:js": "./node_modules/.bin/cake rem:bootstrap:js",
+    "rem:bootstrap":        "./node_modules/.bin/cake rem:bootstrap",
+    "rem:bootstrap:js":     "./node_modules/.bin/cake rem:bootstrap:js",
 
     "gen:model":            "./node_modules/.bin/cake gen:model",
     "gen:collection":       "./node_modules/.bin/cake gen:collection",
@@ -37,12 +35,14 @@
     "del:view:collection":  "./node_modules/.bin/cake del:view:collection",
     "del:controller":       "./node_modules/.bin/cake del:controller",
 
-    "build:dev":    "./node_modules/.bin/cake build:dev",
-    "build:prod":   "./node_modules/.bin/cake build:prod",
-    "watch:dev":    "./node_modules/.bin/cake watch:dev",
-    "watch:prod":   "./node_modules/.bin/cake watch:prod",
-    "server:dev":   "./node_modules/.bin/cake server:dev",
-    "server:prod":  "./node_modules/.bin/cake server:prod"
+    "bower:install":        "./node_modules/.bin/cake bower:install",
+
+    "build:dev":            "./node_modules/.bin/cake build:dev",
+    "build:prod":           "./node_modules/.bin/cake build:prod",
+    "watch:dev":            "./node_modules/.bin/cake watch:dev",
+    "watch:prod":           "./node_modules/.bin/cake watch:prod",
+    "server:dev":           "./node_modules/.bin/cake server:dev",
+    "server:prod":          "./node_modules/.bin/cake server:prod"
   },
 
   "dependencies": {
@@ -51,6 +51,7 @@
     "sugar": "~1.4.0",
     "brunch": "~1.7.6",
     "wrench": "~1.5.1",
+    "jsonfile": "~1.0.1",
     "promptly": "~0.2.0",
     "scaffolt": "~0.4.0",
     "coffee-script": "~1.6.3",
@@ -65,7 +66,6 @@
     "eco-brunch": ">= 1.0 < 1.8",
 
     "uglify-js-brunch": ">= 1.0 < 1.8",
-    "clean-css-brunch": ">= 1.0 < 1.8",
-    "auto-reload-brunch": ">= 1.0 < 1.8"
+    "clean-css-brunch": ">= 1.0 < 1.8"
   }
 }
