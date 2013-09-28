@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP (WIP)
+#### 0.5.1 (September 27, 2013)
 - Make Rivets and Underscore.string optional
 - General cleanup
 - Bugfixes

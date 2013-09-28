@@ -1,4 +1,4 @@
-# Chapless Brunch 0.5.0
+# Chapless Brunch 0.5.1
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -6,12 +6,12 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 ## Requirements
 * [node.js](http://nodejs.org) (mandatory)
-* [CoffeeScript](http://coffeescript.org/#installation) (recommended via npm)
+* [CoffeeScript](http://coffeescript.org/#installation) (optional via npm)
 
 
 ## Setup
 1. Install node.js.
-2. While not mandatory, it is recommended to install CoffeeScript.
+2. If you prefer using the cake command instead of npm run-script (see below) install CoffeeScript.
 3. Download this skeleton.
 4. Open a Terminal / Command Prompt and navigate to this directory where you downloaded the skeleton.
 5. Execute the command `npm install` to install all package dependencies.
@@ -78,7 +78,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.1
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.2
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
