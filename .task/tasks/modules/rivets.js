@@ -3,7 +3,7 @@
 var bower = require('../bower');
 var rivets = module.exports = Object.create(null);
 
-rivets.version = '~0.5.13'
+rivets.version = '~0.5.13';
 
 rivets.add = function() {
   var self = this;
