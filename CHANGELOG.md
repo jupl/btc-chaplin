@@ -3,6 +3,7 @@
 ### WIP (WIP)
 - Make Rivets and Underscore.string optional
 - General cleanup
+- Bugfixes
 
 ### 0.5.0 (September 26, 2013)
 - Update from BTC
