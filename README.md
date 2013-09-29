@@ -1,4 +1,4 @@
-# Chapless Brunch 0.2.1
+# Chapless Brunch 0.5.1
 
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of Brunch with Chaplin. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via cake.
@@ -6,12 +6,12 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 ## Requirements
 * [node.js](http://nodejs.org) (mandatory)
-* [CoffeeScript](http://coffeescript.org/#installation) (recommended via npm)
+* [CoffeeScript](http://coffeescript.org/#installation) (optional via npm)
 
 
 ## Setup
 1. Install node.js.
-2. While not mandatory, it is recommended to install CoffeeScript.
+2. If you prefer using the cake command instead of npm run-script (see below) install CoffeeScript.
 3. Download this skeleton.
 4. Open a Terminal / Command Prompt and navigate to this directory where you downloaded the skeleton.
 5. Execute the command `npm install` to install all package dependencies.
@@ -24,10 +24,16 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 These commands add additional features/items to the project that are not included by default.
 
 #### `add:bootstrap` / `rem:bootstrap`
-Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are provided for full customization. It is recommended that you modify `app.less` and `base.less` if using Bootstrap.
+Add/remove Bootstrap to the project. LESS-based files are provided for full customization. You do not need to run this command to leverage Bootstrap's variables and mixins.
 
-#### `add:stickit` / `rem:stickit`
-Add/remove Backbone.stickit to/from the project.
+#### `add:bootstrap:js` / `rem:bootstrap:js`
+Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://getbootstrap.com/javascript/) to work.
+
+#### `add:rivets` / `rem:rivets`
+Add/remove Rivets.js to the project for binding models and views. No additional configuration is needed if added.
+
+#### `add:underscore:string` / `rem:underscore:string`
+Add/remove Underscore.string to the project. The project will automatically mix in methods to Lo-Dash.
 
 #### `add:fastclick` / `rem:fastclick`
 Add/remove FastClick to/from the project for optimized click events in touch devices.
@@ -68,6 +74,11 @@ Create a new Cordova project using [cordova-cli](https://github.com/apache/cordo
 #### `cordova:add:[platform]`, `cordova:rem:[platform]`
 Add/remove specified platform support to the Cordova project.
 
+### Bower
+
+#### `bower:install`
+Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
 ### Building
 These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
 * `[platform]` denotes the application platform to build under. (Currently supporting `ios` and `android`)
@@ -90,8 +101,7 @@ Assemble the application, compile, and deploy to an emulator for the specified p
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.3
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.3
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.3.2
 * [Cordova](http://cordova.apache.org) 2.6.0
 
 ### Languages
@@ -100,21 +110,12 @@ Assemble the application, compile, and deploy to an emulator for the specified p
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org) 0.8.1
+* [Chaplin](http://chaplinjs.org) 0.11.0
 * [Backbone](http://backbonejs.org) 1.0.0
 
-### Utilities
-* [jQuery](http://jquery.com) 1.9.1
-* [Underscore](http://underscorejs.org) 1.4.4
-* [Underscore.string](http://epeli.github.com/underscore.string/) 2.3.0
-* [Backbone.stickit](http://nytimes.github.com/backbone.stickit/) 0.6.3
-* [Modernizr](http://modernizr.com/) 2.6.2 (in test)
-* [FastClick](https://github.com/ftlabs/fastclick) 0.6.3
-
 ### Styling
-* [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.1
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
+* [Bootstrap](http://getbootstrap.com/) 3.0.0
 
 ### Extras
-* [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
+* [Rivets.js](http://rivetsjs.com/) 0.5.13
+* [Underscore.string](http://epeli.github.io/underscore.string/) 2.3.3

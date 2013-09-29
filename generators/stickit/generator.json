@@ -1,9 +1,0 @@
-{
-  "files": [
-    {
-      "from": "backbone.stickit.js",
-      "to": "vendor/scripts/backbone/backbone.stickit.js"
-    }
-  ],
-  "dependencies": []
-}

@@ -1,8 +1,6 @@
-View = require 'views/base/view'
-
-template = require './template'
+View = require('views/base/view')
 
 module.exports = class IndexView extends View
   className: 'index-view'
-  template: template
   container: 'body'
+  template: require('./template')

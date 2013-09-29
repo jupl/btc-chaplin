@@ -1,5 +1,6 @@
-{{#camelize}}{{name}}{{/camelize}}View = require 'views/{{name}}/view'
+{{#camelize}}{{name}}{{/camelize}}View = require('views/{{name}}/view')
 
 describe '{{#camelize}}{{name}}{{/camelize}}View', ->
-  beforeEach: ->
+
+  beforeEach ->
     @view = new {{#camelize}}{{name}}{{/camelize}}View
