@@ -36,7 +36,10 @@ Add/remove Rivets.js to the project for binding models and views. No additional 
 Add/remove Underscore.string to the project. The project will automatically mix in methods to Lo-Dash.
 
 #### `add:fastclick` / `rem:fastclick`
-Add/remove FastClick to/from the project for optimized click events in touch devices.
+Add/remove FastClick to/from the project for optimized click events in touch devices. Visit their [page](https://github.com/ftlabs/fastclick) for more information and instructions.
+
+#### `add:hammer` / `add:hammer:jquery` / `rem:hammer`
+Add/remove Hammer.js (standalone or jQuery plugin) to/from the project for touch event handling. Visit their [page](http://eightmedia.github.io/hammer.js/) for more information.
 
 ### Scaffolding
 These commands allow one to generate and destroy Chaplin components.
@@ -62,7 +65,7 @@ Generate/destroy a Chaplin controller.
 Generate/destroy a test file to be run using Mocha.
 
 ### Cordova
-These commands are to set up and initialize native projects that use Cordova to wrap your web application in a native app. `[platform]` denotes the application platform to build under. (Currently supporting `ios` and `android`) If you need access to the Cordova JavaScript from your page use the script tag: `<script src="cordova.js"></script>`
+These commands are to set up and initialize native projects that use Cordova to wrap your web application in a native app. `[device]` denotes the application device to build under. (Currently supporting `ios` and `android`) If you need access to the Cordova JavaScript from your page use the script tag: `<script src="cordova.js"></script>`
 
 #### `cordova:init`
 Create a new Cordova project using [cordova-cli](https://github.com/apache/cordova-cli).
@@ -71,8 +74,8 @@ Create a new Cordova project using [cordova-cli](https://github.com/apache/cordo
 * Cordova-specific files are added to `app/assets`. (These files will be ignored if a non-Cordova web build is made.) Do not remove these files.
 * It is recommended for your web app to not depend on any files in `app/assets/res`.
 
-#### `cordova:add:[platform]`, `cordova:rem:[platform]`
-Add/remove specified platform support to the Cordova project.
+#### `cordova:add:[device]`, `cordova:rem:[device]`
+Add/remove specified device support to the Cordova project.
 
 ### Bower
 
@@ -81,20 +84,20 @@ Download and preinstall any Bower dependencies in advance. You can run this if y
 
 ### Building
 These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
-* `[platform]` denotes the application platform to build under. (Currently supporting `ios` and `android`)
+* `[device]` denotes the device to build under using Cordova. (Currently supporting `ios` and `android`)
 * `[mode]` Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
 
-#### `build:web:[mode]`, `build:[platform]:[mode]`
-Assemble the application once. If a Cordova build is made, it will also compile for the specified platform.
+#### `build:[mode]`, `build:[device]:[mode]`
+Assemble the application once. If `device` is specified, then build for device using Cordova. Otherwise it uses the default web environment.
 
-#### `watch:web:[mode]`, `watch:cordova:[mode]`
+#### `watch:[mode]`.
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
 
 #### `server:[mode]`
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
 
-#### `emulate:[platform]:[mode]`
-Assemble the application, compile, and deploy to an emulator for the specified platform.
+#### `emulate:[device]:[mode]`
+Assemble the application, compile, and deploy to an emulator for the specified device.
 
 **NOTE**: [ios-sim](https://github.com/phonegap/ios-sim) is required to emulate on the iOS Simulator.
 
@@ -119,3 +122,5 @@ Assemble the application, compile, and deploy to an emulator for the specified p
 ### Extras
 * [Rivets.js](http://rivetsjs.com/) 0.5.13
 * [Underscore.string](http://epeli.github.io/underscore.string/) 2.3.3
+* [FastClick](https://github.com/ftlabs/fastclick) 0.6.7
+* [Hammer.js](http://eightmedia.github.io/hammer.js/) 1.0.5

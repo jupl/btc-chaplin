@@ -24,6 +24,6 @@ initialize = ->
   new Application(pushState: off)
 
 if cordova?
-  document.addEventListener 'deviceready', initialize, false
+  document.addEventListener('deviceready', initialize, false)
 else
   $(document).ready(initialize)
