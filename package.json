@@ -72,7 +72,6 @@
     "bower": "~1.2.6",
     "sugar": "~1.4.0",
     "brunch": "~1.7.6",
-    "cordova": "2.6.x",
     "wrench": "~1.5.1",
     "cordova": "~3.0.9",
     "jsonfile": "~1.0.1",
