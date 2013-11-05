@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.6.0 (November 5, 2013)
 - Update from BTC
 - Update Bootstrap to 3.0.1
 - Update Rivets
