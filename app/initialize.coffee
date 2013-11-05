@@ -1,7 +1,9 @@
 initialize = ->
 
   # Add Davy promises if available and we are using Exoskeleton
-  if Backbone.Deferred and Davy? then Backbone.Deferred = -> new Davy
+  if Backbone.Deferred and Davy?
+    Backbone.Deferred = ->
+      new Davy
 
   # Set up Rivets if available
   rivets?.adapters[':'] =
