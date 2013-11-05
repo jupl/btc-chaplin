@@ -10,29 +10,34 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 ## File Structure
 
-    ├── app                 # App is built here. Look at Brunch for more info.
-    │   └── assets          # Static files that are just copied
-    │   └── controllers     # Static files that are just copied
-    │   └── assets          # Static files that are just copied
-    │   └── assets          # Static files that are just copied
-    │   └── assets          # Static files that are just copied
-    ├── bower_components    # Packages installed by Bower
-    ├── generators          # Generators used by Scaffolt
-    ├── jakelib             # Unified set of tasks for development
-    ├── public              # Generated final product
-    ├── setup               # Add configuration options to brunch-config
-    ├── test                # Test-related files
-    │   ├── assets          # Static assets required for code tests
-    │   ├── code            # Code-based tests for Mocha PhantomJS
-    │   ├── mocha.opts      # Default options for site tests
-    │   ├── setup.js        # Configuration for site tests
-    │   ├── site            # Site-based tests for Mocha
-    │   └── vendor          # Test libraries for code-based tests
-    ├── vendor              # 3rd party JS/CSS libraries
-    ├── .editorconfig       # EditorConfig definition file for coding styles
-    ├── bower.json          # Listing for Bower dependencies to download
-    ├── brunch-config.js    # Brunch app build configuration
-    └── package.json        # Project dependencies and configuration
+    ├── app                     # App is built here. Look at Brunch for more info.
+    │   ├── assets              # Static files that are just copied
+    │   ├── controllers         # Chaplin controllers
+    │   ├── lib                 # Chaplin utilities and helpers
+    │   ├── models              # Chaplin models and collections
+    │   ├── views               # Chaplin views and collection views
+    │   ├── application.coffee  # Chaplin application definition
+    │   ├── application.less    # Application/page styling definition
+    │   ├── base.less           # LESS variables and mixins for the application
+    │   ├── initialize.coffee   # Chaplin views and collection views
+    │   └── routes.coffee       # Route definitions for Chaplin
+    ├── bower_components        # Packages installed by Bower
+    ├── generators              # Generators used by Scaffolt
+    ├── jakelib                 # Unified set of tasks for development
+    ├── public                  # Generated final product
+    ├── setup                   # Add configuration options to brunch-config
+    ├── test                    # Test-related files
+    │   ├── assets              # Static assets required for code tests
+    │   ├── code                # Code and unit-based tests for Mocha PhantomJS
+    │   ├── mocha.opts          # Default options for site tests
+    │   ├── setup.js            # Configuration for site tests
+    │   ├── site                # Site-based tests for Mocha
+    │   └── vendor              # Test libraries for code-based tests
+    ├── vendor                  # 3rd party JS/CSS libraries
+    ├── .editorconfig           # EditorConfig definition file for coding styles
+    ├── bower.json              # Listing for Bower dependencies to download
+    ├── brunch-config.js        # Brunch app build configuration
+    └── package.json            # Project dependencies and configuration
 
 
 ## Requirements
