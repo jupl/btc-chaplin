@@ -36,8 +36,8 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 
 ## Requirements
-* [node.js](http://nodejs.org)
-* [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
+- [node.js](http://nodejs.org)
+- [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
 
 
 ## Setup
@@ -68,10 +68,16 @@ Download and preinstall any Bower dependencies in advance. You can run this if y
 These commands add additional features/items to the project that are not included by default.
 
 #### `add:jquery` / `rem:jquery`
-Add/remove [jQuery](http://jquery.com/) from the project.
+Add/remove [jQuery](http://jquery.com/) to/from the project.
 
 #### `add:rivets` / `rem:rivets`
-Add/remove [Rivets.js](http://rivetsjs.com/) to the project for binding models and views. No additional configuration is needed if added.
+Add/remove [Rivets.js](http://rivetsjs.com/) to/from the project for binding models and views. No additional configuration is needed if added.
+
+#### `add:bootstrap` / `rem:bootstrap`
+Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
+
+#### `add:bootstrapjs` / `rem:bootstrapjs`
+Add/remove Bootstrap JavaScript files to/from the project.
 
 
 ### Scaffolding
@@ -152,16 +158,16 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain)
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain)
 
 ### Languages
-* [CoffeeScript](http://coffeescript.org/)
-* [Eco](https://github.com/sstephenson/eco)
-* [LESS](http://lesscss.org)
+- [CoffeeScript](http://coffeescript.org/)
+- [Eco](https://github.com/sstephenson/eco)
+- [LESS](http://lesscss.org)
 
 ### Framework
-* [Chaplin](http://chaplinjs.org)
-* [Exoskeleton](http://exosjs.com/)
+- [Chaplin](http://chaplinjs.org)
+- [Exoskeleton](http://exosjs.com/)
 
 ### Styling
-* [Bootstrap](http://getbootstrap.com/)
+- [Bootstrap](http://getbootstrap.com/)
