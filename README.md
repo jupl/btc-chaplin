@@ -107,7 +107,7 @@ Generate/destroy a Chaplin collection. Generating a Chaplin collection will also
 #### `gen:view name=[name]` / `del:view name=[name]`
 Generate/destroy a Chaplin view.
 
-#### `gen:collectionview name=[name]` / `del:view:collectionview name=[name]`
+#### `gen:collectionview name=[name]` / `del:collectionview name=[name]`
 Generate/destroy a Chaplin collection view. Generating a Chaplin collection view will also generate the individual item view.
 
 #### `gen:controller name=[name]` / `del:controller name=[name]`
@@ -187,6 +187,6 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ### Utilities
 - [jQuery](http://jquery.com/)
 - [Lo-Dash](http://lodash.com/)
-- [Davy](https://github.com/lvivski/davy)
 - [Rivets.js](http://rivetsjs.com/)
+- [Davy](https://github.com/lvivski/davy)
 - [Bootstrap](http://getbootstrap.com/)
