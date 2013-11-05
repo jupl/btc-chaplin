@@ -1,8 +1,9 @@
-defaultOptions =
-  routes: require('routes')
-  controllerSuffix: ''
+routes = require('routes')
+utils = require('lib/utils')
+
+defaultOptions = {routes, controllerSuffix: ''}
 
 module.exports = class Application extends Chaplin.Application
 
   constructor: (options) ->
-    super Backbone.utils.extend({}, defaultOptions, options)
+    super utils.extend({}, defaultOptions, options)

@@ -1,6 +1,9 @@
 # Initialize the application on DOM ready event.
 initialize = ->
 
+  # Add Davy promises if available and we are using Exoskeleton
+  if Backbone.Deferred and Davy? then Backbone.Deferred = -> new Davy
+
   # Set up Rivets if available
   rivets?.adapters[':'] =
     subscribe: (obj, keypath, callback) ->

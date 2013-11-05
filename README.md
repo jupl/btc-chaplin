@@ -75,8 +75,17 @@ These commands add additional features/items to the project that are not include
 #### `add:jquery` / `rem:jquery`
 Add/remove [jQuery](http://jquery.com/) to/from the project.
 
+#### `add:lodash` / `rem:lodash`
+Add/remove [Lo-Dash](http://lodash.com/) to/from the project.
+
 #### `add:rivets` / `rem:rivets`
 Add/remove [Rivets.js](http://rivetsjs.com/) to/from the project for binding models and views. No additional configuration is needed if added. To reference a model from a view with rivets use the `model` object. To access model properties from Rivets by default use `:`. (ex: `model:name` equates to `model.get('name')`)
+
+#### `add:exoskeleton` / `rem:exoskeleton`
+Add/remove [Exoskeleton](http://exosjs.com/) to/from the project for a more lightweight Backbone. Note that this removes/restores [classic Backbone](http://backbonejs.org/), jQuery, and Lo-Dash. You can use other tasks to add/remove jQuery and Lo-Dash again. This also adds Davy
+
+#### `add:davy` / `rem:davy`
+Add/remove [Davy](https://github.com/lvivski/davy) to/from the project for simple and lightweight Promise support. Add this if you are using Exoskeleton and want support for promises.
 
 #### `add:bootstrap` / `rem:bootstrap`
 Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
@@ -172,7 +181,12 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Framework
 - [Chaplin](http://chaplinjs.org)
+- [Backbone](http://backbonejs.org)
 - [Exoskeleton](http://exosjs.com/)
 
-### Styling
+### Utilities
+- [jQuery](http://jquery.com/)
+- [Lo-Dash](http://lodash.com/)
+- [Davy](https://github.com/lvivski/davy)
+- [Rivets.js](http://rivetsjs.com/)
 - [Bootstrap](http://getbootstrap.com/)
