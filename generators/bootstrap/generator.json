@@ -144,7 +144,7 @@
     },
     {
       "from": "less/theme.less",
-      "to":   "vendor/bootstrap/styles/_theme.less"
+      "to":   "vendor/bootstrap/styles/theme.less"
     },
     {
       "from": "less/thumbnails.less",

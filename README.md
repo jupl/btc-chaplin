@@ -131,7 +131,7 @@ describe('Sample', function() {
       return driver.getTitle();
     })
     .then(function(title) {
-      expect(title).to.equal('Brunch Toolchain');
+      expect(title).to.equal('Chapless Brunch');
     });
   });
 
