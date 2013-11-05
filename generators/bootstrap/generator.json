@@ -1,4 +1,6 @@
 {
+  "isModule": true,
+  "description": "Bootstrap LESS files and Glyphicon fonts",
   "files": [
     {
       "from": "fonts/glyphicons-halflings-regular.eot",
@@ -18,151 +20,151 @@
     },
     {
       "from": "less/alerts.less",
-      "to":   "vendor/styles/bootstrap/_alerts.less"
+      "to":   "vendor/bootstrap/styles/_alerts.less"
     },
     {
       "from": "less/badges.less",
-      "to":   "vendor/styles/bootstrap/_badges.less"
+      "to":   "vendor/bootstrap/styles/_badges.less"
     },
     {
       "from": "less/bootstrap.less",
-      "to":   "vendor/styles/bootstrap/bootstrap.less"
+      "to":   "vendor/bootstrap/styles/bootstrap.less"
     },
     {
       "from": "less/breadcrumbs.less",
-      "to":   "vendor/styles/bootstrap/_breadcrumbs.less"
+      "to":   "vendor/bootstrap/styles/_breadcrumbs.less"
     },
     {
       "from": "less/button-groups.less",
-      "to":   "vendor/styles/bootstrap/_button-groups.less"
+      "to":   "vendor/bootstrap/styles/_button-groups.less"
     },
     {
       "from": "less/buttons.less",
-      "to":   "vendor/styles/bootstrap/_buttons.less"
+      "to":   "vendor/bootstrap/styles/_buttons.less"
     },
     {
       "from": "less/carousel.less",
-      "to":   "vendor/styles/bootstrap/_carousel.less"
+      "to":   "vendor/bootstrap/styles/_carousel.less"
     },
     {
       "from": "less/close.less",
-      "to":   "vendor/styles/bootstrap/_close.less"
+      "to":   "vendor/bootstrap/styles/_close.less"
     },
     {
       "from": "less/code.less",
-      "to":   "vendor/styles/bootstrap/_code.less"
+      "to":   "vendor/bootstrap/styles/_code.less"
     },
     {
       "from": "less/component-animations.less",
-      "to":   "vendor/styles/bootstrap/_component-animations.less"
+      "to":   "vendor/bootstrap/styles/_component-animations.less"
     },
     {
       "from": "less/dropdowns.less",
-      "to":   "vendor/styles/bootstrap/_dropdowns.less"
+      "to":   "vendor/bootstrap/styles/_dropdowns.less"
     },
     {
       "from": "less/forms.less",
-      "to":   "vendor/styles/bootstrap/_forms.less"
+      "to":   "vendor/bootstrap/styles/_forms.less"
     },
     {
       "from": "less/glyphicons.less",
-      "to":   "vendor/styles/bootstrap/_glyphicons.less"
+      "to":   "vendor/bootstrap/styles/_glyphicons.less"
     },
     {
       "from": "less/grid.less",
-      "to":   "vendor/styles/bootstrap/_grid.less"
+      "to":   "vendor/bootstrap/styles/_grid.less"
     },
     {
       "from": "less/input-groups.less",
-      "to":   "vendor/styles/bootstrap/_input-groups.less"
+      "to":   "vendor/bootstrap/styles/_input-groups.less"
     },
     {
       "from": "less/jumbotron.less",
-      "to":   "vendor/styles/bootstrap/_jumbotron.less"
+      "to":   "vendor/bootstrap/styles/_jumbotron.less"
     },
     {
       "from": "less/labels.less",
-      "to":   "vendor/styles/bootstrap/_labels.less"
+      "to":   "vendor/bootstrap/styles/_labels.less"
     },
     {
       "from": "less/list-group.less",
-      "to":   "vendor/styles/bootstrap/_list-group.less"
+      "to":   "vendor/bootstrap/styles/_list-group.less"
     },
     {
       "from": "less/media.less",
-      "to":   "vendor/styles/bootstrap/_media.less"
+      "to":   "vendor/bootstrap/styles/_media.less"
     },
     {
       "from": "less/modals.less",
-      "to":   "vendor/styles/bootstrap/_modals.less"
+      "to":   "vendor/bootstrap/styles/_modals.less"
     },
     {
       "from": "less/navbar.less",
-      "to":   "vendor/styles/bootstrap/_navbar.less"
+      "to":   "vendor/bootstrap/styles/_navbar.less"
     },
     {
       "from": "less/navs.less",
-      "to":   "vendor/styles/bootstrap/_navs.less"
+      "to":   "vendor/bootstrap/styles/_navs.less"
     },
     {
       "from": "less/pager.less",
-      "to":   "vendor/styles/bootstrap/_pager.less"
+      "to":   "vendor/bootstrap/styles/_pager.less"
     },
     {
       "from": "less/pagination.less",
-      "to":   "vendor/styles/bootstrap/_pagination.less"
+      "to":   "vendor/bootstrap/styles/_pagination.less"
     },
     {
       "from": "less/panels.less",
-      "to":   "vendor/styles/bootstrap/_panels.less"
+      "to":   "vendor/bootstrap/styles/_panels.less"
     },
     {
       "from": "less/popovers.less",
-      "to":   "vendor/styles/bootstrap/_popovers.less"
+      "to":   "vendor/bootstrap/styles/_popovers.less"
     },
     {
       "from": "less/print.less",
-      "to":   "vendor/styles/bootstrap/_print.less"
+      "to":   "vendor/bootstrap/styles/_print.less"
     },
     {
       "from": "less/progress-bars.less",
-      "to":   "vendor/styles/bootstrap/_progress-bars.less"
+      "to":   "vendor/bootstrap/styles/_progress-bars.less"
     },
     {
       "from": "less/responsive-utilities.less",
-      "to":   "vendor/styles/bootstrap/_responsive-utilities.less"
+      "to":   "vendor/bootstrap/styles/_responsive-utilities.less"
     },
     {
       "from": "less/scaffolding.less",
-      "to":   "vendor/styles/bootstrap/_scaffolding.less"
+      "to":   "vendor/bootstrap/styles/_scaffolding.less"
     },
     {
       "from": "less/tables.less",
-      "to":   "vendor/styles/bootstrap/_tables.less"
+      "to":   "vendor/bootstrap/styles/_tables.less"
     },
     {
       "from": "less/theme.less",
-      "to":   "vendor/styles/bootstrap/_theme.less"
+      "to":   "vendor/bootstrap/styles/theme.less"
     },
     {
       "from": "less/thumbnails.less",
-      "to":   "vendor/styles/bootstrap/_thumbnails.less"
+      "to":   "vendor/bootstrap/styles/_thumbnails.less"
     },
     {
       "from": "less/tooltip.less",
-      "to":   "vendor/styles/bootstrap/_tooltip.less"
+      "to":   "vendor/bootstrap/styles/_tooltip.less"
     },
     {
       "from": "less/type.less",
-      "to":   "vendor/styles/bootstrap/_type.less"
+      "to":   "vendor/bootstrap/styles/_type.less"
     },
     {
       "from": "less/utilities.less",
-      "to":   "vendor/styles/bootstrap/_utilities.less"
+      "to":   "vendor/bootstrap/styles/_utilities.less"
     },
     {
       "from": "less/wells.less",
-      "to":   "vendor/styles/bootstrap/_wells.less"
+      "to":   "vendor/bootstrap/styles/_wells.less"
     }
   ],
   "dependencies": []

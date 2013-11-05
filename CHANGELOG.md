@@ -1,5 +1,16 @@
 # Changelog
 
+### 0.6.0 (November 5, 2013)
+- Update from BTC
+- Update Bootstrap to 3.0.1
+- Update Rivets
+- Ensure Bootstrap default theme is included
+- Added Exoskeleton, Lo-Dash, and Davy as modules
+- Added some code to handle either Backbone or Exoskeleton
+- Remove CoffeeLint (check out EditorConfig)
+- Remove Underscore.String by default
+- Remove `redirectTo` function in views (use `Chaplin.helpers`)
+
 #### 0.5.1 (September 27, 2013)
 - Make Rivets and Underscore.string optional
 - General cleanup

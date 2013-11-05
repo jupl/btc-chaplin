@@ -1,6 +1,8 @@
-{{#camelize}}{{name}}{{/camelize}}View = require('views/{{name}}/view')
+{{#camelize}}{{name}}{{/camelize}}View = require('views/{{name}}')
+{{#camelize}}{{name}}{{/camelize}}ItemView = require('views/{{name}}/item')
 
 describe '{{#camelize}}{{name}}{{/camelize}}View', ->
 
   beforeEach ->
     @view = new {{#camelize}}{{name}}{{/camelize}}View
+    @itemView = new {{#camelize}}{{name}}{{/camelize}}ItemView
