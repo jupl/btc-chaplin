@@ -3,12 +3,11 @@
 ### WIP
 - Update from BTC
 - Update Bootstrap to 3.0.1
+- Update Rivets
 - Ensure Bootstrap default theme is included
-- Switch from regular Backbone to Exoskeleton
-- Remove LoDash
-- Remove jQuery
+- Added Exoskeleton, Lo-Dash, and Davy as modules
 - Remove CoffeeLint (check out EditorConfig)
-- Remove Underscore.String (check out String.js, Sugar, etc.)
+- Remove Underscore.String by default
 
 #### 0.5.1 (September 27, 2013)
 - Make Rivets and Underscore.string optional
