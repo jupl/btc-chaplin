@@ -5,4 +5,4 @@ defaultOptions =
 module.exports = class Application extends Chaplin.Application
 
   constructor: (options) ->
-    super _.extend({}, defaultOptions, options)
+    super Backbone.utils.extend({}, defaultOptions, options)

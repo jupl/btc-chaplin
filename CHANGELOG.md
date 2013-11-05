@@ -1,5 +1,13 @@
 # Changelog
 
+### WIP
+- Update from BTC
+- Switch from regular Backbone to Exoskeleton
+- Dropped LoDash
+- Dropped jQuery
+- Dropped CoffeeLint (check out EditorConfig)
+- Dropped Underscore.String (check out String.js, Sugar, etc.)
+
 #### 0.5.1 (September 27, 2013)
 - Make Rivets and Underscore.string optional
 - General cleanup
