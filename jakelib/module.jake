@@ -15,7 +15,7 @@ namespace('add', function() {
   desc('Add Rivets');
   task('rivets', function() {
     editBower(function() {
-      this.dependencies.rivets = '~0.5.13';
+      this.dependencies.rivets = '~0.6.4';
       this.overrides.rivets = {
         main: 'dist/rivets.js'
       };

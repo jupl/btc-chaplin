@@ -71,7 +71,7 @@ These commands add additional features/items to the project that are not include
 Add/remove [jQuery](http://jquery.com/) to/from the project.
 
 #### `add:rivets` / `rem:rivets`
-Add/remove [Rivets.js](http://rivetsjs.com/) to/from the project for binding models and views. No additional configuration is needed if added.
+Add/remove [Rivets.js](http://rivetsjs.com/) to/from the project for binding models and views. No additional configuration is needed if added. To reference a model from a view with rivets use the `model` object. To access model properties from Rivets by default use `:`. (ex: `model:name` equates to `model.get('name')`)
 
 #### `add:bootstrap` / `rem:bootstrap`
 Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
