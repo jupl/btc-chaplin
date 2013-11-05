@@ -19,7 +19,3 @@ module.exports = class View extends Chaplin.View
     @_rivets?.unbind()
     delete @_rivets
     super
-
-  redirectTo: (url, options = {}) ->
-    @publishEvent '!router:route', url, options, (routed) ->
-      throw new Error 'View#redirectTo: no route matched' unless routed

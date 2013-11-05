@@ -8,6 +8,7 @@
 - Added Exoskeleton, Lo-Dash, and Davy as modules
 - Remove CoffeeLint (check out EditorConfig)
 - Remove Underscore.String by default
+- Remove `redirectTo` function in views (use `Chaplin.helpers`)
 
 #### 0.5.1 (September 27, 2013)
 - Make Rivets and Underscore.string optional
