@@ -1,4 +1,3 @@
-# Initialize the application on DOM ready event.
 initialize = ->
 
   # Add Davy promises if available and we are using Exoskeleton
@@ -19,4 +18,9 @@ initialize = ->
   Application = require('application')
   new Application
 
-document.addEventListener('DOMContentLoaded', initialize)
+# Initialize the application on DOM ready event.
+# Use jQuery if available. Otherwise use native.
+if $?
+  $(document).ready(initialize)
+else
+  document.addEventListener('DOMContentLoaded', initialize)

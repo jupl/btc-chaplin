@@ -6,6 +6,7 @@
 - Update Rivets
 - Ensure Bootstrap default theme is included
 - Added Exoskeleton, Lo-Dash, and Davy as modules
+- Added some code to handle either Backbone or Exoskeleton
 - Remove CoffeeLint (check out EditorConfig)
 - Remove Underscore.String by default
 - Remove `redirectTo` function in views (use `Chaplin.helpers`)
