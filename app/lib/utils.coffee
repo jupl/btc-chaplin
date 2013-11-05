@@ -4,7 +4,7 @@
 # Delegate to Chaplin’s utils module
 utils = Chaplin.utils.beget Chaplin.utils
 
-# _(utils).extend
-#  someMethod: ->
+# Backbone.utils.extend utils,
+#   someMethod: ->
 
 module.exports = utils

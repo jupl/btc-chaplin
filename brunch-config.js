@@ -1,4 +1,4 @@
-var setup = require('./.setup');
+var setup = require('./setup');
 
 exports.config = setup({
   files: {
@@ -14,7 +14,7 @@ exports.config = setup({
         'stylesheets/app.css': /^(app|vendor|bower_components)/
       },
       order: {
-        before: ['vendor/styles/bootstrap/normalize.less']
+        before: ['vendor/bootstrap/styles/normalize.less']
       }
     },
 

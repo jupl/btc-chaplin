@@ -1,4 +1,5 @@
 {
+  "description": "Chaplin collection and unit test",
   "files": [
     {
       "from": "collection.coffee.hbs",
@@ -6,7 +7,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/tests/models/{{pluralName}}-test.coffee"
+      "to": "test/code/models/{{pluralName}}-test.coffee"
     }
   ],
   "dependencies": [

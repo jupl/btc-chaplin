@@ -1,9 +1,6 @@
 # Initialize the application on DOM ready event.
 initialize = ->
 
-  # Mix in underscore.string into underscore if it exists
-  if _.str then _.mixin _.str.exports()
-
   # Set up Rivets if available
   rivets?.configure
     adapter:
@@ -20,4 +17,4 @@ initialize = ->
   Application = require('application')
   new Application
 
-$(document).ready(initialize)
+document.addEventListener('DOMContentLoaded', initialize)
