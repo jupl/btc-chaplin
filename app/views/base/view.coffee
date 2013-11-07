@@ -7,17 +7,6 @@ module.exports = class View extends Chaplin.View
   getTemplateFunction: ->
     @template
 
-  constructor: ->
-    @initSelectors()
-    super
-
-  initSelectors: ->
-    for element, selector of @elements then do (element, selector) =>
-      this["$#{element}"] = (subSelector) =>
-        $el = @$ selector
-        $el = $el.find subSelector if subSelector
-        $el
-
   render: ->
     super
     return unless @model
@@ -30,7 +19,3 @@ module.exports = class View extends Chaplin.View
     @_rivets?.unbind()
     delete @_rivets
     super
-
-  redirectTo: (url, options = {}) ->
-    @publishEvent '!router:route', url, options, (routed) ->
-      throw new Error 'View#redirectTo: no route matched' unless routed

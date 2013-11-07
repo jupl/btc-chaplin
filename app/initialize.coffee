@@ -1,29 +1,28 @@
-# Initialize the application on DOM ready event.
 initialize = ->
 
-  # Add FastClick if available
-  new FastClick?(document.body)
-
-  # Mix in underscore.string into underscore if it exists
-  if _.str then _.mixin _.str.exports()
+  # Add Davy promises if available and we are using Exoskeleton
+  if Backbone.Deferred and Davy?
+    Backbone.Deferred = ->
+      new Davy
 
   # Set up Rivets if available
-  rivets?.configure
-    adapter:
-      subscribe: (obj, keypath, callback) ->
-        obj.on("change:#{keypath}", callback)
-      unsubscribe: (obj, keypath, callback) ->
-        obj.off("change:#{keypath}", callback)
-      read: (obj, keypath) ->
-        obj.get(keypath)
-      publish: (obj, keypath, value) ->
-        obj.set(keypath, value)
+  rivets?.adapters[':'] =
+    subscribe: (obj, keypath, callback) ->
+      obj.on("change:#{keypath}", callback)
+    unsubscribe: (obj, keypath, callback) ->
+      obj.off("change:#{keypath}", callback)
+    read: (obj, keypath) ->
+      obj.get(keypath)
+    publish: (obj, keypath, value) ->
+      obj.set(keypath, value)
 
   # Start application
   Application = require('application')
-  new Application(pushState: off)
+  new Application
 
-if cordova?
-  document.addEventListener('deviceready', initialize, false)
-else
+# Initialize the application on DOM ready event.
+# Use jQuery if available. Otherwise use native.
+if $?
   $(document).ready(initialize)
+else
+  document.addEventListener('DOMContentLoaded', initialize)

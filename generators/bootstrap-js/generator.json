@@ -1,52 +1,54 @@
 {
+  "isModule": true,
+  "description": "Bootstrap JavaScript files",
   "files": [
     {
       "from": "js/affix.js",
-      "to":   "vendor/scripts/bootstrap/3-affix.js"
+      "to":   "vendor/bootstrap/scripts/3-affix.js"
     },
     {
       "from": "js/alert.js",
-      "to":   "vendor/scripts/bootstrap/1-alert.js"
+      "to":   "vendor/bootstrap/scripts/1-alert.js"
     },
     {
       "from": "js/button.js",
-      "to":   "vendor/scripts/bootstrap/1-button.js"
+      "to":   "vendor/bootstrap/scripts/1-button.js"
     },
     {
       "from": "js/carousel.js",
-      "to":   "vendor/scripts/bootstrap/1-carousel.js"
+      "to":   "vendor/bootstrap/scripts/1-carousel.js"
     },
     {
       "from": "js/collapse.js",
-      "to":   "vendor/scripts/bootstrap/1-collapse.js"
+      "to":   "vendor/bootstrap/scripts/1-collapse.js"
     },
     {
       "from": "js/dropdown.js",
-      "to":   "vendor/scripts/bootstrap/1-dropdown.js"
+      "to":   "vendor/bootstrap/scripts/1-dropdown.js"
     },
     {
       "from": "js/modal.js",
-      "to":   "vendor/scripts/bootstrap/1-modal.js"
+      "to":   "vendor/bootstrap/scripts/1-modal.js"
     },
     {
       "from": "js/popover.js",
-      "to":   "vendor/scripts/bootstrap/2-popover.js"
+      "to":   "vendor/bootstrap/scripts/2-popover.js"
     },
     {
       "from": "js/scrollspy.js",
-      "to":   "vendor/scripts/bootstrap/2-scrollspy.js"
+      "to":   "vendor/bootstrap/scripts/2-scrollspy.js"
     },
     {
       "from": "js/tab.js",
-      "to":   "vendor/scripts/bootstrap/2-tab.js"
+      "to":   "vendor/bootstrap/scripts/2-tab.js"
     },
     {
       "from": "js/tooltip.js",
-      "to":   "vendor/scripts/bootstrap/1-tooltip.js"
+      "to":   "vendor/bootstrap/scripts/1-tooltip.js"
     },
     {
       "from": "js/transition.js",
-      "to":   "vendor/scripts/bootstrap/0-transition.js"
+      "to":   "vendor/bootstrap/scripts/0-transition.js"
     }
   ],
   "dependencies": []
