@@ -1,5 +1,8 @@
 initialize = ->
 
+  # Add FastClick if available
+  new FastClick?(document.body)
+
   # Add Davy promises if available and we are using Exoskeleton
   if Backbone.Deferred and Davy?
     Backbone.Deferred = ->
@@ -18,11 +21,18 @@ initialize = ->
 
   # Start application
   Application = require('application')
-  new Application
+  new Application(pushState: off)
 
 # Initialize the application on DOM ready event.
 # Use jQuery if available. Otherwise use native.
-if $?
-  $(document).ready(initialize)
+preInitialize = ->
+  if $?
+    $(document).ready(initialize)
+  else
+    document.addEventListener('DOMContentLoaded', initialize);
+
+# Before initializing, check that Cordova is loaded properly
+if cordova?
+  document.addEventListener('deviceready', preInitialize, false);
 else
-  document.addEventListener('DOMContentLoaded', initialize)
+  preInitialize()

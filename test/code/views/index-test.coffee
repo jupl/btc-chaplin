@@ -1,4 +1,4 @@
-IndexView = require('views/index/view')
+IndexView = require('views/index')
 
 describe 'IndexView', ->
 

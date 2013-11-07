@@ -7,7 +7,13 @@
 </head>
 <body>
   <div id="mocha"></div>
-  <script src="../cordova.js"></script>
+
+  <script>
+    // Do not include scripts that don't exist when inside Mocha PhantomJS
+    if(!window.mochaPhantomJS) {
+      document.write('<script src="../cordova.js"><\/script>');
+    }
+  </script>
   <script src="javascripts/vendor.js"></script>
   <script src="../javascripts/vendor.js"></script>
   <script src="../javascripts/app.js"></script>
@@ -30,6 +36,9 @@
     // Start Mocha
     if(window.mochaPhantomJS) {
       mochaPhantomJS.run();
+    }
+    else if(window.cordova) {
+      document.addEventListener('deviceready', function() { mocha.run() }, false);
     }
     else {
       mocha.run();
