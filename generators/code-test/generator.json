@@ -2,8 +2,8 @@
   "description": "test file for code testing",
   "files": [
     {
-      "from": "test.js.hbs",
-      "to": "test/code/{{name}}-test.js"
+      "from": "test.coffee.hbs",
+      "to": "test/code/{{name}}-test.coffee"
     }
   ],
   "dependencies": []

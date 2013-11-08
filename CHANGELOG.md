@@ -1,5 +1,12 @@
 # Changelog
 
+### 0.6.3
+- Switch test generators from JS to Coffee
+- Updating README
+
+### 0.6.2
+- Updating README
+
 ### 0.6.1 (November 8, 2013)
 - Forked from Chapless Brunch
 - Added CoffeeLint and disabled max line length

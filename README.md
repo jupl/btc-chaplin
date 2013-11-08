@@ -1,5 +1,5 @@
 
-# Brunch with Panache 0.6.2
+# Brunch with Panache 0.6.3
 
 [![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
 [![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
@@ -69,6 +69,10 @@ While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple 
 #### `bower:install`
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
 
+### NPM
+
+#### `npm:shrinkwrap`
+Locks down the versions of a package's dependencies so that you can control exactly which versions of each dependency will be used when your package is installed.
 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
@@ -126,27 +130,18 @@ Run code-based tests (ex. unit tests) using mocha-phantomjs. In addition, if you
 #### `test:site [reporter=[reporter]]`
 Run site-based tests (ex. system tests) using PhantomJS and WebDriverJS. The global method `getDriver` is provided to get a setup and built driver. [Mocha as Promised](https://github.com/domenic/mocha-as-promised) is included to leverage WebDriverJS' use of Promises and handle asynchronous behavior easily. ex:
 
-```js
-describe('Sample', function() {
-  var driver;
+```coffee
+describe "{{#humanize}}{{name}}{{/humanize}}", ->
+  driver = undefined
+  before ->
+    driver = global.getDriver()
 
-  before(function() {
-    driver = getDriver();
-  });
+  it "...", ->
+    driver.get "http://localhost:3333"
 
-  it('Has a proper title', function() {
-    return driver.get('http://localhost:3333').then(function() {
-      return driver.getTitle();
-    })
-    .then(function(title) {
-      expect(title).to.equal('Brunch with Panache');
-    });
-  });
+  after ->
+    driver.quit()
 
-  after(function() {
-    driver.quit();
-  });
-});
 ```
 
 
