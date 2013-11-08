@@ -6,12 +6,8 @@
       "to": "app/views/{{name}}/index.coffee"
     },
     {
-      "from": "style.less.hbs",
-      "to": "app/views/{{name}}/style.less"
-    },
-    {
-      "from": "template.eco.hbs",
-      "to": "app/views/{{name}}/template.eco"
+      "from": "template.hbs.hbs",
+      "to": "app/views/{{name}}/template.hbs"
     },
     {
       "from": "test.coffee.hbs",

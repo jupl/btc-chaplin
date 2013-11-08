@@ -1,38 +1,39 @@
-# Chapless Brunch 0.6.0
 
-[<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
-[<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
+# Brunch with Panache 0.6.0
+
+[![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
+[![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
 
 
 ## Introduction
-Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Brunch with Panache is a skeleton for building web applications, specifically single-page applications. It is a modification of [Chapless Brunch](https://github.com/jupl/chapless-brunch). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
 ## File Structure
 
     ├── app                     # App is built here. Look at Brunch for more info.
-    │   ├── assets              # Static files that are just copied
-    │   ├── controllers         # Chaplin controllers
-    │   ├── lib                 # Chaplin utilities and helpers
-    │   ├── models              # Chaplin models and collections
-    │   ├── views               # Chaplin views and collection views
-    │   ├── application.coffee  # Chaplin application definition
-    │   ├── application.less    # Application/page styling definition
-    │   ├── base.less           # LESS variables and mixins for the application
-    │   ├── initialize.coffee   # Chaplin views and collection views
-    │   └── routes.coffee       # Route definitions for Chaplin
+    │   ├── assets              # Static files that are just copied
+    │   ├── controllers         # Chaplin controllers
+    │   ├── lib                 # Chaplin utilities and helpers
+    │   ├── models              # Chaplin models and collections
+    │   ├── views               # Chaplin views and collection views
+    │   ├── application.coffee  # Chaplin application definition
+    │   ├── application.scss    # Application/page styling definition
+    │   ├── base.scss           # Sass variables and mixins for the application
+    │   ├── initialize.coffee   # Chaplin views and collection views
+    │   └── routes.coffee       # Route definitions for Chaplin
     ├── bower_components        # Packages installed by Bower
     ├── generators              # Generators used by Scaffolt
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Generated final product
     ├── setup                   # Add configuration options to brunch-config
     ├── test                    # Test-related files
-    │   ├── assets              # Static assets required for code tests
-    │   ├── code                # Code and unit-based tests for Mocha PhantomJS
-    │   ├── mocha.opts          # Default options for site tests
-    │   ├── setup.js            # Configuration for site tests
-    │   ├── site                # Site-based tests for Mocha
-    │   └── vendor              # Test libraries for code-based tests
+    │   ├── assets              # Static assets required for code tests
+    │   ├── code                # Code and unit-based tests for Mocha PhantomJS
+    │   ├── mocha.opts          # Default options for site tests
+    │   ├── setup.js            # Configuration for site tests
+    │   ├── site                # Site-based tests for Mocha
+    │   └── vendor              # Test libraries for code-based tests
     ├── vendor                  # 3rd party JS/CSS libraries
     ├── .editorconfig           # EditorConfig definition file for coding styles
     ├── bower.json              # Listing for Bower dependencies to download
@@ -87,13 +88,6 @@ Add/remove [Exoskeleton](http://exosjs.com/) to/from the project for a more ligh
 #### `add:davy` / `rem:davy`
 Add/remove [Davy](https://github.com/lvivski/davy) to/from the project for simple and lightweight Promise support. Add this if you are using Exoskeleton and want support for promises.
 
-#### `add:bootstrap` / `rem:bootstrap`
-Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
-
-#### `add:bootstrapjs` / `rem:bootstrapjs`
-Add/remove Bootstrap JavaScript files to/from the project.
-
-
 ### Scaffolding
 - Unit test files are automatically generated for Chaplin items.
 - For Chaplin views, a template and stylesheet is also provided in addition to the code file.
@@ -145,7 +139,7 @@ describe('Sample', function() {
       return driver.getTitle();
     })
     .then(function(title) {
-      expect(title).to.equal('Chapless Brunch');
+      expect(title).to.equal('Brunch with Panache');
     });
   });
 
@@ -176,8 +170,8 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Languages
 - [CoffeeScript](http://coffeescript.org/)
-- [Eco](https://github.com/sstephenson/eco)
-- [LESS](http://lesscss.org)
+- [Handlebars](handlebarsjs.com)
+- [Sass](sass-lang.com)
 
 ### Framework
 - [Chaplin](http://chaplinjs.org)
@@ -189,4 +183,3 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 - [Lo-Dash](http://lodash.com/)
 - [Rivets.js](http://rivetsjs.com/)
 - [Davy](https://github.com/lvivski/davy)
-- [Bootstrap](http://getbootstrap.com/)

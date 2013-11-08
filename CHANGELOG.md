@@ -1,5 +1,15 @@
 # Changelog
 
+### 0.6.1 (November 8, 2013)
+- Forked from Chapless Brunch
+- Added CoffeeLint and disabled max line length
+- Removed Bootstrap
+- Added Shrinkwrap build task, e.g. `jake npm:shrinkwrap`
+- Replaced Eco with Handlebars
+- Replaced Less with Sass
+- Stop using view-specific styles
+- Updated README to reflect above changes
+
 ### 0.6.0 (November 5, 2013)
 - Update from BTC
 - Update Bootstrap to 3.0.1

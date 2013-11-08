@@ -5,21 +5,26 @@ exports.config = setup({
     javascripts: {
       joinTo: {
         'javascripts/app.js': /^app/,
-        'javascripts/vendor.js': /^(vendor|bower_components)/
+        'javascripts/vendor.js': /^(?!app)/
       }
     },
 
     stylesheets: {
-      joinTo: {
-        'stylesheets/app.css': /^(app|vendor|bower_components)/
-      },
-      order: {
-        before: ['vendor/bootstrap/styles/normalize.less']
-      }
+      joinTo: 'stylesheets/app.css'
     },
 
     templates: {
       joinTo: 'javascripts/app.js'
+    }
+  },
+  plugins: {
+    coffeelint: {
+      pattern: /^app\/.*\.coffee$/,
+      options: {
+        max_line_length: {
+          level: "ignore"
+        }
+      }
     }
   }
 });
