@@ -3,6 +3,7 @@
 ### WIP
 - Remove Bootstrap (use Bower or manually set up)
 - Add LESS Hat
+- Update from BTC
 
 ### 0.6.0 (November 5, 2013)
 - Update from BTC
