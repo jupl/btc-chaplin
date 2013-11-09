@@ -1,11 +1,11 @@
-# Chapless Brunch 0.6.0
+# Chapless Brunch 0.7.0
 
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
 
 
 ## Introduction
-Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. In additional to assembling a standard web-based application, this skeleton can also assemble native applications using Cordova. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. In additional to assembling a standard web-based application, this skeleton can also assemble native applications using Cordova. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
 ## File Structure
@@ -28,12 +28,12 @@ Chapless Brunch is a skeleton for building web applications, specifically single
     ├── public                  # Generated final product
     ├── setup                   # Add configuration options to brunch-config
     ├── test                    # Test-related files
-    │   ├── assets              # Static assets required for code tests
-    │   ├── code                # Code and unit-based tests for Mocha PhantomJS
+    │   ├── assets              # Static assets to run code tests manually
+    │   ├── code                # Code-based tests for Karma/manual
+    │   ├── site                # Site-based tests for Mocha and WebDriverJS
+    │   ├── karma.conf.js       # Karma configuration for code tests
     │   ├── mocha.opts          # Default options for site tests
-    │   ├── setup.js            # Configuration for site tests
-    │   ├── site                # Site-based tests for Mocha
-    │   └── vendor              # Test libraries for code-based tests
+    │   └── setup.js            # Configuration for site tests
     ├── vendor                  # 3rd party JS/CSS libraries
     ├── .editorconfig           # EditorConfig definition file for coding styles
     ├── bower.json              # Listing for Bower dependencies to download
@@ -146,38 +146,31 @@ Generate/destroy a test file with the given test name for testing the site. (ex:
 
 
 ### Testing
-Temporarily spin up a local server with Brunch and run tests, leveraging [PhantomJS](http://phantomjs.org/), [Mocha](http://visionmedia.github.io/mocha/), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai), and runs through [mocha-phantomjs](http://metaskills.net/mocha-phantomjs/). Site testing uses [WebDriverJS](https://github.com/camme/webdriverjs).
+Tests leverage [PhantomJS](http://phantomjs.org/), [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
 
-#### `test:all [reporter=[reporter]]`
-Run all tests listed below. Since Mocha is used, the reporter can be specified. (ex: `jake test:all reporter=min`) By default `spec` reporter is used.
+#### `test:all [codereporter=progress] [sitereporter=spec]`
+Run all tests listed below once. For more information on reporters see below.
 
-#### `test:code [reporter=[reporter]]`
-Run code-based tests (ex. unit tests) using mocha-phantomjs. In addition, if you run a build (see below) using `dev` the tests are included with a reporter under `test/` to run in browsers. (ex. visit `http://locahost:[port]/test`)
+#### `test:code [reporter=progress] [watch=false]`
+Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured out of the box to run with PhantomJS. A Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
 
-#### `test:site [reporter=[reporter]]`
-Run site-based tests (ex. system tests) using PhantomJS and WebDriverJS. The global method `getDriver` is provided to get a setup and built driver. [Mocha as Promised](https://github.com/domenic/mocha-as-promised) is included to leverage WebDriverJS' use of Promises and handle asynchronous behavior easily. ex:
+#### `test:site [reporter=spec] [watch=false]`
+Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
-```js
-describe('Sample', function() {
-  var driver;
+```coffeescript
+describe 'Sample', ->
 
-  before(function() {
-    driver = getDriver();
-  });
+  before ->
+    @driver = getDriver()
 
-  it('Has a proper title', function() {
-    return driver.get('http://localhost:3333').then(function() {
-      return driver.getTitle();
-    })
-    .then(function(title) {
-      expect(title).to.equal('Chapless Brunch');
-    });
-  });
+  it 'Has a proper title', ->
+    @driver.get('http://localhost:3333').then ->
+      driver.getTitle()
+    .then (title) ->
+      expect(title).to.equal('Chapless Brunch')
 
-  after(function() {
-    driver.quit();
-  });
-});
+  after ->
+    @driver.quit()
 ```
 
 

@@ -1,6 +1,5 @@
 // Tasks to add modules to the project that are not included by default.
 // This is usually either Bower packages or module-based Scaffolt generators.
-var devices = require('./lib').devices;
 var generators = require('./lib').generators;
 var jsonfile = require('jsonfile');
 var Promise = require('bluebird');
@@ -41,9 +40,7 @@ namespace('add', function() {
   });
 
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
-  task('exoskeleton', function() {
-    jake.Task['rem:jquery'].invoke();
-    jake.Task['rem:lodash'].invoke();
+  task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
       this.dependencies.exoskeleton = '~0.5.1';
       this.overrides.chaplin = {
@@ -92,7 +89,6 @@ namespace('add', function() {
       desc('Add ' + generator.description);
       task(generator.task, function() {
         return new Promise(function(resolve) {
-          jake.Task['scaffold:add'].addListener('complete', resolve).invoke(generator.name);
           jake.Task['scaffold:add']
           .addListener('complete', resolve)
           .invoke(generator.name);
@@ -133,9 +129,7 @@ namespace('rem', function() {
   });
 
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
-  task('exoskeleton', function() {
-    jake.Task['add:jquery'].invoke();
-    jake.Task['add:lodash'].invoke();
+  task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
       this.overrides.backbone = {
         dependencies: {

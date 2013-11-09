@@ -3,31 +3,31 @@
   "files": [
     {
       "from": "index.coffee.hbs",
-      "to": "app/views/{{name}}/index.coffee"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/index.coffee"
     },
     {
       "from": "style.less.hbs",
-      "to": "app/views/{{name}}/style.less"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/style.less"
     },
     {
       "from": "template.eco.hbs",
-      "to": "app/views/{{name}}/template.eco"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/template.eco"
     },
     {
       "from": "item/index.coffee.hbs",
-      "to": "app/views/{{name}}/item/index.coffee"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/item/index.coffee"
     },
     {
       "from": "item/style.less.hbs",
-      "to": "app/views/{{name}}/item/style.less"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/item/style.less"
     },
     {
       "from": "item/template.eco.hbs",
-      "to": "app/views/{{name}}/item/template.eco"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/item/template.eco"
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/views/{{name}}-test.coffee"
+      "to": "test/code/views/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
     }
   ],
   "dependencies": []

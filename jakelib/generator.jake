@@ -7,7 +7,7 @@ var Promise = require('bluebird');
 namespace('gen', function() {
   generators.forEach(function(generator) {
     if(!generator.isModule) {
-      desc('Generate a ' + generator.description);
+      desc('Generate a(n) ' + generator.description);
       task(generator.task, function() {
         validate(generator.name, process.env.name);
         return new Promise(function(resolve) {
@@ -38,8 +38,7 @@ namespace('del', function() {
 });
 
 function validate(generator, name) {
-  var isView = generator === 'view' || generator === 'collection-view';
-  if(isView && name.dasherize() === 'base') {
+  if((generator === 'view' || generator === 'collection-view') && name.dasherize() === 'base') {
     fail('name parameter cannot be "base"');
   }
 }

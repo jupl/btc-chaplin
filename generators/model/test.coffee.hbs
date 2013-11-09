@@ -1,0 +1,6 @@
+{{#camelize}}{{name}}{{/camelize}} = require('models/{{#dasherize}}{{name}}{{/dasherize}}')
+
+describe '{{#camelize}}{{name}}{{/camelize}}', ->
+
+  beforeEach ->
+    @model = new {{#camelize}}{{name}}{{/camelize}}

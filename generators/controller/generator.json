@@ -3,11 +3,11 @@
   "files": [
     {
       "from": "controller.coffee.hbs",
-      "to": "app/controllers/{{name}}.coffee"
+      "to": "app/controllers/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/controllers/{{name}}-test.coffee"
+      "to": "test/code/controllers/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
     }
   ],
   "dependencies": []

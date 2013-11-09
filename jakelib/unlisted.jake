@@ -43,6 +43,18 @@ namespace('scaffold', function() {
   task('rem', function(type) {
     return execute(localBinCommand('scaffolt', type + ' placeholder -r'));
   });
+
+  task('add', function(type) {
+    return new Promise(function(resolve) {
+      jake.exec(util.format('./node_modules/.bin/scaffolt %s placeholder', type), {interactive: true}, resolve);
+    });
+  });
+
+  task('rem', function(type) {
+    return new Promise(function(resolve) {
+      jake.exec(util.format('./node_modules/.bin/scaffolt %s placeholder -r', type), {interactive: true}, resolve);
+    });
+  });
 });
 
 function validateName(name) {
