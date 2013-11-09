@@ -98,17 +98,16 @@ Add/remove FastClick to/from the project for optimized click events in touch dev
 #### `add:hammer` / `add:hammerjquery` / `rem:hammer`
 Add/remove Hammer.js (standalone or jQuery plugin) to/from the project for touch event handling. Visit their [page](http://eightmedia.github.io/hammer.js/) for more information.
 
-#### `add:bootstrap` / `rem:bootstrap`
-Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
+#### `add:devicejs` / `rem:devicejs`
+Add/remove Device.js to handle different device options in CSS and JavaScript. Visit their [page](http://matthewhudson.me/projects/device.js/) for more information.
 
-#### `add:bootstrapjs` / `rem:bootstrapjs`
-Add/remove Bootstrap JavaScript files to/from the project.
+**NOTE**: Make sure to take a look at the `noConflict` method to avoid issues with the use of the `device` variable in Cordova.
 
 
 ### Cordova
 These commands are to set up and initialize native projects that use Cordova to wrap your web application in a native app. `[device]` denotes the application device to build under. (Currently supporting `ios` and `android`) If you need access to the Cordova JavaScript from your page use the script tag: `<script src="cordova.js"></script>`
 
-#### `cordova:init [package=[package] [name=[name]]]`
+#### `cordova:init [package=io.cordova.hellocordova [name=HelloCordova]]`
 Create a new Cordova project using [cordova-cli](https://github.com/apache/cordova-cli).
 - Package and name options are optional, which uses the default Cordova options. If you specify `name`, you must also specify `package`.
 - Project will reside in `cordova/`. If an existing project exists when running this task, it will be replaced with a new one.
