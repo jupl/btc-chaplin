@@ -1,0 +1,10 @@
+describe '{{#humanize}}{{name}}{{/humanize}}', ->
+
+  before ->
+    @driver = getDriver()
+
+  it '...', ->
+    @driver.get('http://localhost:3333')
+
+  after ->
+    @driver.quit()
