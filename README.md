@@ -5,7 +5,7 @@
 
 
 ## Introduction
-Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
 ## File Structure
@@ -86,12 +86,6 @@ Add/remove [Exoskeleton](http://exosjs.com/) to/from the project for a more ligh
 
 #### `add:davy` / `rem:davy`
 Add/remove [Davy](https://github.com/lvivski/davy) to/from the project for simple and lightweight Promise support. Add this if you are using Exoskeleton and want support for promises.
-
-#### `add:bootstrap` / `rem:bootstrap`
-Add/remove [Bootstrap](http://getbootstrap.com/) LESS files and Glyphicon fonts to/from the project.
-
-#### `add:bootstrapjs` / `rem:bootstrapjs`
-Add/remove Bootstrap JavaScript files to/from the project.
 
 
 ### Scaffolding
@@ -186,7 +180,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Utilities
 - [jQuery](http://jquery.com/)
+- [LESS Hat](http://lesshat.com/)
 - [Lo-Dash](http://lodash.com/)
 - [Rivets.js](http://rivetsjs.com/)
 - [Davy](https://github.com/lvivski/davy)
-- [Bootstrap](http://getbootstrap.com/)
