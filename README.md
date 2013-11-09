@@ -129,27 +129,20 @@ Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured out of
 #### `test:site [reporter=spec] [watch=false]`
 Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
-```js
-describe('Sample', function() {
-  var driver;
+```coffeescript
+describe 'Sample', ->
 
-  before(function() {
-    driver = getDriver();
-  });
+  before ->
+    @driver = getDriver()
 
-  it('Has a proper title', function() {
-    return driver.get('http://localhost:3333').then(function() {
-      return driver.getTitle();
-    })
-    .then(function(title) {
-      expect(title).to.equal('Chapless Brunch');
-    });
-  });
+  it 'Has a proper title', ->
+    driver.get('http://localhost:3333').then ->
+      driver.getTitle()
+    .then (title) ->
+      expect(title).to.equal('Chapless Brunch')
 
-  after(function() {
-    driver.quit();
-  });
-});
+  after ->
+    driver.quit()
 ```
 
 

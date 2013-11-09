@@ -2,8 +2,8 @@
   "description": "test file for site testing",
   "files": [
     {
-      "from": "test.js.hbs",
-      "to": "test/site/{{#dasherize}}{{name}}{{/dasherize}}.js"
+      "from": "test.coffee.hbs",
+      "to": "test/site/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
     }
   ],
   "dependencies": []

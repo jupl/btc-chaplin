@@ -1,5 +1,5 @@
 Collection = require('models/base/collection')
-{{#camelize}}{{name}}{{/camelize}} = require('./{{name}}')
+{{#camelize}}{{name}}{{/camelize}} = require('./{{#dasherize}}{{name}}{{/dasherize}}')
 
 module.exports = class {{#camelize}}{{pluralName}}{{/camelize}} extends Collection
   model: {{#camelize}}{{name}}{{/camelize}}
