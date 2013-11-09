@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.7.0 (November 9, 2013)
 - Remove Bootstrap (use Bower or manually set up)
 - Add LESS Hat
 - Update from BTC
