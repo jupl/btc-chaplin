@@ -136,13 +136,13 @@ describe 'Sample', ->
     @driver = getDriver()
 
   it 'Has a proper title', ->
-    driver.get('http://localhost:3333').then ->
+    @driver.get('http://localhost:3333').then ->
       driver.getTitle()
     .then (title) ->
       expect(title).to.equal('Chapless Brunch')
 
   after ->
-    driver.quit()
+    @driver.quit()
 ```
 
 
