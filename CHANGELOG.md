@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.6.5 (November 10, 2013)
+- Merged in Brunch Toolchain 0.5.3, giving us Karma and autorun tests
+- Fix issue with stylesheet generation
+- Fix issue with exoskeleton generation task
+
 ### 0.6.4 (November 10, 2013)
 - Revamped generators to give more opinion to views orginization
 - Pages now composed using regions

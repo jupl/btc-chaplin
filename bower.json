@@ -9,7 +9,11 @@
     "chaplin": "~0.11.0",
     "console-polyfill": "~0.1.0",
     "jquery": "~2.0.3",
-    "lodash": "~2.0.0"
+    "lodash": "~2.0.0",
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "sinon": "http://sinonjs.org/releases/sinon-1.7.3.js",
+    "sinon-chai": "~2.4.0"
   },
   "overrides": {
     "backbone": {
@@ -18,6 +22,19 @@
         "jquery": "*"
       },
       "main": "backbone.js"
+    },
+    "mocha": {
+      "main": [
+        "mocha.css",
+        "mocha.js"
+      ]
+    },
+    "sinon-chai": {
+      "main": "lib/sinon-chai.js",
+      "dependencies": {
+        "sinon": "*",
+        "chai": "*"
+      }
     }
   }
 }
