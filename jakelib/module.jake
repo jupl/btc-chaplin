@@ -104,7 +104,7 @@ namespace('rem', function() {
   });
 
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
-  task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
+  task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
     editBower(function() {
       this.overrides.backbone = {
         dependencies: {
