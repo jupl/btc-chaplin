@@ -1,5 +1,8 @@
 # Changelog
 
+### WIP
+- Flesh out test generators a bit
+
 ### 0.7.1 (November 9, 2013)
 - Fix issue with exoskeleton task
 - Update from BTC
