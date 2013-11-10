@@ -1400,30 +1400,6 @@
         }
       }
     },
-    "auto-reload-brunch": {
-      "version": "1.7.1",
-      "from": "auto-reload-brunch@>= 1.0 < 1.8",
-      "dependencies": {
-        "ws": {
-          "version": "0.4.25",
-          "from": "ws@0.4.25",
-          "dependencies": {
-            "commander": {
-              "version": "0.6.1",
-              "from": "commander@~0.6.1"
-            },
-            "tinycolor": {
-              "version": "0.0.1",
-              "from": "tinycolor@0.x"
-            },
-            "options": {
-              "version": "0.0.5",
-              "from": "options@latest"
-            }
-          }
-        }
-      }
-    },
     "clean-css-brunch": {
       "version": "1.7.1",
       "from": "clean-css-brunch@>= 1.0 < 1.8",
@@ -1471,6 +1447,30 @@
                   "from": "wordwrap@~0.0.2"
                 }
               }
+            }
+          }
+        }
+      }
+    },
+    "auto-reload-brunch": {
+      "version": "1.7.1",
+      "from": "auto-reload-brunch@>= 1.0 < 1.8",
+      "dependencies": {
+        "ws": {
+          "version": "0.4.25",
+          "from": "ws@0.4.25",
+          "dependencies": {
+            "commander": {
+              "version": "0.6.1",
+              "from": "commander@~0.6.1"
+            },
+            "tinycolor": {
+              "version": "0.0.1",
+              "from": "tinycolor@0.x"
+            },
+            "options": {
+              "version": "0.0.5",
+              "from": "options@latest"
             }
           }
         }

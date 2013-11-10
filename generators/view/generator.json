@@ -2,12 +2,12 @@
   "description": "Chaplin view and unit test",
   "files": [
     {
-      "from": "index.coffee.hbs",
-      "to": "app/views/{{name}}/index.coffee"
+      "from": "view.coffee.hbs",
+      "to": "app/views/{{name}}/{{name}}-view.coffee"
     },
     {
       "from": "template.hbs.hbs",
-      "to": "app/views/{{name}}/template.hbs"
+      "to": "app/views/{{name}}/templates/{{name}}.hbs"
     },
     {
       "from": "test.coffee.hbs",

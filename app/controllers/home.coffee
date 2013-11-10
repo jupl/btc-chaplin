@@ -1,7 +1,7 @@
 Controller = require('controllers/base/controller')
-IndexView = require('views/index')
+HomeView = require('views/home/home-view')
 
 module.exports = class ApplicationController extends Controller
 
   index: ->
-    @view = new IndexView
+    @view = new HomeView

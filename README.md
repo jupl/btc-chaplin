@@ -1,5 +1,5 @@
 
-# Brunch with Panache 0.6.3
+# Brunch with Panache 0.6.4
 
 [![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
 [![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
@@ -16,10 +16,9 @@ Brunch with Panache is a skeleton for building web applications, specifically si
     │   ├── controllers         # Chaplin controllers
     │   ├── lib                 # Chaplin utilities and helpers
     │   ├── models              # Chaplin models and collections
+    │   ├── styles              # Application style rule declarations
     │   ├── views               # Chaplin views and collection views
     │   ├── application.coffee  # Chaplin application definition
-    │   ├── application.scss    # Application/page styling definition
-    │   ├── base.scss           # Sass variables and mixins for the application
     │   ├── initialize.coffee   # Chaplin views and collection views
     │   └── routes.coffee       # Route definitions for Chaplin
     ├── bower_components        # Packages installed by Bower
@@ -34,7 +33,7 @@ Brunch with Panache is a skeleton for building web applications, specifically si
     │   ├── setup.js            # Configuration for site tests
     │   ├── site                # Site-based tests for Mocha
     │   └── vendor              # Test libraries for code-based tests
-    ├── vendor                  # 3rd party JS/CSS libraries
+    ├── vendor                  # 3rd party JS/CSS libraries which lack Bower
     ├── .editorconfig           # EditorConfig definition file for coding styles
     ├── bower.json              # Listing for Bower dependencies to download
     ├── brunch-config.js        # Brunch app build configuration
