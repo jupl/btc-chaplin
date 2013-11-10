@@ -6,7 +6,7 @@
 
 
 ## Introduction
-Brunch with Panache is a skeleton for building web applications, specifically single-page applications. It is a modification of [Chapless Brunch](https://github.com/jupl/chapless-brunch). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Brunch with Panache is a skeleton for building web applications, specifically single-page applications designed to work in a service-oriented architecture. It is a modification of [Chapless Brunch](https://github.com/jupl/chapless-brunch). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
 ## File Structure
@@ -42,12 +42,13 @@ Brunch with Panache is a skeleton for building web applications, specifically si
 
 ## Requirements
 - [node.js](http://nodejs.org)
+- [CoffeeScript](http://coffeescript.org/#installation) (required for generators and tests)
 - [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
 
 
 ## Setup
 
-1. Install node.js.
+1. Install node.js and CoffeeScript.
 2. If doing development, install Jake.
 4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.

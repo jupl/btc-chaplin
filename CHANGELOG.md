@@ -1,16 +1,16 @@
 # Changelog
 
-### 0.6.4
+### 0.6.4 (November 10, 2013)
 - Revamped generators to give more opinion to views orginization
 - Pages now composed using regions
 - Created header and footer regions
 - Added URL view helper from BWC
 - Reorganized styling files
 
-### 0.6.3
+### 0.6.3 (November 8, 2013)
 - Switch test generators from JS to Coffee
 
-### 0.6.2
+### 0.6.2 (November 8, 2013)
 - Updating README
 
 ### 0.6.1 (November 8, 2013)
