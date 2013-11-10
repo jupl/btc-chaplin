@@ -1,4 +1,4 @@
-# Chapless Brunch 0.7.0
+# Chapless Brunch 0.7.1
 
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)

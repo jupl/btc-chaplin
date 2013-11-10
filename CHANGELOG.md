@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.7.1 (November 9, 2013)
+- Fix issue with exoskeleton task
+- Update from BTC
+
 ### 0.7.0 (November 9, 2013)
 - Remove Bootstrap (use Bower or manually set up)
 - Add LESS Hat
