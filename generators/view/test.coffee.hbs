@@ -3,4 +3,7 @@
 describe '{{#camelize}}{{name}}{{/camelize}}View', ->
 
   beforeEach ->
-    @view = new {{#camelize}}{{name}}{{/camelize}}View
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}View = new {{#camelize}}{{name}}{{/camelize}}View
+
+  afterEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}View.dispose()
