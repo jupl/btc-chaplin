@@ -3,23 +3,23 @@
   "files": [
     {
       "from": "collection-view.coffee.hbs",
-      "to": "app/views/{{name}}/{{name}}-collection-view.coffee"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/{{#dasherize}}{{name}}{{/dasherize}}-collection-view.coffee"
     },
     {
       "from": "template.hbs.hbs",
-      "to": "app/views/{{name}}/templates/{{name}}-collection.hbs"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/templates/{{#dasherize}}{{name}}{{/dasherize}}-collection.hbs"
     },
     {
       "from": "item/item-view.coffee.hbs",
-      "to": "app/views/{{name}}/{{name}}-item-view.coffee"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/{{#dasherize}}{{name}}{{/dasherize}}-item-view.coffee"
     },
     {
       "from": "item/template.hbs.hbs",
-      "to": "app/views/{{name}}/templates/{{name}}-item.hbs"
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}/templates/{{#dasherize}}{{name}}{{/dasherize}}-item.hbs"
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/views/{{name}}-test.coffee"
+      "to": "test/code/views/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
     }
   ],
   "dependencies": []

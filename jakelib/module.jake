@@ -33,9 +33,7 @@ namespace('add', function() {
   });
 
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
-  task('exoskeleton', function() {
-    jake.Task['rem:jquery'].invoke();
-    jake.Task['rem:lodash'].invoke();
+  task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
       this.dependencies.exoskeleton = '~0.5.1';
       this.overrides.chaplin = {
@@ -92,8 +90,7 @@ namespace('rem', function() {
   });
 
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
-  task('exoskeleton', function() {
-    jake.Task['rem:jquery','rem:lodash'].invoke();
+  task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
     editBower(function() {
       this.overrides.backbone = {
         dependencies: {

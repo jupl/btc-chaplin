@@ -1,5 +1,5 @@
 ItemView = require('views/base/item')
 
 module.exports = class {{#camelize}}{{name}}{{/camelize}}ItemView extends ItemView
-  className: '{{name}}-item-view'
-  template: require('./templates/{{name}}-item')
+  className: '{{#dasherize}}{{name}}{{/dasherize}}-item-view'
+  template: require('./templates/{{#dasherize}}{{name}}{{/dasherize}}-item')

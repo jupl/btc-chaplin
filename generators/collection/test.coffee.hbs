@@ -1,5 +1,5 @@
-{{#camelize}}{{name}}{{/camelize}} = require('models/{{name}}')
-{{#camelize}}{{pluralName}}{{/camelize}} = require('models/{{pluralName}}')
+{{#camelize}}{{name}}{{/camelize}} = require('models/{{#dasherize}}{{name}}{{/dasherize}}')
+{{#camelize}}{{pluralName}}{{/camelize}} = require('models/{{#dasherize}}{{pluralName}}{{/dasherize}}')
 
 describe '{{#camelize}}{{pluralName}}{{/camelize}}', ->
 

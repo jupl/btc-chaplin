@@ -1,5 +1,5 @@
-{{#camelize}}{{name}}{{/camelize}}CollectionView = require('views/{{name}}/{{name}}-collection-view')
-{{#camelize}}{{name}}{{/camelize}}ItemView = require('views/{{name}}/{{name}}-item-view')
+{{#camelize}}{{name}}{{/camelize}}CollectionView = require('views/{{#dasherize}}{{name}}{{/dasherize}}/{{#dasherize}}{{name}}{{/dasherize}}-collection-view')
+{{#camelize}}{{name}}{{/camelize}}ItemView = require('views/{{#dasherize}}{{name}}{{/dasherize}}/{{#dasherize}}{{name}}{{/dasherize}}-item-view')
 
 describe '{{#camelize}}{{name}}{{/camelize}}CollectionView', ->
 

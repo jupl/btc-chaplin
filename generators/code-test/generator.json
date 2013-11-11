@@ -3,7 +3,7 @@
   "files": [
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
+      "to": "test/code/{{#dasherize}}{{name}}{{/dasherize}}-test.coffee"
     }
   ],
   "dependencies": []

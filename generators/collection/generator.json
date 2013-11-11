@@ -7,7 +7,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/models/{{pluralName}}-test.coffee"
+      "to": "test/code/models/{{#dasherize}}{{pluralName}}{{/dasherize}}.coffee"
     }
   ],
   "dependencies": [

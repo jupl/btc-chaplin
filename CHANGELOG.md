@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.7.0 (November 10, 2013)
+- Update from CB
+- Giving an opinion to test file names via generators
+
 ### 0.6.5 (November 10, 2013)
 - Merged in Brunch Toolchain 0.5.3, giving us Karma and autorun tests
 - Fix issue with stylesheet generation
@@ -19,7 +23,7 @@
 - Updating README
 
 ### 0.6.1 (November 8, 2013)
-- Forked from Chapless Brunch
+- Forked from Chapless Brunch (CB)
 - Added CoffeeLint and disabled max line length
 - Removed Bootstrap
 - Added Shrinkwrap build task, e.g. `jake npm:shrinkwrap`

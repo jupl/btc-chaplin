@@ -1,4 +1,4 @@
-# Brunch with Panache 0.6.5
+# Brunch with Panache 0.7.0
 
 [![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
 [![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
@@ -32,7 +32,7 @@ Brunch with Panache is a skeleton for building web applications, specifically si
     │   ├── karma.conf.js       # Karma configuration for code tests
     │   ├── mocha.opts          # Default options for site tests
     │   └── setup.js            # Configuration for site tests
-    ├── vendor                  # 3rd party JS/CSS libraries which lack Bower
+    ├── vendor                  # 3rd party JS/CSS libraries
     ├── .editorconfig           # EditorConfig definition file for coding styles
     ├── bower.json              # Listing for Bower dependencies to download
     ├── brunch-config.js        # Brunch app build configuration
@@ -91,6 +91,7 @@ Add/remove [Exoskeleton](http://exosjs.com/) to/from the project for a more ligh
 #### `add:davy` / `rem:davy`
 Add/remove [Davy](https://github.com/lvivski/davy) to/from the project for simple and lightweight Promise support. Add this if you are using Exoskeleton and want support for promises.
 
+
 ### Scaffolding
 - Unit test files are automatically generated for Chaplin items.
 - For Chaplin views, a template and stylesheet is also provided in addition to the code file.
@@ -129,7 +130,7 @@ Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured out of
 #### `test:site [reporter=spec] [watch=false]`
 Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
-```coffee
+```coffeescript
 describe 'Sample', ->
 
   before ->
@@ -143,7 +144,6 @@ describe 'Sample', ->
 
   after ->
     @driver.quit()
-
 ```
 
 
@@ -177,6 +177,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Utilities
 - [jQuery](http://jquery.com/)
+- [LESS Hat](http://lesshat.com/)
 - [Lo-Dash](http://lodash.com/)
 - [Rivets.js](http://rivetsjs.com/)
 - [Davy](https://github.com/lvivski/davy)
