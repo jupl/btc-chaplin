@@ -1,5 +1,9 @@
 # Changelog
 
+### WIP
+- Removed unneeded tests merged in from upstream
+- Adding opinion to naming standards for page-level views
+
 ### 0.7.0 (November 10, 2013)
 - Update from CB
 - Giving an opinion to test file names via generators
