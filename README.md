@@ -7,6 +7,8 @@
 ## Introduction
 Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
+For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/jupl/chapless-brunch/tree/cordova).
+
 
 ## File Structure
 
