@@ -4,9 +4,11 @@
 describe '{{#camelize}}{{pluralName}}{{/camelize}}', ->
 
   beforeEach ->
-    @model = new {{#camelize}}{{name}}{{/camelize}}
-    @collection = new {{#camelize}}{{pluralName}}{{/camelize}}
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}} = new {{#camelize}}{{name}}{{/camelize}}
+    @{{#lowercamelize}}{{pluralName}}{{/lowercamelize}} = new {{#camelize}}{{pluralName}}{{/camelize}}
+
+
 
   afterEach ->
-    @model.dispose()
-    @collection.dispose()
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}.dispose()
+    @{{#lowercamelize}}{{pluralName}}{{/lowercamelize}}.dispose()
