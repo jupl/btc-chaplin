@@ -1,4 +1,4 @@
-# Chapless Brunch 0.7.1
+# Chapless Brunch 0.7.2
 
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
@@ -162,7 +162,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.3
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.4
 
 ### Languages
 - [CoffeeScript](http://coffeescript.org/)

@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+#### 0.7.2 (November 14, 2013)
 - Flesh out test generators a bit
 - Update BTC
 
