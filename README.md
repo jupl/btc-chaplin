@@ -195,4 +195,4 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 
 ### Core
 - [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.7.2
-- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.4.2
+- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.4.3
