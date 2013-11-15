@@ -4,3 +4,4 @@ describe 'ApplicationController', ->
 
   beforeEach ->
     @controller = new ApplicationController
+

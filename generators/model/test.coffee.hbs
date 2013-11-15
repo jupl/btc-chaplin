@@ -5,5 +5,7 @@ describe '{{#camelize}}{{name}}{{/camelize}}', ->
   beforeEach ->
     @{{#lowercamelize}}{{name}}{{/lowercamelize}} = new {{#camelize}}{{name}}{{/camelize}}
 
+
+
   afterEach ->
     @{{#lowercamelize}}{{name}}{{/lowercamelize}}.dispose()

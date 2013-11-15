@@ -4,3 +4,4 @@ describe 'IndexView', ->
 
   beforeEach ->
     @view = new IndexView
+

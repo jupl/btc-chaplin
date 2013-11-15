@@ -7,6 +7,8 @@ describe '{{#camelize}}{{name}}{{/camelize}}View', ->
     @{{#lowercamelize}}{{name}}{{/lowercamelize}}View = new {{#camelize}}{{name}}{{/camelize}}View
     @{{#lowercamelize}}{{name}}{{/lowercamelize}}ItemView = new {{#camelize}}{{name}}{{/camelize}}ItemView
 
+
+
   afterEach ->
     @{{#lowercamelize}}{{name}}{{/lowercamelize}}View.dispose()
     @{{#lowercamelize}}{{name}}{{/lowercamelize}}ItemView.dispose()
