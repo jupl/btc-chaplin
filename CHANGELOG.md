@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.7.1 (November 19, 2013)
 - Removed unneeded tests merged in from upstream
 - Adding opinion to naming standards for page-level views (use "-page-view" suffix)
 - Update from CB
