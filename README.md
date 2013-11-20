@@ -18,33 +18,35 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
 
 ## File Structure
 
-    ├── app                     # App is built here. Look at Brunch for more info.
-    │   ├── assets              # Static files that are just copied
-    │   ├── controllers         # Chaplin controllers
-    │   ├── lib                 # Chaplin utilities and helpers
-    │   ├── models              # Chaplin models and collections
-    │   ├── styles              # Application style rule declarations
-    │   ├── views               # Chaplin views and collection views
-    │   ├── application.coffee  # Chaplin application definition
-    │   ├── initialize.coffee   # Chaplin views and collection views
-    │   └── routes.coffee       # Route definitions for Chaplin
-    ├── bower_components        # Packages installed by Bower
-    ├── generators              # Generators used by Scaffolt
-    ├── jakelib                 # Unified set of tasks for development
-    ├── public                  # Generated final product
-    ├── setup                   # Add configuration options to brunch-config
-    ├── test                    # Test-related files
-    │   ├── assets              # Static assets to run code tests manually
-    │   ├── code                # Code-based tests for Karma/manual
-    │   ├── site                # Site-based tests for Mocha and WebDriverJS
-    │   ├── karma.conf.js       # Karma configuration for code tests
-    │   ├── mocha.opts          # Default options for site tests
-    │   └── setup.js            # Configuration for site tests
-    ├── vendor                  # 3rd party JS/CSS libraries
-    ├── .editorconfig           # EditorConfig definition file for coding styles
-    ├── bower.json              # Listing for Bower dependencies to download
-    ├── brunch-config.js        # Brunch app build configuration
-    └── package.json            # Project dependencies and configuration
+    ├── app                       # App is built here. Look at Brunch for more info.
+    │   ├── assets                # Static files that are just copied
+    │   ├── controllers           # Chaplin controllers
+    │   ├── lib                   # Chaplin utilities and helpers
+    │   ├── models                # Chaplin models and collections
+    │   ├── styles                # Application style rule declarations
+    │   │   ├── _base.scss        # Styles for static framework (80%)
+    │   │   └── application.scss  # Styles for application (20%)
+    │   ├── views                 # Chaplin views and collection views
+    │   ├── application.coffee    # Chaplin application definition
+    │   ├── initialize.coffee     # Chaplin views and collection views
+    │   └── routes.coffee         # Route definitions for Chaplin
+    ├── bower_components          # Packages installed by Bower
+    ├── generators                # Generators used by Scaffolt
+    ├── jakelib                   # Unified set of tasks for development
+    ├── public                    # Generated final product
+    ├── setup                     # Add configuration options to brunch-config
+    ├── test                      # Test-related files
+    │   ├── assets                # Static assets to run code tests manually
+    │   ├── code                  # Code-based tests for Karma/manual
+    │   ├── site                  # Site-based tests for Mocha and WebDriverJS
+    │   ├── karma.conf.js         # Karma configuration for code tests
+    │   ├── mocha.opts            # Default options for site tests
+    │   └── setup.js              # Configuration for site tests
+    ├── vendor                    # 3rd party JS/CSS libraries
+    ├── .editorconfig             # EditorConfig definition file for coding styles
+    ├── bower.json                # Listing for Bower dependencies to download
+    ├── brunch-config.js          # Brunch app build configuration
+    └── package.json              # Project dependencies and configuration
 
 
 ## Requirements
