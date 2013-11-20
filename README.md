@@ -5,8 +5,16 @@
 
 
 ## Introduction
-Brunch with Panache is a skeleton for building web applications, specifically single-page applications designed to work in a service-oriented architecture. It is a modification of [Chapless Brunch](https://github.com/jupl/chapless-brunch). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Brunch with Panache is a skeleton for building web applications, specifically single-page applications. It is a modification of [Chapless Brunch](https://github.com/jupl/chapless-brunch). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
+It contains the following differences from Chapless Brunch:
+
+- More opionated file naming conventions
+- Sass instead of Less, with expected integration with framework
+- Intended to be used with forthcoming DRY library
+- NPM shrinkwrap task. Lock those dependencies [down](https://twitter.com/jhabdas/status/401084154697117698/photo/1)!
+
+For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/jhabdas/brunch-with-panache/tree/cordova).
 
 ## File Structure
 

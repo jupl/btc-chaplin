@@ -4,5 +4,9 @@
 describe '{{#camelize}}{{name}}{{/camelize}}CollectionView', ->
 
   beforeEach ->
-    @view = new {{#camelize}}{{name}}{{/camelize}}CollectionView
-    @itemView = new {{#camelize}}{{name}}{{/camelize}}ItemView
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}View = new {{#camelize}}{{name}}{{/camelize}}CollectionView
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}ItemView = new {{#camelize}}{{name}}{{/camelize}}ItemView
+
+  afterEach ->
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}CollectionView.dispose()
+    @{{#lowercamelize}}{{name}}{{/lowercamelize}}ItemView.dispose()

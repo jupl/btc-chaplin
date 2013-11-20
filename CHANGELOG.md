@@ -2,7 +2,10 @@
 
 ### WIP
 - Removed unneeded tests merged in from upstream
-- Adding opinion to naming standards for page-level views
+- Adding opinion to naming standards for page-level views (use "-page-view" suffix)
+- Update from CB
+- Update README to start differentiating from CB
+- Bring the "-controller" suffix back to controller filenames
 
 ### 0.7.0 (November 10, 2013)
 - Update from CB
