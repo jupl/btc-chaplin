@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.2 (November 24, 2013)
+- Added passing tests to make skeleton easier to use
+
 ### 0.7.1 (November 19, 2013)
 - Removed unneeded tests merged in from upstream
 - Adding opinion to naming standards for page-level views (use "-page-view" suffix)
