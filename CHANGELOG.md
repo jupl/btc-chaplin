@@ -1,5 +1,8 @@
 # Changelog
 
+### WIP
+- Added workaround to allow "npm test" script to function properly
+
 ### 0.7.2 (November 24, 2013)
 - Added passing tests to make skeleton easier to use
 
