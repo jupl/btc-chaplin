@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.4 (December 2, 2013)
+- Fix for CI build error in "npm test" script Re: Sass dependency
+
 ### 0.7.3 (December 2, 2013)
 - Added workaround to allow "npm test" script to function properly
 - Added robots.txt file with example

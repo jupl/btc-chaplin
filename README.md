@@ -1,4 +1,4 @@
-# Brunch with Panache 0.7.2
+# Brunch with Panache 0.7.4
 
 [![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
 [![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
