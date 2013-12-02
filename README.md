@@ -187,7 +187,6 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Utilities
 - [jQuery](http://jquery.com/)
-- [LESS Hat](http://lesshat.com/)
 - [Lo-Dash](http://lodash.com/)
 - [Rivets.js](http://rivetsjs.com/)
 - [Davy](https://github.com/lvivski/davy)

@@ -1,4 +1,5 @@
 # Application-specific view helpers
+# http://handlebarsjs.com/#helpers
 # ---------------------------------
 
 # Register custom Handlebars helpers
