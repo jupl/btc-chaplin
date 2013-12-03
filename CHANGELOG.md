@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.7.5 (December 3, 2013)
+- Fixed broken dependency reporting following repo org switch -> trunkclub
+
 ### 0.7.4 (December 2, 2013)
 - Fix for CI build error in "npm test" script Re: Sass dependency
 
