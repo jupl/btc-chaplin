@@ -1,7 +1,7 @@
 # Brunch with Panache 0.7.4
 
-[![Dependency Status](https://david-dm.org/jhabdas/brunch-with-panache.png)](https://david-dm.org/jhabdas/brunch-with-panache)
-[![devDependency Status](https://david-dm.org/jhabdas/brunch-with-panache/dev-status.png)](https://david-dm.org/jhabdas/brunch-with-panache#info=devDependencies)
+[![Dependency Status](https://david-dm.org/trunkclub/brunch-with-panache.png)](https://david-dm.org/trunkclub/brunch-with-panache)
+[![devDependency Status](https://david-dm.org/trunkclub/brunch-with-panache/dev-status.png)](https://david-dm.org/trunkclub/brunch-with-panache#info=devDependencies)
 
 
 ## Introduction
@@ -14,7 +14,7 @@ It contains the following differences from Chapless Brunch:
 - Intended to be used with forthcoming DRY library
 - NPM shrinkwrap task. Lock those dependencies [down](https://twitter.com/jhabdas/status/401084154697117698/photo/1)!
 
-For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/jhabdas/brunch-with-panache/tree/cordova).
+For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/trunkclub/brunch-with-panache/tree/cordova).
 
 ## File Structure
 
