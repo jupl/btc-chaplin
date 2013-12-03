@@ -1,5 +1,8 @@
 # Changelog
 
+### WIP
+- Fix npm test script by adding Sass install
+
 ### 0.7.5 (December 3, 2013)
 - Fixed broken dependency reporting following repo org switch -> trunkclub
 

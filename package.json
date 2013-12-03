@@ -3,7 +3,7 @@
 
   "scripts": {
     "start": "npm install --production && ./node_modules/.bin/jake server:prod",
-    "test": "npm install && ./node_modules/.bin/jake test:code && ./node_modules/.bin/jake test:site"
+    "test": "gem install sass && npm install && ./node_modules/.bin/jake test:code && ./node_modules/.bin/jake test:site"
   },
 
   "dependencies": {
