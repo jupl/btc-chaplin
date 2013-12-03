@@ -1,4 +1,4 @@
-# Brunch with Panache 0.7.5
+# Brunch with Panache 0.7.6
 
 [![Dependency Status](https://david-dm.org/trunkclub/brunch-with-panache.png)](https://david-dm.org/trunkclub/brunch-with-panache)
 [![devDependency Status](https://david-dm.org/trunkclub/brunch-with-panache/dev-status.png)](https://david-dm.org/trunkclub/brunch-with-panache#info=devDependencies)

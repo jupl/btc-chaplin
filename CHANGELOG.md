@@ -1,7 +1,9 @@
 # Changelog
 
-### WIP
-- Fix npm test script by adding Sass install
+### 0.7.6 (December 3, 2013)
+- Now using the main element
+- Removing superfluous and invalid markup around header/footer
+- Fixing issue where page view was not attached in the right location
 
 ### 0.7.5 (December 3, 2013)
 - Fixed broken dependency reporting following repo org switch -> trunkclub
