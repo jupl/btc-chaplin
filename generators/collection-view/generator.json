@@ -19,7 +19,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/views/{{#dasherize}}{{name}}{{/dasherize}}.coffee"
+      "to": "test/code/views/{{#dasherize}}{{name}}{{/dasherize}}-test.coffee"
     }
   ],
   "dependencies": []

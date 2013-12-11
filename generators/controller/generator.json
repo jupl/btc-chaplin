@@ -7,7 +7,7 @@
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/controllers/{{#dasherize}}{{name}}{{/dasherize}}-controller.coffee"
+      "to": "test/code/controllers/{{#dasherize}}{{name}}{{/dasherize}}-controller-test.coffee"
     }
   ],
   "dependencies": []

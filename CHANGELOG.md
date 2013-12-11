@@ -1,5 +1,8 @@
 # Changelog
 
+### WIP
+- Adding postfix "-test" to generaters which produce code tests
+
 ### 0.7.6 (December 3, 2013)
 - Now using the main element
 - Removing superfluous and invalid markup around header/footer
