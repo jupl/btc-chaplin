@@ -1,5 +1,12 @@
 # Changelog
 
+#### WIP
+- Update Cordova Brunch
+  - Fix typo in copying `config.xml`
+  - Update Cordova to 3.2
+    - Stop referencing `res`
+  - Rename `cordova:init` to `cordova:gen`
+
 #### 0.7.2 (November 14, 2013)
 - Flesh out test generators a bit
 - Update BTC
