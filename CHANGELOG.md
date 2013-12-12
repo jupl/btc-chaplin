@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.8.0 (December 12, 2013)
 - Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
 - Reference Bower for Less Hat
 - Update BTC
