@@ -1,6 +1,20 @@
 # Changelog
 
-#### WIP
+### 0.8.0 (December 12, 2013)
+- Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
+- Reference Bower for Less Hat
+- Update BTC
+  - Fix Windows support
+  - Internal fix to bring back spawn options
+  - Add specific WebStorm and IntelliJ files to gitignore
+  - Stop worrying about absolute paths
+  - Mark execute promises as cancellable
+  - Move auto-reload-brunch to devDependencies
+  - Allow project's bower to be run if root (or root-like)
+  - Update selenium-webdriver
+  - Update dependencies
+  - Added `bower:clean` task
+  - Changed behavior of `gen`/`del` tasks
 - Update Cordova Brunch
   - Fix typo in copying `config.xml`
   - Update Cordova to 3.2

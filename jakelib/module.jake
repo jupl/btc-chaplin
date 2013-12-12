@@ -22,7 +22,7 @@ namespace('add', function() {
   desc('Add Lo-Dash');
   task('lodash', function() {
     editBower(function() {
-      this.dependencies.lodash = '~2.0.0';
+      this.dependencies.lodash = '~2.4.1';
     });
   });
 
@@ -39,7 +39,7 @@ namespace('add', function() {
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
   task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
-      this.dependencies.exoskeleton = '~0.5.1';
+      this.dependencies.exoskeleton = '~0.6.1';
       this.overrides.chaplin = {
         dependencies: {
           exoskeleton: '*'

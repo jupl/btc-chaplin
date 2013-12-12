@@ -1,5 +1,4 @@
-# Chapless Brunch 0.7.2
-
+# Chapless Brunch 0.8.0
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
 
@@ -9,7 +8,6 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 
 
 ## File Structure
-
     ├── app                     # App is built here. Look at Brunch for more info.
     │   ├── assets              # Static files that are just copied
     │   ├── controllers         # Chaplin controllers
@@ -119,22 +117,24 @@ Add/remove specified device support to the Cordova project.
 
 
 ### Scaffolding
-- Unit test files are automatically generated for Chaplin items.
-- For Chaplin views, a template and stylesheet is also provided in addition to the code file.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command. (ex: `jake gen codetest=test1 sitetest=test2`) Unit test files are automatically generated for Chaplin items. For Chaplin views, a template and stylesheet is also provided in addition to the code file.
 
-#### `gen:model name=[name]` / `del:model name=[name]`
+#### `gen` / `del`
+List available scaffolds.
+
+#### `gen model=[name]` / `del model=[name]`
 Generate/destroy a Chaplin model.
 
-#### `gen:collection name=[name]` / `del:collection name=[name]`
+#### `gen collection=[name]` / `del collection=[name]`
 Generate/destroy a Chaplin collection. Generating a Chaplin collection will also generate its corresponding model. Specify the name in singular form, as collection will automatically be pluralized.
 
-#### `gen:view name=[name]` / `del:view name=[name]`
+#### `gen view=[name]` / `del view=[name]`
 Generate/destroy a Chaplin view.
 
-#### `gen:collectionview name=[name]` / `del:collectionview name=[name]`
+#### `gen collectionview=[name]` / `del collectionview=[name]`
 Generate/destroy a Chaplin collection view. Generating a Chaplin collection view will also generate the individual item view.
 
-#### `gen:controller name=[name]` / `del:controller name=[name]`
+#### `gen controller=[name]` / `del controller=[name]`
 Generate/destroy a Chaplin controller.
 
 #### `gen:codetest name=[name]` / `del:codetest name=[name]`
@@ -194,5 +194,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.7.2
+- [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.8.0
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.5.2
