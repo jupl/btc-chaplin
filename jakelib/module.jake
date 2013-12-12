@@ -3,9 +3,6 @@
 var generators = require('./lib').generators;
 var jsonfile = require('jsonfile');
 var Promise = require('bluebird');
-var resolvePath = require('./lib').resolvePath;
-
-var bowerFile = resolvePath('bower.json');
 
 namespace('add', function() {
   desc('Add jQuery');
@@ -25,7 +22,7 @@ namespace('add', function() {
   desc('Add Lo-Dash');
   task('lodash', function() {
     editBower(function() {
-      this.dependencies.lodash = '~2.0.0';
+      this.dependencies.lodash = '~2.4.1';
     });
   });
 
@@ -42,7 +39,7 @@ namespace('add', function() {
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
   task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
-      this.dependencies.exoskeleton = '~0.5.1';
+      this.dependencies.exoskeleton = '~0.6.1';
       this.overrides.chaplin = {
         dependencies: {
           exoskeleton: '*'
@@ -140,7 +137,7 @@ namespace('rem', function() {
 });
 
 function editBower(callback) {
-  var json = jsonfile.readFileSync(bowerFile);
+  var json = jsonfile.readFileSync('bower.json');
   callback.call(json);
-  jsonfile.writeFileSync(bowerFile, json);
+  jsonfile.writeFileSync('bower.json', json);
 }

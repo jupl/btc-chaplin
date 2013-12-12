@@ -1,5 +1,21 @@
 # Changelog
 
+#### 0.8.0 (December 12, 2013)
+- Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
+- Reference Bower for Less Hat
+- Update BTC
+  - Fix Windows support
+  - Internal fix to bring back spawn options
+  - Add specific WebStorm and IntelliJ files to gitignore
+  - Stop worrying about absolute paths
+  - Mark execute promises as cancellable
+  - Move auto-reload-brunch to devDependencies
+  - Allow project's bower to be run if root (or root-like)
+  - Update selenium-webdriver
+  - Update dependencies
+  - Added `bower:clean` task
+  - Changed behavior of `gen`/`del` tasks
+
 #### 0.7.2 (November 14, 2013)
 - Flesh out test generators a bit
 - Update BTC
