@@ -11,7 +11,6 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
 
 
 ## File Structure
-
     ├── app                     # App is built here. Look at Brunch for more info.
     │   ├── assets              # Static files that are just copied
     │   ├── controllers         # Chaplin controllers
@@ -48,15 +47,15 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
 
 
 ## Setup
-
 1. Install node.js.
-2. If doing development, install Jake.
+2. If using Windows and leveraging Bower, install git.
+3. If doing development, install Jake.
 4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.
 
 
 ## Notes
-If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. ex: `brunch watch --server --environment web:prod`
+If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. (ex: `brunch watch --server --environment web:prod`)
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
@@ -69,6 +68,9 @@ While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple 
 
 #### `bower:install`
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
+#### `bower:clean`
+Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies.
 
 
 ### Extras
@@ -94,28 +96,30 @@ Add/remove [Davy](https://github.com/lvivski/davy) to/from the project for simpl
 
 
 ### Scaffolding
-- Unit test files are automatically generated for Chaplin items.
-- For Chaplin views, a template and stylesheet is also provided in addition to the code file.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command. (ex: `jake gen codetest=test1 sitetest=test2`) Unit test files are automatically generated for Chaplin items. For Chaplin views, a template and stylesheet is also provided in addition to the code file.
 
-#### `gen:model name=[name]` / `del:model name=[name]`
+#### `gen` / `del`
+List available scaffolds.
+
+#### `gen model=[name]` / `del model=[name]`
 Generate/destroy a Chaplin model.
 
-#### `gen:collection name=[name]` / `del:collection name=[name]`
+#### `gen collection=[name]` / `del collection=[name]`
 Generate/destroy a Chaplin collection. Generating a Chaplin collection will also generate its corresponding model. Specify the name in singular form, as collection will automatically be pluralized.
 
-#### `gen:view name=[name]` / `del:view name=[name]`
+#### `gen view=[name]` / `del view=[name]`
 Generate/destroy a Chaplin view.
 
-#### `gen:collectionview name=[name]` / `del:collectionview name=[name]`
+#### `gen collectionview=[name]` / `del collectionview=[name]`
 Generate/destroy a Chaplin collection view. Generating a Chaplin collection view will also generate the individual item view.
 
-#### `gen:controller name=[name]` / `del:controller name=[name]`
+#### `gen controller=[name]` / `del controller=[name]`
 Generate/destroy a Chaplin controller.
 
-#### `gen:codetest name=[name]` / `del:codetest name=[name]`
+#### `gen codetest=[name]` / `del codetest=[name]`
 Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
 
-#### `gen:sitetest name=[name]` / `del:sitetest name=[name]`
+#### `gen sitetest=[name]` / `del sitetest=[name]`
 Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
 
 
