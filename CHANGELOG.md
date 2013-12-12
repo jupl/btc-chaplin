@@ -1,6 +1,8 @@
 # Changelog
 
 #### WIP
+- Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
+- Reference Bower for Less Hat
 - Update BTC
   - Fix Windows support
   - Internal fix to bring back spawn options
