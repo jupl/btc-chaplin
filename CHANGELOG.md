@@ -1,6 +1,9 @@
 # Changelog
 
-#### 0.8.0 (December 12, 2013)
+#### WIP
+- Fix consistency in generators
+
+### 0.8.0 (December 12, 2013)
 - Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
 - Reference Bower for Less Hat
 - Update BTC
