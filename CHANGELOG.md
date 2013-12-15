@@ -1,6 +1,15 @@
 # Changelog
 
-#### 0.8.0 (December 12, 2013)
+#### 0.8.1 (December 14, 2013)
+- Fix consistency in generators
+- Change brunch-config to CoffeeScript
+- Update BTC
+  - Allow multiple names to be specified per scaffold
+  - Move default Jake task to Jakefile
+  - Include server to customize and add services
+  - Update packages
+
+### 0.8.0 (December 12, 2013)
 - Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
 - Reference Bower for Less Hat
 - Update BTC
