@@ -15,9 +15,9 @@ exports.startServer = (port, publicPath, callback) ->
   # app.post(...)
 
   # Set other paths to index.html for HTML5 pushState apps
-  indexPath = path.resolve(publicPath, 'index.html')
-  app.get '*', (request, response) ->
-    response.sendfile(indexPath)
+  # indexPath = path.resolve(publicPath, 'index.html')
+  # app.get '*', (request, response) ->
+  #   response.sendfile(indexPath)
 
   # Start up server
   server = http.createServer(app)

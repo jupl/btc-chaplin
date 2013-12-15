@@ -11,7 +11,7 @@
     "bower": "~1.2.8",
     "brunch": "~1.7.8",
     "coffee-script": "~1.6.3",
-    "cordova": "~3.2.0",
+    "cordova": "~3.3.0",
     "express": "~3.4.7",
     "jake": "~0.7.2",
     "jsonfile": "~1.1.0",
