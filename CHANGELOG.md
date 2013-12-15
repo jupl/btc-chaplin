@@ -2,6 +2,11 @@
 
 #### WIP
 - Fix consistency in generators
+- Update BTC
+  - Allow multiple names to be specified per scaffold
+  - Move default Jake task to Jakefile
+  - Include server to customize and add services
+  - Update packages
 
 ### 0.8.0 (December 12, 2013)
 - Update dependencies (Chaplin, Lo-Dash, Exoskeleton)
