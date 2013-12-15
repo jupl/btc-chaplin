@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.8.1 (December 14, 2013)
 - Fix consistency in generators
 - Change brunch-config to CoffeeScript
 - Update BTC
