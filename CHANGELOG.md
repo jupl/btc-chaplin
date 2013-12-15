@@ -2,7 +2,6 @@
 
 #### 0.8.1 (December 14, 2013)
 - Fix consistency in generators
-- Change brunch-config to CoffeeScript
 - Update Cordova to 3.3
 - Update BTC
   - Allow multiple names to be specified per scaffold
