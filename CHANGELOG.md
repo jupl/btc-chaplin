@@ -2,6 +2,7 @@
 
 #### WIP
 - Fix consistency in generators
+- Change brunch-config to CoffeeScript
 - Update BTC
   - Allow multiple names to be specified per scaffold
   - Move default Jake task to Jakefile
