@@ -1,4 +1,4 @@
-# Chapless Brunch 0.8.0
+# Chapless Brunch 0.8.1
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
 
@@ -24,6 +24,7 @@ Chapless Brunch is a skeleton for building web applications, specifically single
     ├── generators              # Generators used by Scaffolt
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Generated final product
+    ├── server                  # Server configuration
     ├── setup                   # Add configuration options to brunch-config
     ├── test                    # Test-related files
     │   ├── assets              # Static assets to run code tests manually
@@ -48,13 +49,14 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 ## Setup
 
 1. Install node.js.
-2. If doing development, install Jake.
+2. If using Windows and leveraging Bower, install [Git](http://git-scm.com/download/win).
+3. If doing development, install Jake.
 4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.
 
 
 ## Notes
-If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. ex: `brunch watch --server --environment web:prod`
+If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. (ex: `brunch watch --server --env web:prod`) If you have a Cordova project under the `cordova` folder you can also use `cordova:dev` or `cordova:prod` to build to `cordova/www`.
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
@@ -67,6 +69,9 @@ While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple 
 
 #### `bower:install`
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
+#### `bower:clean`
+Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies. (ex. updated package)
 
 
 ### Extras
@@ -117,7 +122,7 @@ Add/remove specified device support to the Cordova project.
 
 
 ### Scaffolding
-Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command. (ex: `jake gen codetest=test1 sitetest=test2`) Unit test files are automatically generated for Chaplin items. For Chaplin views, a template and stylesheet is also provided in addition to the code file.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for Chaplin items. For Chaplin views, a template and stylesheet is also provided in addition to the code file.
 
 #### `gen` / `del`
 List available scaffolds.
@@ -194,5 +199,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.8.0
+- [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.8.1
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.5.2
