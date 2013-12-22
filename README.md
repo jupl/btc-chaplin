@@ -1,4 +1,4 @@
-# Chapless Brunch 0.8.1
+# Chapless Brunch 0.8.2
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
 
@@ -114,7 +114,7 @@ Generate/destroy a Chaplin view.
 Generate/destroy a Chaplin collection view. Generating a Chaplin collection view will also generate the individual item view.
 
 #### `gen controller=[name]` / `del controller=[name]`
-Generate/destroy a Chaplin controller.
+Generate/destroy a [Chaplin controller](http://docs.chaplinjs.org/chaplin.controller.html).
 
 #### `gen codetest=[name]` / `del codetest=[name]`
 Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
