@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.8.2 (December 21, 2013)
 - Update BTC
   - Update Mocha
   - Update WebDriverJS
