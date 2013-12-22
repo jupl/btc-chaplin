@@ -1,5 +1,10 @@
 # Changelog
 
+#### WIP
+- Update BTC
+  - Update Mocha
+  - Update WebDriverJS
+
 #### 0.8.1 (December 14, 2013)
 - Fix consistency in generators
 - Update BTC
