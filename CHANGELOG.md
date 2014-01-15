@@ -1,5 +1,12 @@
 # Changelog
 
+#### 0.8.3 (January 15, 2014)
+- Update BTC
+  - Fix watch in `test:code`
+  - Update Mocha
+  - Update Bluebird
+  - Update Nodemon
+
 #### 0.8.2 (December 21, 2013)
 - Update BTC
   - Update Mocha
