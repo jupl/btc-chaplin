@@ -1,5 +1,13 @@
 # Changelog
 
+#### WIP
+- Update BTC
+  - Add `npm:clean` task
+  - Clean up package.json
+  - Update jQuery
+  - Update normalize.css
+  - Update Chai
+
 #### 0.8.3 (January 15, 2014)
 - Update BTC
   - Fix watch in `test:code`
