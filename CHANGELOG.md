@@ -1,6 +1,8 @@
 # Changelog
 
-#### WIP
+### WIP
+- Update Chaplin
+- Update console-polyfill
 - Update BTC
   - Add `npm:clean` task
   - Clean up package.json
