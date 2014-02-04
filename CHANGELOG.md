@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.9.0 (February 4, 2014)
 - Update Chaplin
 - Update console-polyfill
 - Update BTC
@@ -9,7 +9,6 @@
   - Update jQuery
   - Update normalize.css
   - Update Chai
-  - Clean npm cache for `npm:clean`
   - Add structure to `server` directory
   - Add Prerender support (server and middleware)
   - Update karma-chai-plugins
