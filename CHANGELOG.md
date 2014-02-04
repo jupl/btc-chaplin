@@ -1,5 +1,18 @@
 # Changelog
 
+### 0.9.0 (February 4, 2014)
+- Update Chaplin
+- Update console-polyfill
+- Update BTC
+  - Add `npm:clean` task
+  - Clean up package.json
+  - Update jQuery
+  - Update normalize.css
+  - Update Chai
+  - Add structure to `server` directory
+  - Add Prerender support (server and middleware)
+  - Update karma-chai-plugins
+
 #### 0.8.3 (January 15, 2014)
 - Update BTC
   - Fix watch in `test:code`

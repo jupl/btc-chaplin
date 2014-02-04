@@ -1,10 +1,10 @@
-# Chapless Brunch 0.8.3
+# Chapless Brunch 0.9.0
 [<img src="https://david-dm.org/jupl/chapless-brunch.png"/>](https://david-dm.org/jupl/chapless-brunch)
 [<img src="https://david-dm.org/jupl/chapless-brunch/dev-status.png"/>](https://david-dm.org/jupl/chapless-brunch#info=devDependencies)
 
 
 ## Introduction
-Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
+Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. [Prerender](https://prerender.io/) can be easily enabled/configured for search engine crawling.
 
 For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/jupl/chapless-brunch/tree/cordova).
 
@@ -26,6 +26,8 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Generated final product
     ├── server                  # Server configuration
+    │   ├── prerender           # Configuration for Prerender server/middleware
+    │   └── routes              # Custom routes/services/proxies/etc. (server-side)
     ├── setup                   # Add configuration options to brunch-config
     ├── test                    # Test-related files
     │   ├── assets              # Static assets to run code tests manually
@@ -59,9 +61,21 @@ If you want to just run Brunch without using Jake tasks, just use either `web:de
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
+Prerender is not enabled by default.
+- To enable Prerender edit `server/index.js`.
+- To modify Prerender server see `prerender/server.js`.
+- To modify Prerender middleware see `prerender/index.js`.
+- For more information visit their [website](https://prerender.io/).
+
 
 ## Task List
 While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple and consistent interface. These tasks can be executed using `jake`. (`jake [task]`) These are the following available tasks provided out of the box:
+
+
+### NPM
+
+#### `npm:clean`
+Remove downloaded Node modules. This is useful if you want to reinstall dependencies. (ex. updated/corrupted package(s)) Remember that you need to call `npm install` to install dependencies.
 
 
 ### Bower
@@ -70,7 +84,7 @@ While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple 
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
 
 #### `bower:clean`
-Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies. (ex. updated package)
+Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies. (ex. updated/corrupted package(s))
 
 
 ### Extras
@@ -162,13 +176,13 @@ Assemble the application once.
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
 
 #### `server:[mode]`
-Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
+Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. [Prerender](https://prerender.io/) server and middleware is set up if enabled. This build uses the `web` environment.
 
 
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.6.1
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.7.1
 
 ### Languages
 - [CoffeeScript](http://coffeescript.org/)
