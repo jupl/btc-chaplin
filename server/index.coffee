@@ -1,14 +1,10 @@
 express = require('express')
 http = require('http')
 path = require('path')
-setupPrerender = require('./prerender')
 setupRoutes = require('./routes')
 
 exports.startServer = (port, publicPath, callback) ->
   app = express()
-
-  # Uncomment to use Prerender
-  # setupPrerender(app)
 
   # Point to generated static files
   app.use(express.static(publicPath))

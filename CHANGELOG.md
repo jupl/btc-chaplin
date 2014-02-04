@@ -10,7 +10,6 @@
   - Update normalize.css
   - Update Chai
   - Add structure to `server` directory
-  - Add Prerender support (server and middleware)
   - Update karma-chai-plugins
 
 #### 0.8.3 (January 15, 2014)

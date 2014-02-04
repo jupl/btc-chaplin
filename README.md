@@ -4,7 +4,7 @@
 
 
 ## Introduction
-Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. In additional to assembling a standard web-based application, this skeleton can also assemble native applications using Cordova. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. [Prerender](https://prerender.io/) can be easily enabled/configured for search engine crawling.
+Chapless Brunch is a skeleton for building web applications, specifically single-page applications. It is a modification of [Brunch with Chaplin](https://github.com/paulmillr/brunch-with-chaplin). This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [LESS Hat](http://lesshat.com/) mixins are included. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. In additional to assembling a standard web-based application, this skeleton can also assemble native applications using Cordova. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
 ## File Structure
@@ -25,7 +25,6 @@ Chapless Brunch is a skeleton for building web applications, specifically single
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Generated final product
     ├── server                  # Server configuration
-    │   ├── prerender           # Configuration for Prerender server/middleware
     │   └── routes              # Custom routes/services/proxies/etc. (server-side)
     ├── setup                   # Add configuration options to brunch-config
     ├── test                    # Test-related files
@@ -61,12 +60,6 @@ Chapless Brunch is a skeleton for building web applications, specifically single
 If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. (ex: `brunch watch --server --env web:prod`) If you have a Cordova project under the `cordova` folder you can also use `cordova:dev` or `cordova:prod` to build to `cordova/www`.
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
-
-Prerender is not enabled by default.
-- To enable Prerender edit `server/index.js`.
-- To modify Prerender server see `prerender/server.js`.
-- To modify Prerender middleware see `prerender/index.js`.
-- For more information visit their [website](https://prerender.io/).
 
 
 ## Task List
@@ -205,13 +198,13 @@ describe 'Sample', ->
 These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS, plus include source maps as well as tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS as well as omit source maps and tests. Specify `device` where applicable to build a native app using Cordova for a specific device. If any Bower dependencies have not been downloaded yet, Bower will first download them.
 
 #### `build:[mode] [device=[device]]`
-Assemble the application once. If `device` is specified, then build a native app for a device using Cordova. Otherwise it uses the default web environment.
+Assemble the application once. If `device` is specified, then build a native app for a device using Cordova. Otherwise it uses the `web` environment.
 
 #### `watch:[mode]`
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
 
 #### `server:[mode]`
-Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. [Prerender](https://prerender.io/) server and middleware is set up if enabled. This build uses the `web` environment.
+Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
 
 #### `emulate:[mode] device=[device]`
 Assemble the application, compile, and deploy to an emulator for the specified device.
@@ -223,4 +216,4 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 
 ### Core
 - [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.9.0
-- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.6.1
+- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.7.1
