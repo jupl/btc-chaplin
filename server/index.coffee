@@ -8,7 +8,7 @@ exports.startServer = (port, publicPath, callback) ->
   app = express()
 
   # Uncomment to use Prerender
-  setupPrerender(app)
+  # setupPrerender(app)
 
   # Point to generated static files
   app.use(express.static(publicPath))
