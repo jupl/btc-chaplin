@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.10.0 (February 5, 2014)
 - Update Davy
 - Add back coffee-script module
 - Update BTC
