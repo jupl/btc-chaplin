@@ -1,5 +1,17 @@
 # Changelog
 
+### WIP
+- Update Davy
+- Update BTC
+  - Do not install Prerender packages by default
+    - Autodetect if packages are available
+  - Add tasks to install/uninstall Prerender packages
+  - Add PhantomJS as a dependency (could be used for Prerender)
+  - Do not install code/site testing-related packages by default
+  - Add tasks to install/uninstall code/site testing-related packages
+  - Update Sinon Chai
+  - Fix bug in `npm:clean`
+
 ### 0.9.0 (February 4, 2014)
 - Update Chaplin
 - Update console-polyfill
