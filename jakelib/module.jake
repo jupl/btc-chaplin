@@ -49,15 +49,6 @@ namespace('add', function() {
     return npm.execute('install');
   });
 
-  desc('Add Prerender');
-  task('prerender', function() {
-    editPackage(function() {
-      this.dependencies.prerender = '~2.0.1';
-      this.dependencies['prerender-node'] = '~0.1.15';
-    });
-    return npm.execute('install');
-  });
-
   desc('Add jQuery');
   task('jquery', function() {
     editBower(function() {
@@ -175,11 +166,6 @@ namespace('rem', function() {
       'nodemon',
       'selenium-webdriver',
       '--save-dev');
-  });
-
-  desc('Remove Prerender');
-  task('prerender', function() {
-    return npm.execute('uninstall', 'prerender', 'prerender-node', '--save');
   });
 
   desc('Remove jQuery');
