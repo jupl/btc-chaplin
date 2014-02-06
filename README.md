@@ -65,7 +65,7 @@ Prerender is not enabled by default.
 - To enable/disable Prerender see tasks `add:prerender`/`rem:prerender`.
 - By default it is configured to use a local Prerender server that is set up.
 - To modify the local Prerender server see `server/prerender/server.js`.
-- To modify Prerender middleware see `server/prerender/index.js`.
+- To modify Prerender middleware see `server/prerender/index.coffee`.
 - For more information visit their [website](https://prerender.io/).
 
 
