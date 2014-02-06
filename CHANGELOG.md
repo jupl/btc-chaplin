@@ -2,6 +2,7 @@
 
 ### WIP
 - Update Davy
+- Add back coffee-script module
 - Update BTC
   - Do not install Prerender packages by default
     - Autodetect if packages are available
