@@ -6,15 +6,11 @@
     "bower_components"
   ],
   "dependencies": {
-    "chai": "~1.9.0",
     "chaplin": "~1.0.0",
     "console-polyfill": "~0.1.1",
     "jquery": "~2.1.0",
     "lesshat": "~2.0.12",
-    "lodash": "~2.4.1",
-    "mocha": "~1.17.0",
-    "sinon": "http://sinonjs.org/releases/sinon-1.7.3.js",
-    "sinon-chai": "~2.4.0"
+    "lodash": "~2.4.1"
   },
   "overrides": {
     "backbone": {
@@ -23,19 +19,6 @@
         "jquery": "*"
       },
       "main": "backbone.js"
-    },
-    "mocha": {
-      "main": [
-        "mocha.css",
-        "mocha.js"
-      ]
-    },
-    "sinon-chai": {
-      "main": "lib/sinon-chai.js",
-      "dependencies": {
-        "sinon": "*",
-        "chai": "*"
-      }
     }
   }
 }
