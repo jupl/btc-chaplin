@@ -1,6 +1,6 @@
 'use strict'
 
-AppController = require('controllers/application')
+AppController = require('controllers/app')
 
 describe 'AppController', ->
 

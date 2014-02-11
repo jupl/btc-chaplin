@@ -11,9 +11,6 @@ module.exports = function(config) {
       paths.public + '/javascripts/vendor.js',
       paths.public + '/javascripts/app.js',
       'test/code/**/*'
-    ],
-    preprocessors: {
-      '**/*.coffee': ['coffee']
-    }
+    ]
   });
 };

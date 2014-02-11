@@ -76,7 +76,7 @@ function listGenerators() {
 }
 
 function validate(generator, name) {
-  if((generator === 'view' || generator === 'collection-view') && name.dasherize() === 'base') {
+  if((generator === 'view' || generator === 'collectionview') && name.dasherize() === 'base') {
     fail('name parameter cannot be "base"');
   }
 }
