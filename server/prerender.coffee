@@ -15,4 +15,3 @@ module.exports = (app) ->
   prerenderUrl = 'http://127.0.0.1:3000'
   middleware.set('prerenderServiceUrl', prerenderUrl)
   app.use(middleware)
-}

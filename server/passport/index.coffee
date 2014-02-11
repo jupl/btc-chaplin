@@ -21,7 +21,7 @@ module.exports = (app) ->
   # Hook in with user model
   passport.serializeUser (user, done) ->
     done(null, user.id)
-  passport.deserializeUser function(id, done) ->
+  passport.deserializeUser (id, done) ->
     User.findById(id, '-password').exec(done)
 
   # Add any strategies required
