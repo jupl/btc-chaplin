@@ -48,39 +48,36 @@ namespace('add', function() {
 
   desc('Add Lo-Dash');
   task('lodash', function() {
-    editBower(function() {
-      this.dependencies.lodash = '~2.4.1';
-    });
+    return bower.execute('install', '--allow-root', '--save', 'lodash#~2.4.1');
   });
 
   desc('Add Rivets for better view/model data binding');
   task('rivets', function() {
-    editBower(function() {
-      this.dependencies.rivets = '~0.6.4';
-      this.overrides.rivets = {
-        main: 'dist/rivets.js'
-      };
-    });
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    bow.overrides.rivets = {
+      main: 'dist/rivets.js'
+    };
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
+    return bower.execute('install', '--allow-root', '--save', 'rivets#~0.6.4');
   });
 
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
   task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
-    editBower(function() {
-      this.dependencies.exoskeleton = '~0.6.1';
-      this.overrides.chaplin = {
-        dependencies: {
-          exoskeleton: '*'
-        }
-      };
-      delete this.overrides.backbone;
-    });
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    bow.overrides.chaplin = {
+      dependencies: {
+        exoskeleton: '*'
+      }
+    };
+    delete bow.overrides.backbone;
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
+    return bower.execute('insall', '--allow-root', '--save',
+      'exoskeleton#~0.6.1');
   });
 
   desc('Add Davy for promise support (useful with Exoskeleton)');
   task('davy', function() {
-    editBower(function() {
-      this.dependencies.davy = '~0.1.0';
-    });
+    return bower.execute('install', '--allow-root', '--save', 'davy#~0.1.0');
   });
 });
 
@@ -125,38 +122,33 @@ namespace('rem', function() {
 
   desc('Remove Lo-Dash');
   task('lodash', function() {
-    editBower(function() {
-      delete this.dependencies.lodash;
-    });
+    return bower.execute('uninstall', '--allow-root', '--save', 'lodash');
   });
 
   desc('Remove Rivets');
   task('rivets', function() {
-    editBower(function() {
-      delete this.dependencies.rivets;
-      delete this.overrides.rivets;
-    });
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    delete bow.overrides.rivets;
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
+    return bower.execute('uninstall', '--allow-root', '--save', 'rivets');
   });
 
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
   task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
-    editBower(function() {
-      this.overrides.backbone = {
-        dependencies: {
-          lodash: '*',
-          jquery: '*'
-        },
-        main: 'backbone.js'
-      };
-      delete this.dependencies.exoskeleton;
-      delete this.overrides.chaplin;
-    });
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    bow.overrides.backbone = {
+      dependencies: {
+        lodash: '*',
+        jquery: '*'
+      }
+    };
+    delete bow.overrides.chaplin;
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
+    return bower.execute('uninstall', '--allow-root', '--save', 'exoskeleton');
   });
 
   desc('Remove Davy');
   task('davy', function() {
-    editBower(function() {
-      delete this.dependencies.davy;
-    });
+    return bower.execute('uninstall', '--allow-root', '--save', 'davy');
   });
 });
