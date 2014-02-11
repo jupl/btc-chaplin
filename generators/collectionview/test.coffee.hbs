@@ -1,0 +1,16 @@
+'use strict'
+
+{{uppercamelize name}}View = require('views/{{dasherize name}}')
+{{uppercamelize name}}ItemView = require('views/{{dasherize name}}/item')
+
+describe '{{uppercamelize name}}View', ->
+
+  beforeEach ->
+    @{{camelize name}}View = new {{uppercamelize name}}View
+    @{{camelize name}}ItemView = new {{uppercamelize name}}ItemView
+
+
+
+  afterEach ->
+    @{{camelize name}}View.dispose()
+    @{{camelize name}}ItemView.dispose()

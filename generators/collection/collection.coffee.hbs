@@ -1,5 +1,7 @@
-Collection = require('models/base/collection')
-{{#camelize}}{{name}}{{/camelize}} = require('./{{#dasherize}}{{name}}{{/dasherize}}')
+'use strict'
 
-module.exports = class {{#camelize}}{{pluralName}}{{/camelize}} extends Collection
-  model: {{#camelize}}{{name}}{{/camelize}}
+Collection = require('models/base/collection')
+{{uppercamelize name}} = require('./{{dasherize name}}')
+
+module.exports = class {{uppercamelize pluralName}} extends Collection
+  model: {{uppercamelize name}}

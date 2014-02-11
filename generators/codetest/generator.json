@@ -1,0 +1,10 @@
+{
+  "description": "test file for code testing in Karma",
+  "files": [
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/code/{{dasherize name}}.coffee"
+    }
+  ],
+  "dependencies": []
+}

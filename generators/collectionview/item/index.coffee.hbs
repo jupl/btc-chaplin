@@ -1,0 +1,7 @@
+'use strict'
+
+ItemView = require('views/base/item')
+
+module.exports = class {{uppercamelize name}}ItemView extends ItemView
+  className: '{{dasherize name}}-item-view'
+  template: require('./template')

@@ -1,0 +1,10 @@
+{
+  "description": "test file for site testing with WebDriverJS",
+  "files": [
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/site/{{dasherize name}}.coffee"
+    }
+  ],
+  "dependencies": []
+}
