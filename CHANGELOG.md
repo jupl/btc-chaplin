@@ -12,6 +12,8 @@
   - Unify `add:codetesting` and `add:sitetesting` tasks
   - Add scaffold to generate server model
   - Add aliases to generator tasks
+  - Simplify scaffold-related tasks
+  - Fix issue with waiting for files to build before running tasks
 
 ### 0.10.0 (February 5, 2014)
 - Update Davy
