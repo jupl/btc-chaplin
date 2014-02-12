@@ -150,10 +150,11 @@ namespace('rem', function() {
         dependencies: {
           lodash: '*',
           jquery: '*'
-        }
+        },
+        main: 'backbone.js'
       };
       delete this.dependencies['exoskeleton'];
-      delete this.dependencies['chaplin'];
+      delete this.overrides['chaplin'];
     });
   });
 
