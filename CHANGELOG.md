@@ -14,6 +14,8 @@
   - Add aliases to generator tasks
   - Simplify scaffold-related tasks
   - Fix issue with waiting for files to build before running tasks
+  - Server extras are installed to `dependencies`, not `devDependencies`
+  - Revert to editing `package.json` and `bower.json`
 
 ### 0.10.0 (February 5, 2014)
 - Update Davy
