@@ -1,11 +1,14 @@
-{{#camelize}}{{name}}{{/camelize}} = require('models/{{#dasherize}}{{name}}{{/dasherize}}')
+'use strict'
 
-describe '{{#camelize}}{{name}}{{/camelize}}', ->
+{{uppercamelize name}} = require('models/{{dasherize name}}')
+
+describe '{{uppercamelize name}}', ->
 
   beforeEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}} = new {{#camelize}}{{name}}{{/camelize}}
+    @{{camelize name}} = new {{uppercamelize name}}
 
+  it '', ->
 
 
   afterEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}}.dispose()
+    @{{camelize name}}.dispose()

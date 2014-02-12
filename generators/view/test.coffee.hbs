@@ -1,11 +1,14 @@
-{{#camelize}}{{name}}{{/camelize}}View = require('views/{{name}}')
+'use strict'
 
-describe '{{#camelize}}{{name}}{{/camelize}}View', ->
+{{uppercamelize name}}View = require('views/{{dasherize name}}')
+
+describe '{{uppercamelize name}}View', ->
 
   beforeEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}}View = new {{#camelize}}{{name}}{{/camelize}}View
+    @{{camelize name}}View = new {{uppercamelize name}}View
 
+  it '', ->
 
 
   afterEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}}View.dispose()
+    @{{camelize name}}View.dispose()

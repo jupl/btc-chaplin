@@ -1,0 +1,34 @@
+{
+  "description": "Chaplin collection view and unit test",
+  "files": [
+    {
+      "from": "index.coffee.hbs",
+      "to": "app/views/{{dasherize name}}/index.coffee"
+    },
+    {
+      "from": "style.less.hbs",
+      "to": "app/views/{{dasherize name}}/style.less"
+    },
+    {
+      "from": "template.eco.hbs",
+      "to": "app/views/{{dasherize name}}/template.eco"
+    },
+    {
+      "from": "item/index.coffee.hbs",
+      "to": "app/views/{{dasherize name}}/item/index.coffee"
+    },
+    {
+      "from": "item/style.less.hbs",
+      "to": "app/views/{{dasherize name}}/item/style.less"
+    },
+    {
+      "from": "item/template.eco.hbs",
+      "to": "app/views/{{dasherize name}}/item/template.eco"
+    },
+    {
+      "from": "test.coffee.hbs",
+      "to": "test/code/views/{{dasherize name}}.coffee"
+    }
+  ],
+  "dependencies": []
+}

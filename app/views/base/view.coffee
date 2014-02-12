@@ -1,4 +1,6 @@
-require('lib/view-helper') # Just load the view helpers, no return value
+'use strict'
+
+require('lib/view-helper')
 
 module.exports = class View extends Chaplin.View
   autoRender: yes
@@ -9,11 +11,11 @@ module.exports = class View extends Chaplin.View
 
   render: ->
     super
-    return unless @model
+    return unless @model and window.rivets
     if @_rivets
       @_rivets.build()
     else
-      @_rivets = rivets?.bind(@el, {@model})
+      @_rivets = rivets.bind(@el, {@model})
 
   dispose: ->
     @_rivets?.unbind()

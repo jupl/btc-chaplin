@@ -1,5 +1,22 @@
 # Changelog
 
+### 0.11.0 (February 11, 2014)
+- Enforce strict mode
+- Remove dashes in generators
+- Update BTC
+  - Remove Prerender server
+  - Add support for Mongoose/Passport/sessions
+  - Simplify Brunch config
+  - Detect browsers in Karma
+  - Server refactoring
+  - Unify `add:codetesting` and `add:sitetesting` tasks
+  - Add scaffold to generate server model
+  - Add aliases to generator tasks
+  - Simplify scaffold-related tasks
+  - Fix issue with waiting for files to build before running tasks
+  - Server extras are installed to `dependencies`, not `devDependencies`
+  - Revert to editing `package.json` and `bower.json`
+
 ### 0.10.0 (February 5, 2014)
 - Update Davy
 - Add back coffee-script module

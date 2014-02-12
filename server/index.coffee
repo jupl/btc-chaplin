@@ -1,19 +1,25 @@
+'use strict'
+
 express = require('express')
 http = require('http')
 path = require('path')
+setupPassport = require('./passport')
 setupPrerender = require('./prerender')
 setupRoutes = require('./routes')
+setupSession = require('./session')
 
 exports.startServer = (port, publicPath, callback) ->
   app = express()
 
-  # Set up Prerender if available
+  # Add middleware
+  app.use(express.compress())
   setupPrerender(app)
-
-  # Point to generated static files
   app.use(express.static(publicPath))
-
-  # Append custom routes/services/proxies/etc.
+  app.use(express.json())
+  app.use(express.urlencoded())
+  app.use(express.cookieParser())
+  setupSession(app)
+  setupPassport(app)
   setupRoutes(app)
 
   # Set other paths to index.html for HTML5 pushState apps

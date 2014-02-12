@@ -1,11 +1,14 @@
-{{#camelize}}{{name}}{{/camelize}}Controller = require('controllers/{{#dasherize}}{{name}}{{/dasherize}}')
+'use strict'
 
-describe '{{#camelize}}{{name}}{{/camelize}}Controller', ->
+{{uppercamelize name}}Controller = require('controllers/{{dasherize name}}')
+
+describe '{{uppercamelize name}}Controller', ->
 
   beforeEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}}Controller = new {{#camelize}}{{name}}{{/camelize}}Controller
+    @{{camelize name}}Controller = new {{uppercamelize name}}Controller
 
+  it '', ->
 
 
   afterEach ->
-    @{{#lowercamelize}}{{name}}{{/lowercamelize}}Controller.dispose()
+    @{{camelize name}}Controller.dispose()

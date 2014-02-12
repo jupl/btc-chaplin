@@ -1,12 +1,13 @@
+'use strict'
+
 initialize = ->
 
   # Add Davy promises if available and we are using Exoskeleton
-  if Backbone.Deferred and Davy?
-    Backbone.Deferred = ->
-      new Davy
+  if Backbone.Deferred and window.Davy
+    Backbone.Deferred = -> new Davy
 
   # Set up Rivets if available
-  rivets?.adapters[':'] =
+  if window.rivets then rivets.adapters[':'] =
     subscribe: (obj, keypath, callback) ->
       obj.on("change:#{keypath}", callback)
     unsubscribe: (obj, keypath, callback) ->
@@ -17,12 +18,12 @@ initialize = ->
       obj.set(keypath, value)
 
   # Start application
-  Application = require('application')
-  new Application
+  App = require('app')
+  new App
 
 # Initialize the application on DOM ready event.
 # Use jQuery if available. Otherwise use native.
-if $?
+if window.$
   $(document).ready(initialize)
 else
   document.addEventListener('DOMContentLoaded', initialize)

@@ -1,8 +1,8 @@
 {
   "repository": "git",
   "scripts": {
-    "start": "npm install --production && ./node_modules/.bin/jake server:prod",
-    "test": "npm install && ./node_modules/.bin/jake test:all"
+    "start": "npm install --production && jake server:prod",
+    "test": "npm install && jake test:all"
   },
   "dependencies": {
     "eco-brunch": "~1.7.1",
@@ -15,11 +15,8 @@
     "bluebird": "~1.0.0",
     "bower": "~1.2.8",
     "brunch": "~1.7.8",
-    "coffee-script": "~1.7.1",
     "express": "~3.4.7",
     "jake": "~0.7.2",
-    "jsonfile": "~1.1.0",
-    "phantomjs": "~1.9.2",
     "scaffolt": "~0.4.2",
     "sugar": "~1.4.1"
   },

@@ -3,19 +3,19 @@
   "files": [
     {
       "from": "index.coffee.hbs",
-      "to": "app/views/{{name}}/index.coffee"
+      "to": "app/views/{{dasherize name}}/index.coffee"
     },
     {
       "from": "style.less.hbs",
-      "to": "app/views/{{name}}/style.less"
+      "to": "app/views/{{dasherize name}}/style.less"
     },
     {
       "from": "template.eco.hbs",
-      "to": "app/views/{{name}}/template.eco"
+      "to": "app/views/{{dasherize name}}/template.eco"
     },
     {
       "from": "test.coffee.hbs",
-      "to": "test/code/views/{{name}}.coffee"
+      "to": "test/code/views/{{dasherize name}}.coffee"
     }
   ],
   "dependencies": []
