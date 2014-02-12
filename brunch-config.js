@@ -27,5 +27,13 @@ exports.config = {
     templates: {
       joinTo: 'javascripts/app.js'
     }
+  },
+
+  overrides: {
+    cordova: {
+      paths: {
+        public: 'cordova/www'
+      }
+    }
   }
 };

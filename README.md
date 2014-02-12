@@ -18,7 +18,7 @@ Chapless Brunch is a skeleton for building web applications, specifically single
     │   ├── base.less           # LESS variables and mixins for the application
     │   ├── initialize.coffee   # Chaplin views and collection views
     │   └── routes.coffee       # Route definitions for Chaplin
-    ├── cordova                 # Generated Cordova project
+    ├── cordova                 # Cordova project
     ├── generators              # Generators used by Scaffolt
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Compiled client-side assets
@@ -116,7 +116,7 @@ Add/remove [device.js](http://matthewhudson.me/projects/device.js/) to handle di
 These commands are to set up and initialize native projects that use Cordova to wrap your web application in a native app. `[device]` denotes the application device to build under. (Currently supporting `ios` and `android`) If you need access to the Cordova JavaScript from your page use the script tag: `<script src="cordova.js"></script>`
 
 #### `cordova:init [package=io.cordova.hellocordova [name=HelloCordova]]`
-Create a new Cordova project using [cordova-cli](https://github.com/apache/cordova-cli).
+Generate a new Cordova project using [cordova-cli](https://github.com/apache/cordova-cli).
 - Package and name options are optional, which uses the default Cordova options. If you specify `name`, you must also specify `package`.
 - Project will reside in `cordova/`. If an existing project exists when running this task, it will be replaced with a new one.
 - Cordova-specific files are added to `app/assets`. (These files will be ignored if a non-Cordova web build is made.) Do not remove these files.
@@ -215,4 +215,4 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 
 ### Core
 - [Chapless Brunch](https://github.com/jupl/chapless-brunch) 0.11.0
-- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.8.1
+- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.9.2
