@@ -1,4 +1,4 @@
-# Chapless Brunch 0.10.0
+# Chapless Brunch 0.11.0
 [![Dependency Status](https://gemnasium.com/jupl/chapless-brunch.png)](https://gemnasium.com/jupl/chapless-brunch)
 
 

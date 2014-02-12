@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.11.0 (February 11, 2014)
 - Enforce strict mode
 - Remove dashes in generators
 - Update BTC
