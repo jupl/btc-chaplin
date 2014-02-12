@@ -14,6 +14,7 @@ namespace('add', function() {
     pkg.devDependencies['karma-chai-plugins'] = '~0.2.0';
     pkg.devDependencies['karma-detect-browsers'] = '~0.1.2';
     pkg.devDependencies['karma-mocha'] = '~0.1.1';
+    pkg.devDependencies['coffee-script'] = '~1.7.1';
     pkg.devDependencies['chai'] = '~1.9.0';
     pkg.devDependencies['mocha'] = '~1.17.1';
     pkg.devDependencies['mocha-as-promised'] = '~2.0.0';

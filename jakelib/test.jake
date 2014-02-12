@@ -107,6 +107,8 @@ namespace('test', function() {
             args.unshift('--watch');
             args.unshift(config.paths.public);
             args.unshift('--watch');
+            args.unshift('js,coffee');
+            args.unshift('-e');
             nodemon.execute(args).then(resolve, reject);
           }
           else {
