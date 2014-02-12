@@ -1,16 +1,15 @@
+'use strict'
+
 express = require('express')
 http = require('http')
 path = require('path')
-setupRoutes = require('./routes')
 
 exports.startServer = (port, publicPath, callback) ->
   app = express()
 
-  # Point to generated static files
+  # Add middleware
+  app.use(express.compress())
   app.use(express.static(publicPath))
-
-  # Append custom routes/services/proxies/etc.
-  setupRoutes(app)
 
   # Set other paths to index.html for HTML5 pushState apps
   # indexPath = path.resolve(publicPath, 'index.html')

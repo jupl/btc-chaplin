@@ -1,5 +1,7 @@
+'use strict'
+
 View = require('views/base/view')
 
-module.exports = class {{#camelize}}{{name}}{{/camelize}}View extends View
-  className: '{{name}}-view'
+module.exports = class {{uppercamelize name}}View extends View
+  className: '{{dasherize name}}-view'
   template: require('./template')

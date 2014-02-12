@@ -1,3 +1,5 @@
+'use strict'
+
 routes = require('routes')
 utils = require('lib/utils')
 

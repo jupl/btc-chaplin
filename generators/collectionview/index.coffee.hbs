@@ -1,0 +1,9 @@
+'use strict'
+
+CollectionView = require('views/base/collection')
+{{uppercamelize name}}ItemView = require('./item')
+
+module.exports = class {{uppercamelize name}}View extends CollectionView
+  className: '{{dasherize name}}-view'
+  template: require('./template')
+  itemView: {{uppercamelize name}}ItemView

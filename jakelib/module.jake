@@ -1,49 +1,23 @@
+'use strict';
+
 // Tasks to add modules to the project that are not included by default.
-// This is usually either Bower packages or module-based Scaffolt generators.
-var generators = require('./lib').generators;
-var jsonfile = require('jsonfile');
+// This is usually either Bower packages or NPM packages.
+var fs = require('fs');
 var npm = require('./lib').bin('npm');
 
 namespace('add', function() {
-  desc('Add support for testing (code/site)');
-  task('testing', ['add:codetesting', 'add:sitetesting']);
-
-  desc('Add support for code testing');
-  task('codetesting', function() {
-    editBower(function() {
-      this.dependencies.chai = '~1.9.0';
-      this.dependencies.mocha = '~1.17.1';
-      this.dependencies.sinon = 'http://sinonjs.org/releases/sinon-1.7.3.js';
-      this.dependencies['sinon-chai'] = '~2.5.0';
-      this.overrides.mocha = {
-        "main": [
-          "mocha.css",
-          "mocha.js"
-        ]
-      };
-      this.overrides['sinon-chai'] = {
-        "main": "lib/sinon-chai.js",
-        "dependencies": {
-          "sinon": "*",
-          "chai": "*"
-        }
-      };
-    });
+  desc('Add testing modules');
+  task('testing', function() {
     editPackage(function() {
-      this.devDependencies.karma = '~0.10.9';
       this.devDependencies['karma-chai-plugins'] = '~0.2.0';
+      this.devDependencies['karma-detect-browsers'] = '~0.1.2';
       this.devDependencies['karma-mocha'] = '~0.1.1';
-    });
-    return npm.execute('install');
-  });
-
-  desc('Add support for site testing');
-  task('sitetesting', function() {
-    editPackage(function() {
-      this.devDependencies.chai = '~1.9.0';
-      this.devDependencies.mocha = '~1.17.1';
+      this.devDependencies['coffee-script'] = '~1.7.1';
+      this.devDependencies['chai'] = '~1.9.0';
+      this.devDependencies['mocha'] = '~1.17.1';
       this.devDependencies['mocha-as-promised'] = '~2.0.0';
-      this.devDependencies.nodemon = '~1.0.14';
+      this.devDependencies['nodemon'] = '~1.0.14';
+      this.devDependencies['phantomjs'] = '~1.9.2';
       this.devDependencies['selenium-webdriver'] = '~2.39.0';
     });
     return npm.execute('install');
@@ -52,7 +26,7 @@ namespace('add', function() {
   desc('Add jQuery');
   task('jquery', function() {
     editBower(function() {
-      this.dependencies.jquery = '~2.1.0';
+      this.dependencies['jquery'] = '~2.1.0';
     });
   });
 
@@ -66,14 +40,14 @@ namespace('add', function() {
   desc('Add Lo-Dash');
   task('lodash', function() {
     editBower(function() {
-      this.dependencies.lodash = '~2.4.1';
+      this.dependencies['lodash'] = '~2.4.1';
     });
   });
 
   desc('Add Rivets for better view/model data binding');
   task('rivets', function() {
     editBower(function() {
-      this.dependencies.rivets = '~0.6.4';
+      this.dependencies['rivets'] = '~0.6.4';
       this.overrides.rivets = {
         main: 'dist/rivets.js'
       };
@@ -83,20 +57,20 @@ namespace('add', function() {
   desc('Add Exoskeleton (replaces Backbone, removes jQuery and Lodash)');
   task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
-      this.dependencies.exoskeleton = '~0.6.1';
-      this.overrides.chaplin = {
+      this.dependencies['exoskeleton'] = '~0.6.1';
+      this.overrides['chaplin'] = {
         dependencies: {
           exoskeleton: '*'
         }
       };
-      delete this.overrides.backbone;
+      delete this.overrides['backbone'];
     });
   });
 
   desc('Add Davy for promise support (useful with Exoskeleton)');
   task('davy', function() {
     editBower(function() {
-      this.dependencies.davy = '~0.1.0';
+      this.dependencies['lodash'] = '~0.1.0';
     });
   });
 
@@ -137,41 +111,24 @@ namespace('add', function() {
 });
 
 namespace('rem', function() {
-  desc('Remove support for testing (code/site)');
-  task('testing', ['rem:codetesting', 'rem:sitetesting']);
-
-  desc('Remove support for code testing');
-  task('codetesting', function() {
-    editBower(function() {
-      delete this.dependencies.chai;
-      delete this.dependencies.mocha;
-      delete this.dependencies.sinon;
-      delete this.dependencies['sinon-chai'];
-      delete this.overrides.mocha;
-      delete this.overrides['sinon-chai'];
-    });
-    return npm.execute('uninstall',
-      'karma',
+  desc('Remove testing modules');
+  task('testing', function() {
+    return npm.execute('uninstall', '--save-dev',
       'karma-chai-plugins',
+      'karma-detect-browsers',
       'karma-mocha',
-      '--save-dev');
-  });
-
-  desc('Remove support for site testing');
-  task('sitetesting', function() {
-    return npm.execute('uninstall',
       'chai',
       'mocha',
       'mocha-as-promised',
       'nodemon',
-      'selenium-webdriver',
-      '--save-dev');
+      'phantomjs',
+      'selenium-webdriver');
   });
 
   desc('Remove jQuery');
   task('jquery', function() {
     editBower(function() {
-      delete this.dependencies.jquery;
+      delete this.dependencies['jquery'];
     });
   });
 
@@ -185,37 +142,37 @@ namespace('rem', function() {
   desc('Remove Lo-Dash');
   task('lodash', function() {
     editBower(function() {
-      delete this.dependencies.lodash;
+      delete this.dependencies['lodash'];
     });
   });
 
   desc('Remove Rivets');
   task('rivets', function() {
     editBower(function() {
-      delete this.dependencies.rivets;
-      delete this.overrides.rivets;
+      delete this.dependencies['rivets'];
+      delete this.overrides['rivets'];
     });
   });
 
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
   task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
     editBower(function() {
-      this.overrides.backbone = {
+      this.overrides['backbone'] = {
         dependencies: {
           lodash: '*',
           jquery: '*'
         },
         main: 'backbone.js'
       };
-      delete this.dependencies.exoskeleton;
-      delete this.overrides.chaplin;
+      delete this.dependencies['exoskeleton'];
+      delete this.overrides['chaplin'];
     });
   });
 
   desc('Remove Davy');
   task('davy', function() {
     editBower(function() {
-      delete this.dependencies.davy;
+      delete this.dependencies['davy'];
     });
   });
 
@@ -244,13 +201,13 @@ namespace('rem', function() {
 });
 
 function editBower(callback) {
-  var json = jsonfile.readFileSync('bower.json');
+  var json = JSON.parse(fs.readFileSync('bower.json'));
   callback.call(json);
-  jsonfile.writeFileSync('bower.json', json);
+  fs.writeFileSync('bower.json', JSON.stringify(json, null, 2) + '\n');
 }
 
 function editPackage(callback) {
-  var json = jsonfile.readFileSync('package.json');
+  var json = JSON.parse(fs.readFileSync('package.json'));
   callback.call(json);
-  jsonfile.writeFileSync('package.json', json);
+  fs.writeFileSync('package.json', JSON.stringify(json, null, 2) + '\n');
 }
