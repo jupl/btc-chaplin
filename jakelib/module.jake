@@ -71,12 +71,12 @@ namespace('add', function() {
   task('exoskeleton', ['rem:jquery', 'rem:lodash'], function() {
     editBower(function() {
       this.dependencies['exoskeleton'] = '~0.6.1';
-      this.overrides.chaplin = {
+      this.overrides['chaplin'] = {
         dependencies: {
           exoskeleton: '*'
         }
       };
-      delete this.overrides.backbone;
+      delete this.overrides['backbone'];
     });
   });
 
@@ -146,13 +146,14 @@ namespace('rem', function() {
   desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
   task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
     editBower(function() {
-      delete this.dependencies['exoskeleton'];
-      this.overrides.backbone = {
+      this.overrides['backbone'] = {
         dependencies: {
           lodash: '*',
           jquery: '*'
         }
       };
+      delete this.dependencies['exoskeleton'];
+      delete this.dependencies['chaplin'];
     });
   });
 
