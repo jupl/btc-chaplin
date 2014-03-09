@@ -3,6 +3,8 @@
 #### WIP
 - Update coffee-script-brunch
 - Do not use pushState by default for this skeleton
+- Remove `view-helper.coffee`
+- Move `utils.coffee`
 - Update BTC
   - Add BrowserSync as an option for autoreload
   - Update paths for code and site testing

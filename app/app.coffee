@@ -1,7 +1,7 @@
 'use strict'
 
 routes = require('routes')
-utils = require('lib/utils')
+utils = require('utils')
 
 defaultOptions = {routes, pushState: off, controllerSuffix: ''}
 
