@@ -3,7 +3,7 @@
 routes = require('routes')
 utils = require('lib/utils')
 
-defaultOptions = {routes, controllerSuffix: ''}
+defaultOptions = {routes, pushState: off, controllerSuffix: ''}
 
 module.exports = class Application extends Chaplin.Application
 

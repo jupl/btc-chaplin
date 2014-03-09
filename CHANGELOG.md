@@ -2,6 +2,17 @@
 
 #### WIP
 - Update coffee-script-brunch
+- Do not use pushState by default for this skeleton
+- Update BTC
+  - Add BrowserSync as an option for autoreload
+  - Update paths for code and site testing
+  - Rename paths for generated JS/CSS
+  - For index.html, use relative paths by default
+  - Remove server extras (let the user customize as needed, will go to a separate repo)
+  - Simplify generator-related tasks by reusing code
+  - Installing test-related modules does not modify `package.json`
+  - Install Bower components automatically after running `npm install`
+  - Revert to editing `package.json` and `bower.json`
 
 ### 0.11.0 (February 11, 2014)
 - Enforce strict mode
