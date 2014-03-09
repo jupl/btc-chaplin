@@ -20,6 +20,8 @@ This is a project template for [Chaplin](http://chaplinjs.org/) applications wit
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Compiled client-side assets
     ├── server                  # Server configuration
+    │   ├── browser-sync.js     # BrowserSync proxy setup
+    │   └── index.js            # Starting point of server setup
     ├── test                    # Test-related files
     │   ├── code                # Code tests that run with Karma
     │   ├── site                # Site tests that run with WebDriverJS

@@ -6,6 +6,8 @@
 - Remove `view-helper.coffee`
 - Move `utils.coffee`
 - Update BTC
+  - Update Express.js
+  - Include Normalize.css by default
   - Add BrowserSync as an option for autoreload
   - Update paths for code and site testing
   - Rename paths for generated JS/CSS

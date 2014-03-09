@@ -8,9 +8,10 @@
   "dependencies": {
     "chaplin": "~1.0.0",
     "console-polyfill": "~0.1.1",
-    "lesshat": "~2.0.12",
     "jquery": "~2.1.0",
-    "lodash": "~2.4.1"
+    "lesshat": "~2.0.12",
+    "lodash": "~2.4.1",
+    "normalize-css": "~3.0.0"
   },
   "overrides": {
     "backbone": {
