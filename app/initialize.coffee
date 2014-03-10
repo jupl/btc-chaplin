@@ -3,7 +3,7 @@
 initialize = ->
 
   # Add Davy promises if available and we are using Exoskeleton
-  if Backbone.Deferred and window.Davy
+  if !Backbone.Deferred and window.Davy
     Backbone.Deferred = -> new Davy
 
   # Set up Rivets if available

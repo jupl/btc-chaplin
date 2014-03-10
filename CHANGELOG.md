@@ -5,6 +5,7 @@
 - Do not use pushState by default for this skeleton
 - Remove `view-helper.coffee`
 - Move `utils.coffee`
+- Bugfixes with Davy
 - Update BTC
   - Update BrowserSync
   - Update Bluebird

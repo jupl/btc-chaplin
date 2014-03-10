@@ -52,7 +52,7 @@ namespace('add', function() {
   desc('Add Davy for promise support (useful with Exoskeleton)');
   task('davy', function() {
     editBower(function() {
-      this.dependencies['lodash'] = '~0.1.0';
+      this.dependencies['davy'] = '~0.1.0';
     });
   });
 });
