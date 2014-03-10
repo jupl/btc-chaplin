@@ -10,22 +10,28 @@ exports.config = {
     port: 3333
   },
 
+  plugins: {
+    autoreload: {
+      enabled: process.env.browsersync !== 'true'
+    }
+  },
+
   files: {
     javascripts: {
       joinTo: {
-        'javascripts/app.js': /^app/,
-        'javascripts/vendor.js': /^(vendor|bower_components)/
+        'scripts/app.js': /^app/,
+        'scripts/vendor.js': /^(vendor|bower_components)/
       }
     },
 
     stylesheets: {
       joinTo: {
-        'stylesheets/app.css': /^(app|vendor|bower_components)/
+        'styles/app.css': /^(app|vendor|bower_components)/
       }
     },
 
     templates: {
-      joinTo: 'javascripts/app.js'
+      joinTo: 'scripts/app.js'
     }
   }
 };

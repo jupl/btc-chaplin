@@ -3,7 +3,7 @@
 initialize = ->
 
   # Add Davy promises if available and we are using Exoskeleton
-  if Backbone.Deferred and window.Davy
+  if !Backbone.Deferred and window.Davy
     Backbone.Deferred = -> new Davy
 
   # Set up Rivets if available
@@ -19,7 +19,7 @@ initialize = ->
 
   # Start application
   App = require('app')
-  new App
+  new App(pushState: off)
 
 # Initialize the application on DOM ready event.
 # Use jQuery if available. Otherwise use native.
