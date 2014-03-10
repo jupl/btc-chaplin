@@ -1,0 +1,9 @@
+'use strict'
+
+connection = require('./index')
+{Schema} = require('mongoose')
+
+schema = new Schema
+
+
+module.exports = connection.model('{{uppercamelize name}}', schema)
