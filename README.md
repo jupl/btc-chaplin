@@ -1,7 +1,7 @@
-# BTC Chaplin 0.11.0
+# [BTC Chaplin](http://jupl.github.io/btc/chaplin/) 0.11.0
 [![Dependency Status](https://gemnasium.com/jupl/btc-chaplin.png)](https://gemnasium.com/jupl/btc-chaplin)
 
-This is a project template for [Chaplin](http://chaplinjs.org/) applications with [CoffeeScript](http://coffeescript.org/). Visit the site for more information.
+This is a project template for [Chaplin](http://chaplinjs.org/) applications with [CoffeeScript](http://coffeescript.org/). Visit [the site](http://jupl.github.io/btc/chaplin) for more information.
 
 
 ## File Structure
