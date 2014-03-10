@@ -7,7 +7,6 @@
 - Move `utils.coffee`
 - Bugfixes with Davy
 - Update BTC
-  - Update BrowserSync
   - Update Bluebird
   - Update PhantomJS
   - Update Selenium Webdriver
