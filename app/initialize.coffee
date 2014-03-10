@@ -19,7 +19,7 @@ initialize = ->
 
   # Start application
   App = require('app')
-  new App
+  new App(pushState: off)
 
 # Initialize the application on DOM ready event.
 # Use jQuery if available. Otherwise use native.
