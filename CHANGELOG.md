@@ -6,6 +6,10 @@
 - Remove `view-helper.coffee`
 - Move `utils.coffee`
 - Bugfixes with Davy
+- Update BTC Cordova
+  - Fix bug with running Cordova tasks on existing project
+  - Update Hammer.js
+    - Update how Hammer and jquery.hammer is added to Bower
 - Update BTC
   - Update Bluebird
   - Update PhantomJS

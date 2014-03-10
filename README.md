@@ -56,4 +56,4 @@ One-line commands are provided for convenience as well for those that want to st
 
 ### Core
 - [BTC Chaplin](https://github.com/jupl/btc-chaplin) 0.12.0
-- [BTC Cordova](https://github.com/jupl/btc-cordova) 0.9.2
+- [BTC Cordova](https://github.com/jupl/btc-cordova) 0.10.4
