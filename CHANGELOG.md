@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+### 0.12.0 (March 10, 2014)
 - Update coffee-script-brunch
 - Do not use pushState by default for this skeleton
 - Remove `view-helper.coffee`
