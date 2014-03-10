@@ -1,7 +1,5 @@
 'use strict'
 
-require('lib/view-helper')
-
 module.exports = class View extends Chaplin.View
   autoRender: yes
 
