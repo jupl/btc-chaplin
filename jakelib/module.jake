@@ -87,8 +87,8 @@ namespace('rem', function() {
     });
   });
 
-  desc('Remove Exoskeleton (restores classic Backbone, jQuery, and Lo-Dash)');
-  task('exoskeleton', ['add:jquery', 'add:lodash'], function() {
+  desc('Remove Exoskeleton (drops Davy and restores classic Backbone, jQuery, and Lo-Dash)');
+  task('exoskeleton', ['add:jquery', 'add:lodash', 'rem:davy'], function() {
     editBower(function() {
       this.overrides['backbone'] = {
         dependencies: {
