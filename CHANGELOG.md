@@ -6,6 +6,10 @@
 - Remove `view-helper.coffee`
 - Move `utils.coffee`
 - Update BTC
+  - Update BrowserSync
+  - Update Bluebird
+  - Update PhantomJS
+  - Update Selenium Webdriver
   - Update Express.js
   - Include Normalize.css by default
   - Add BrowserSync as an option for autoreload

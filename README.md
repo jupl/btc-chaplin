@@ -8,14 +8,14 @@ This is a project template for [Chaplin](http://chaplinjs.org/) applications wit
     ├── app                     # Assets/code/styles for the client application
     │   ├── assets              # Static files copied without modification
     │   ├── controllers         # Chaplin controllers
-    │   ├── lib                 # Chaplin utilities and helpers
     │   ├── models              # Chaplin models and collections
     │   ├── views               # Chaplin views and collection views
     │   ├── app.coffee          # Chaplin application definition
     │   ├── app.less            # Application/page styling definition
     │   ├── base.less           # LESS variables and mixins for the application
     │   ├── initialize.coffee   # Chaplin views and collection views
-    │   └── routes.coffee       # Route definitions for Chaplin
+    │   ├── routes.coffee       # Route definitions for Chaplin
+    │   └── utils.coffee        # Utilities and helpers
     ├── generators              # Generators used by Scaffolt
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Compiled client-side assets
@@ -58,7 +58,7 @@ A basic push state server serving static assets is included by default. You can 
 ## Libraries
 
 ### Core
-- [BTC](https://github.com/jupl/btc) 0.10.3
+- [BTC](https://github.com/jupl/btc) 0.10.4
 
 ### Languages
 - [CoffeeScript](http://coffeescript.org/)
